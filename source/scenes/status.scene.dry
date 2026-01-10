@@ -33,27 +33,37 @@ King: [+ king +]
 
 Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Reichstag composition:
+Assembly composition:
 
-# 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
-[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
-# 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
-# 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
-# 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
-# 1928: 9, 1930: 5
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
-# 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
-# 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
-# 1928: 9, 1930: 10
+{!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">**HSS**</span>!}: [+ hss_r +]%
+
+{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">**NDS**</span>!}: [+ ds_r +]%
+
+{!<span class="tooltip-text" title="Democratic Party" style="color: #FFD500;">**DS**</span>!}: [+ ds_r +]%
+
+{!<span class="tooltip-text" title="Agrarian Party" style="color: #3D863D;">**ZS**</span>!}: [+ zs_r +]%
+
+{!<span class="tooltip-text" title="Montenegrin Federalist Party" style="color: #006400;">**CFS**</span>!}: [+ zs_r +]%
+
+{!<span class="tooltip-text" title="Socialist Party of Yugoslavia" style="color: #DD0000;">**SPJ**</span>!}: [+ spj_r +]%
+
+{!<span class="tooltip-text" title="Communist Party of Yugoslavia" style="color: #770000;">**KPJ**</span>!}: [+ kpj_r +]%
+
+**Regime Parties**: [+ regime_r +]%
+
+{!<span class="tooltip-text" title="Yugoslav National Party" style="color: #767676;">**JNS**</span>!}: [+ jns_r +]%
+
+{!<span class="tooltip-text" title="Slovene People's Party" style="color: #74CA37;">**SLS**</span>!}: [+ sls_r +]%
+
+[? if nrs_exist: {!<span class="tooltip-text" title="People's Radical Party" style="color: #404371;">**NRS***</span>!}: [+ nrs_r +]% ?]
+
+[? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">**JRZ**</span>!}: [+ jrz_r +]% ?]
+
+[? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">**ZBOR**</span>!}: [+ zbor_r +]% ?]
+
 Others: [+ other_r +]%
 
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
+[? if uo_in_government: Budget: [+ budget +] ?]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
