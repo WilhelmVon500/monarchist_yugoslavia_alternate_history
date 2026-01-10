@@ -37,13 +37,13 @@ Assembly composition:
 
 {!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">**HSS**</span>!}: [+ hss_r +]%
 
-{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">**NDS**</span>!}: [+ ds_r +]%
+{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">**NDS**</span>!}: [+ nds_r +]%
 
 {!<span class="tooltip-text" title="Democratic Party" style="color: #FFD500;">**DS**</span>!}: [+ ds_r +]%
 
 {!<span class="tooltip-text" title="Agrarian Party" style="color: #3D863D;">**ZS**</span>!}: [+ zs_r +]%
 
-{!<span class="tooltip-text" title="Montenegrin Federalist Party" style="color: #006400;">**CFS**</span>!}: [+ zs_r +]%
+{!<span class="tooltip-text" title="Montenegrin Federalist Party" style="color: #006400;">**CFS**</span>!}: [+ cfs_r +]%
 
 {!<span class="tooltip-text" title="Socialist Party of Yugoslavia" style="color: #DD0000;">**SPJ**</span>!}: [+ spj_r +]%
 
@@ -56,6 +56,8 @@ Assembly composition:
 {!<span class="tooltip-text" title="Slovene People's Party" style="color: #74CA37;">**SLS**</span>!}: [+ sls_r +]%
 
 [? if nrs_exist: {!<span class="tooltip-text" title="People's Radical Party" style="color: #404371;">**NRS***</span>!}: [+ nrs_r +]% ?]
+
+{!<span class="tooltip-text" title="Yugoslav Muslim Organization" style="color: #008000;">**JMO**</span>!}: [+ jmo_r +]%
 
 [? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">**JRZ**</span>!}: [+ jrz_r +]% ?]
 
