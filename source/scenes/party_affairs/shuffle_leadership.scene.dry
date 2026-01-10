@@ -84,7 +84,7 @@ go-to: rm_main
 Šubašić has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
 
-# ids
+# sds
 
 
 @remove_budisavljevic
@@ -373,120 +373,109 @@ go-to: advisor_menu
 
 Ivan Šubašić is now an advisor.
 
-# reformist
+
+# sds
 
 
-@add_severing
-title: Carl Severing
-subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+@add_pribicevic
+title: Svetozar Pribićević
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/SeveringCarl.jpg
-tags: reformist_advisor
-view-if: severing_advisor = 0 and n_advisors < 3
-on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
+card-image: img/portraits/PribićevićSvetozar.jpg
+tags: sds_advisor
+view-if: pribicevic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
+on-arrival: pribicevic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
 go-to: advisor_menu
 
-Carl Severing is now an advisor.
+Svetozar Pribićević is now an advisor.
 
-@add_braun
-title: Otto Braun
-subtitle: Otto Braun is the Minister-President of Prussia, and one of the most recognizable and well-known Social Democratic leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
+@add_budisavljevic
+title: Srđan Budisavljević
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/BraunOtto.jpg
-tags: reformist_advisor
-view-if: braun_advisor = 0 and n_advisors < 3
-on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
+card-image: img/portraits/BudisavljevićSrđan.jpg
+tags: sds_advisor
+view-if: budisavljevic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
+on-arrival: budisavljevic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
 go-to: advisor_menu
 
-Otto Braun is now an advisor.
+Srđan Budisavljević is now an advisor.
 
-@add_juchacz
-title: Marie Juchacz
-subtitle: Marie Juchacz is the founder of Worker's Welfare, a mutual-aid organization. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Worker's Welfare, Organizing Women ?]
+@add_demetrovic
+title: Juraj Demetrović
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/JuchaczMarie.jpg
-view-if: juchacz_advisor = 0 and n_advisors < 3
-on-arrival: juchacz_advisor = 1; n_advisors += 1; reformist_strength += 5
+card-image: img/portraits/DemetrovićJuraj.jpg
+tags: sds_advisor
+view-if: demetrovic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
+on-arrival: demetrovic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
 go-to: advisor_menu
-tags: reformist_advisor
 
-Marie Juchacz is now an advisor.
+Juraj Demetrović is now an advisor.
 
-@add_pfulf
-title: Antonie Pfülf
-subtitle: Antonie Pfülf is a leader in social policy and women's rights. {!<br><br>!}[? if difficulty < 0 : Actions - Support a People's Party, Women's Rights ?]
+
+# ds
+
+
+@add_davidovic
+title: Ljubomir Davidović
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/PfülfAntonie.jpg
-view-if: pfulf_advisor = 0 and n_advisors < 3
-on-arrival: pfulf_advisor = 1; n_advisors += 1
+card-image: img/portraits/DavidovićLjubomir.jpg
+tags: ds_advisor
+view-if: davidovic_advisor = 0 and n_advisors < 3 and democratic_party_uo
+on-arrival: davidovic_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
-tags: reformist_advisor
 
-Antonie Pfülf is now an advisor.
+Ljubomir Davidović is now an advisor.
 
-
-
-# left
-
-@add_levi
-title: Paul Levi
-subtitle: Paul Levi is a former KPD leader who was purged for criticizing Communist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD ?]
+@add_grol
+title: Milan Grol
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/LeviPaul.jpg
-view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
-on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/GrolMilan.jpg
+tags: ds_advisor
+view-if: grol_advisor = 0 and n_advisors < 3 and democratic_party_uo
+on-arrival: grol_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
-tags: left_advisor
 
-Paul Levi is now an advisor.
+Milan Grol is now an advisor.
 
-@add_sender
-title: Toni Sender
-subtitle: Toni Sender is an anti-war and womens' rights advocate, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Left-Center Unity, Organizing Women, Against Toleration, Addressing the Economic Crisis ?]
+@add_pavelic_sr
+title: Ante Pavelić Sr.
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/SenderToni.jpg
-view-if: sender_advisor = 0 and n_advisors < 3
-on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/PavelićSrAnte.jpg
+tags: ds_advisor
+view-if: pavelic_sr_advisor = 0 and n_advisors < 3 and democratic_party_uo
+on-arrival: pavelic_sr_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
-tags: left_advisor
 
-Toni Sender is now an advisor.
+Ante Pavelić Sr. is now an advisor.
 
-@add_rosenfeld
-title: Kurt Rosenfeld
-subtitle: Kurt Rosenfeld is a lawyer, anti-militarist activist, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
+@add_kramer
+title: Albert Kramer
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/RosenfeldKurt.jpg
-view-if: rosenfeld_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/KramerAlbert.jpg
+tags: ds_advisor
+view-if: kramer_advisor = 0 and n_advisors < 3 and democratic_party_uo
+on-arrival: kramer_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
-tags: left_advisor
 
-Kurt Rosenfeld is now an advisor.
+Albert Kramer is now an advisor.
 
-@add_seydewitz
-title: Max Seydewitz
-subtitle: Max Seydewitz is a former leader of the youth wing, current supporter of the left wing of the SPD, and advocates for class struggle. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Class Struggle, Socialist Youth, Against Toleration ?]
+@add_marinkovic
+title: Vojislav Marinković
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/SeydewitzMax.jpg
-view-if: seydewitz_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/MarinkovićVojislav.jpg
+tags: ds_advisor
+view-if: marinkovic_advisor = 0 and n_advisors < 3 and democratic_party_uo
+on-arrival: marinkovic_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
-tags: left_advisor
 
-Max Seydewitz is now an advisor.
-
-@add_siemsen
-title: Anna Siemsen
-subtitle: Anna Siemsen is an and educational reform advocate and pacifist, who was one of the few German women to receive a PhD in the pre-war period. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Pacifism, Educational Curriculum, Educational Structure ?]
-is-card: true
-card-image: img/portraits/SiemsenAnna.jpg
-view-if: siemsen_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: siemsen_advisor = 1; n_advisors += 1; left_strength += 5
-go-to: advisor_menu
-tags: left_advisor
-
-Anna Siemsen is now an advisor.
+Vojislav Marinković is now an advisor.
 
 
 
