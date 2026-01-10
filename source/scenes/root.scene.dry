@@ -156,15 +156,16 @@ Q.economic_growth = 0;
 Q.economic_expansion = 0;
 
 Q.classes = ['workers', 'middle_class', 'rural', 'unemployed', 'croatian_peasants'];
-Q.parties = ['jns', 'nrs', 'kpj', 'spj', 'ds', 'nds', 'zs', 'jmo', 'hss', 'cfs', 'sls'];
+Q.parties = ['jns', 'kpj', 'spj', 'ds', 'nds', 'zs', 'jmo', 'hss', 'cfs', 'sls'];
 
-Q.zbor_exist = 0;
+Q.nrs_exist = 0;
 Q.jrz_exist = 0;
+Q.zbor_exist = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_jns = 60;
-Q.workers_nrs = 20;
+Q.workers_nrs = 0;
 Q.workers_z = 5;
 Q.workers_ddp = 0;
 Q.workers_dvp = 0;
