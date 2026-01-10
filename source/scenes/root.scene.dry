@@ -36,8 +36,9 @@ Q.old_demographics = 0;
 Q.use_decimals = 0;
 
 // party resources
+Q.uo_name = "UO";
+Q.uo_name_long = "United Opposition"
 Q.resources = 2;
-// party dues
 Q.dues = 2;
 
 // the state of the party
