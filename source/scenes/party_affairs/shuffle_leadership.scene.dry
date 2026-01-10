@@ -21,7 +21,7 @@ Removing advisors will increase dissent from their faction of the party, while s
 
 @rm_main
 title: Remove advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor 
+tags: hss_advisor, sds_advisor, ds_advisor, zs_advisor, cfs_advisor, sls_advisor 
 frequency: 1
 
 - #remove_advisor
@@ -33,88 +33,85 @@ go-to: root
 tags: remove_advisor
 
 
-@remove_hilferding
-title: Remove Hilferding
-view-if: hilferding_advisor = 1
-on-arrival: hilferding_advisor = 0; center_dissent += 5; n_advisors -= 1
+# hss
+
+
+@remove_macek
+title: Remove Maček
+view-if: macek_advisor
+on-arrival: macek_advisor = 0; croatian_peasant_party_dissent += 5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
-Hilferding has been removed as an advisor. The Centrist faction disapproves.
+Maček has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
-@remove_wels
-title: Remove Wels
-view-if: wels_advisor = 1
+@remove_kosutic
+title: Remove Košutić
+view-if: kosutic_advisor
 tags: remove_advisor
-on-arrival: wels_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: kosutic_advisor = 0; croatian_peasant_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Wels has been removed as an advisor. The Centrist faction disapproves.
+Košutić has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
-@remove_muller
+@remove_sutej
 title: Remove Müller
-view-if: muller_advisor = 1
+view-if: sutej_advisor
 tags: remove_advisor
-on-arrival: muller_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: sutej_advisor = 0; croatian_peasant_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Müller has been removed as an advisor. The Centrist faction disapproves.
+Müller has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
 
-@remove_breitscheid
-title: Remove Breitscheid
-view-if: breitscheid_advisor = 1
+@remove_tomasic
+title: Remove Tomašić
+view-if: tomasic_advisor
 tags: remove_advisor
-on-arrival: breitscheid_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: tomasic_advisor = 0; croatian_peasant_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Breitscheid has been removed as an advisor. The Centrist faction disapproves.
-
-# reformists
+Tomašić has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
 
-@remove_severing
-title: Remove Severing
-view-if: severing_advisor = 1
+@remove_subasic
+title: Remove Šubašić
+view-if: subasic_advisor
 tags: remove_advisor
-on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: subasic_advisor = 0; croatian_peasant_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Severing has been removed as an advisor. The Reformist faction disapproves.
+Šubašić has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
-@remove_braun
-title: Remove Braun
-view-if: braun_advisor = 1
+
+# ids
+
+
+@remove_budisavljevic
+title: Remove Budisavljević
+view-if: budisavljevic_advisor
 tags: remove_advisor
-on-arrival: braun_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: budisavljevic_advisor = 0; independent_democratic_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Braun has been removed as an advisor. The Reformist faction disapproves.
+Budisavljević has been removed as an advisor. The <span style="color: #FCF342;">**Independent Democratic Party**</span> disapproves.
 
-@remove_juchacz
-title: Remove Juchacz
-view-if: juchacz_advisor = 1
+@remove_demetrovic
+title: Remove Demetrović
+view-if: demetrovic_advisor
 tags: remove_advisor
-on-arrival: juchacz_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: demetrovic_advisor = 0; independent_democratic_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Juchacz has been removed as an advisor. The Reformist faction disapproves.
-
-@remove_pfulf
-title: Remove Pfülf
-view-if: pfulf_advisor = 1
-tags: remove_advisor
-on-arrival: pfulf_advisor = 0; reformist_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Pfülf has been removed as an advisor. The Reformist faction disapproves.
+Demetrović has been removed as an advisor. The <span style="color: #FCF342;">**Independent Democratic Party**</span> disapproves.
 
 
-# labor
+# ds
+
 
 @remove_leipart
 title: Remove Leipart
-view-if: leipart_advisor = 1
+view-if: leipart_advisor
 tags: remove_advisor
 on-arrival: leipart_advisor = 0; labor_dissent += 5; n_advisors -= 1
 go-to: rm_main
@@ -123,7 +120,7 @@ Leipart has been removed as an advisor. The Labor faction disapproves.
 
 @remove_aufhauser
 title: Remove Aufhäuser
-view-if: aufhauser_advisor = 1
+view-if: aufhauser_advisor
 tags: remove_advisor
 on-arrival: aufhauser_advisor = 0; labor_dissent += 5; n_advisors -= 1
 go-to: rm_main
@@ -132,7 +129,7 @@ Aufhäuser has been removed as an advisor. The Labor faction disapproves.
 
 @remove_wissell
 title: Remove Wissell
-view-if: wissell_advisor = 1
+view-if: wissell_advisor
 tags: remove_advisor
 on-arrival: wissell_advisor = 0; labor_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -142,7 +139,7 @@ Wissell has been removed as an advisor. The Labor faction disapproves.
 
 @remove_woytinsky
 title: Remove Woytinsky
-view-if: woytinsky_advisor = 1
+view-if: woytinsky_advisor
 tags: remove_advisor
 on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -153,7 +150,7 @@ Woytinsky has been removed as an advisor. The Labor faction disapproves.
 
 @remove_levi
 title: Remove Levi
-view-if: levi_advisor = 1
+view-if: levi_advisor
 tags: remove_advisor
 on-arrival: levi_advisor = 0; left_dissent += 5; n_advisors -= 1
 go-to: rm_main
@@ -162,7 +159,7 @@ Levi has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_sender
 title: Remove Sender
-view-if: sender_advisor = 1
+view-if: sender_advisor
 tags: remove_advisor
 on-arrival: sender_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -171,7 +168,7 @@ Sender has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_rosenfeld
 title: Remove Rosenfeld
-view-if: rosenfeld_advisor = 1
+view-if: rosenfeld_advisor
 tags: remove_advisor
 on-arrival: rosenfeld_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -180,7 +177,7 @@ Rosenfeld has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_seydewitz
 title: Remove Seydewitz
-view-if: seydewitz_advisor = 1
+view-if: seydewitz_advisor
 tags: remove_advisor
 on-arrival: seydewitz_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -189,7 +186,7 @@ Seydewitz has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_siemsen
 title: Remove Siemsen
-view-if: siemsen_advisor = 1
+view-if: siemsen_advisor
 tags: remove_advisor
 on-arrival: siemsen_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -197,13 +194,12 @@ go-to: rm_main
 Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
 
-
-
 # neorevisionists
+
 
 @remove_mierendorff
 title: Remove Mierendorff
-view-if: mierendorff_advisor = 1
+view-if: mierendorff_advisor
 tags: remove_advisor
 on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
 go-to: rm_main
@@ -212,7 +208,7 @@ Mierendorff has been removed as an advisor. The Neorevisionist faction disapprov
 
 @remove_leber
 title: Remove Leber
-view-if: leber_advisor = 1
+view-if: leber_advisor
 tags: remove_advisor
 on-arrival: leber_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -221,7 +217,7 @@ Leber has been removed as an advisor. The Neorevisionist faction disapproves.
 
 @remove_schumacher
 title: Remove Schumacher
-view-if: schumacher_advisor = 1
+view-if: schumacher_advisor
 tags: remove_advisor
 on-arrival: schumacher_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
@@ -231,11 +227,10 @@ Schumacher has been removed as an advisor. The Neorevisionist faction disapprove
 
 ## nonfactional
 
-# tbh I'm not sure if Baade should be a reformist or nonfactional. same for stampfer. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
 
 @remove_baade
 title: Remove Baade
-view-if: baade_advisor = 1
+view-if: baade_advisor
 tags: remove_advisor
 on-arrival: baade_advisor = 0; n_advisors -= 1
 go-to: rm_main
@@ -247,7 +242,7 @@ Baade has been removed as an advisor.
 
 @remove_hirschfeld
 title: Remove Hirschfeld
-view-if: hirschfeld_advisor = 1
+view-if: hirschfeld_advisor
 tags: remove_advisor
 on-arrival: hirschfeld_advisor = 0; n_advisors -= 1
 go-to: rm_main
@@ -256,7 +251,7 @@ Hirschfeld has been removed as an advisor.
 
 @remove_stampfer
 title: Remove Stampfer
-view-if: stampfer_advisor = 1
+view-if: stampfer_advisor
 tags: remove_advisor
 on-arrival: stampfer_advisor = 0; n_advisors -= 1
 go-to: rm_main
@@ -265,7 +260,7 @@ Stampfer has been removed as an advisor.
 
 @remove_radbruch
 title: Remove Radbruch
-view-if: radbruch_advisor = 1
+view-if: radbruch_advisor
 tags: remove_advisor
 on-arrival: radbruch_advisor = 0; n_advisors -= 1
 go-to: rm_main
