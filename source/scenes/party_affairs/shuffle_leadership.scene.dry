@@ -526,7 +526,7 @@ title: Sekula Drljević
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/DrljevićSekula.jpg
-tags: neorev_advisor
+tags: cfs_advisor
 view-if: drljevic_advisor = 0 and n_advisors < 3 and montenegrin_federalist_party_uo
 on-arrival: drljevic_advisor = 1; n_advisors += 1; montenegrin_federalist_party_strength += 5
 go-to: advisor_menu
@@ -538,7 +538,7 @@ title: Novica Radović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/RadovićNovica.jpg
-tags: neorev_advisor
+tags: cfs_advisor
 view-if: radovic_advisor = 0 and n_advisors < 3 and montenegrin_federalist_party_uo
 on-arrival: radovic_advisor = 1; n_advisors += 1; montenegrin_federalist_party_strength += 5
 go-to: advisor_menu
@@ -550,7 +550,7 @@ title: Krsto Popović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/PopovićKrsto.jpg
-tags: neorev_advisor
+tags: cfs_advisor
 view-if: popovic_advisor = 0 and n_advisors < 3 and montenegrin_federalist_party_uo
 on-arrival: popovic_advisor = 1; n_advisors += 1; montenegrin_federalist_party_strength += 5
 go-to: advisor_menu
@@ -566,7 +566,7 @@ title: Anton Korošec
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/KorošecAnton.jpg
-tags: nonfactional_advisor
+tags: sls_advisor
 view-if: korosec_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
 on-arrival: korosec_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
 go-to: advisor_menu
@@ -578,7 +578,7 @@ title: Juro Adlešič
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/AdlešičJuro.jpg
-tags: nonfactional_advisor
+tags: sls_advisor
 view-if: adlesic_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
 on-arrival: adlesic_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
 go-to: advisor_menu
@@ -590,7 +590,7 @@ title: Franc Snoj
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/SnojFranc.jpg
-tags: nonfactional_advisor
+tags: sls_advisor
 view-if: snoj_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
 on-arrival: snoj_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
 go-to: advisor_menu
