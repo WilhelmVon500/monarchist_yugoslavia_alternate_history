@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-UO position: [? if uo_toleration : toleration ?][? if uo_in_government : in government - ?][? if not uo_toleration and not uo_in_government: opposition ?]
+<span style="color: #FFA500;">**UO**</span> position: [? if uo_toleration : toleration ?][? if uo_in_government : in government - ?][? if not uo_toleration and not uo_in_government: opposition ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if uo_in_government and not in_uo_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
