@@ -186,7 +186,7 @@ go-to: rm_main
 Čubrilović has been removed as an advisor. The <span style="color: #3D863D;">**Agrarian Party**</span> disapproves.
 
 
-# neorevisionists
+# cfs
 
 
 @remove_mierendorff
@@ -217,47 +217,44 @@ go-to: rm_main
 Schumacher has been removed as an advisor. The Neorevisionist faction disapproves.
 
 
-## nonfactional
+## sls
 
 
 @remove_baade
 title: Remove Baade
 view-if: baade_advisor
 tags: remove_advisor
-on-arrival: baade_advisor = 0; n_advisors -= 1
+on-arrival: baade_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Baade has been removed as an advisor.
-
-#The Reformist faction disapproves.
-
+Baade has been removed as an advisor. The Neorevisionist faction disapproves.
 
 @remove_hirschfeld
 title: Remove Hirschfeld
 view-if: hirschfeld_advisor
 tags: remove_advisor
-on-arrival: hirschfeld_advisor = 0; n_advisors -= 1
+on-arrival: hirschfeld_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Hirschfeld has been removed as an advisor. 
+Hirschfeld has been removed as an advisor. The Neorevisionist faction disapproves.
 
 @remove_stampfer
 title: Remove Stampfer
 view-if: stampfer_advisor
 tags: remove_advisor
-on-arrival: stampfer_advisor = 0; n_advisors -= 1
+on-arrival: stampfer_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Stampfer has been removed as an advisor. 
+Stampfer has been removed as an advisor. The Neorevisionist faction disapproves.
 
 @remove_radbruch
 title: Remove Radbruch
 view-if: radbruch_advisor
 tags: remove_advisor
-on-arrival: radbruch_advisor = 0; n_advisors -= 1
+on-arrival: radbruch_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Radbruch has been removed as an advisor. 
+Radbruch has been removed as an advisor. The Neorevisionist faction disapproves.
 
 
 
