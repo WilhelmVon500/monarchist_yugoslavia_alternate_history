@@ -1,0 +1,27 @@
+title: A New <span style="color: #222222;">**Party**</span> for the Regime?
+subtitle: Milan Stojadinović has formed a new party.
+view-if: year = 1935 and month >= 3
+new-page: true
+max-visits: 1
+on-arrival: {!
+Q.jrz_exist = 1;
+Q.parties.push('jrz');
+!}
+tags: event
+
+= <span style="color: #222222;">**JRZ**</span> Formation
+
+WIP
+
+- @advantage: Can we build contacts with the <span style="color: #767676;">**JNS**</span>?
+- @nothing: This is none of our concern.
+
+@advantage
+on-arrival: jns_relation += 5
+
+With turmoil in the conservative camp, we have an opportunity to recruit portions of former pro-Regime politicians into our coalition.
+
+
+@nothing
+
+The Regime's internal affairs are none of our concern.
