@@ -198,72 +198,63 @@ go-to: rm_main
 # cfs
 
 
-@remove_mierendorff
-title: Remove Mierendorff
-view-if: mierendorff_advisor
+@remove_drljevic
+title: Remove Drljević
+view-if: drljevic_advisor
 tags: remove_advisor
-on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
+on-arrival: drljevic_advisor = 0; montenegrin_federalist_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Mierendorff has been removed as an advisor. The Neorevisionist faction disapproves.
+Drljević has been removed as an advisor. The <span style="color: #006400;">**Montenegrin Federalist Party**</span> disapproves.
 
-@remove_leber
-title: Remove Leber
-view-if: leber_advisor
+@remove_radovic
+title: Remove Radović
+view-if: radovic_advisor
 tags: remove_advisor
-on-arrival: leber_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: radovic_advisor = 0; montenegrin_federalist_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Leber has been removed as an advisor. The Neorevisionist faction disapproves.
+Radović has been removed as an advisor. The <span style="color: #006400;">**Montenegrin Federalist Party**</span> disapproves.
 
-@remove_schumacher
-title: Remove Schumacher
-view-if: schumacher_advisor
+@remove_popovic
+title: Remove Popović
+view-if: popovic_advisor
 tags: remove_advisor
-on-arrival: schumacher_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: popovic_advisor = 0; montenegrin_federalist_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Schumacher has been removed as an advisor. The Neorevisionist faction disapproves.
+Popović has been removed as an advisor. The <span style="color: #006400;">**Montenegrin Federalist Party**</span> disapproves.
 
 
 ## sls
 
 
-@remove_baade
-title: Remove Baade
-view-if: baade_advisor
+@remove_korosec
+title: Remove Korošec
+view-if: korosec_advisor
 tags: remove_advisor
-on-arrival: baade_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: korosec_advisor = 0; slovene_peoples_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Baade has been removed as an advisor. The Neorevisionist faction disapproves.
+Korošec has been removed as an advisor. The <span style="color: #74CA37;">**Slovene People's Party**</span> disapproves.
 
-@remove_hirschfeld
-title: Remove Hirschfeld
-view-if: hirschfeld_advisor
+@remove_adlesic
+title: Remove Adlešič
+view-if: adlesic_advisor
 tags: remove_advisor
-on-arrival: hirschfeld_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: adlesic_advisor = 0; slovene_peoples_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Hirschfeld has been removed as an advisor. The Neorevisionist faction disapproves.
+Adlešič has been removed as an advisor. The <span style="color: #74CA37;">**Slovene People's Party**</span> disapproves.
 
-@remove_stampfer
-title: Remove Stampfer
-view-if: stampfer_advisor
+@remove_snoj
+title: Remove Snoj
+view-if: snoj_advisor
 tags: remove_advisor
-on-arrival: stampfer_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: snoj_advisor = 0; slovene_peoples_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Stampfer has been removed as an advisor. The Neorevisionist faction disapproves.
-
-@remove_radbruch
-title: Remove Radbruch
-view-if: radbruch_advisor
-tags: remove_advisor
-on-arrival: radbruch_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
-go-to: rm_main
-
-Radbruch has been removed as an advisor. The Neorevisionist faction disapproves.
+Snoj has been removed as an advisor. The <span style="color: #74CA37;">**Slovene People's Party**</span> disapproves.
 
 
 
