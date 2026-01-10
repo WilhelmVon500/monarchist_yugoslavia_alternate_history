@@ -110,13 +110,13 @@ Demetrović has been removed as an advisor. The <span style="color: #FCF342;">**
 
 
 @remove_davidovic
-title: Remove Leipart
+title: Remove Davidović
 view-if: davidovic_advisor
 tags: remove_advisor
 on-arrival: davidovic_advisor = 0; democratic_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Leipart has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
+Davidović has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
 
 @remove_grol
 title: Remove Grol
