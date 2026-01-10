@@ -87,6 +87,15 @@ go-to: rm_main
 # sds
 
 
+@remove_pribicevic
+title: Remove Pribićević
+view-if: pribicevic_advisor
+tags: remove_advisor
+on-arrival: pribicevic_advisor = 0; independent_democratic_party_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Pribićević has been removed as an advisor. The <span style="color: #FCF342;">**Independent Democratic Party**</span> disapproves.
+
 @remove_budisavljevic
 title: Remove Budisavljević
 view-if: budisavljevic_advisor
