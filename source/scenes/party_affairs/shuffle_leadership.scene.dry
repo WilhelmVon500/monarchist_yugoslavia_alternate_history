@@ -288,7 +288,7 @@ frequency: 1
 - @hss: Add <span style="color: #04B431;">**HSS**</span> advisors
 - @sds: Add <span style="color: #FCF342;">**SDS**</span> advisors
 - @ds: Add <span style="color: #FFD500;">**DS**</span> advisors
-- @zs: Add <span style="color: #3D863D;">**ZS**</span advisors
+- @zs: Add <span style="color: #3D863D;">**ZS**</span> advisors
 - @cfs: Add <span style="color: #006400;">**CFS**</span> advisors
 - @sls: Add <span style="color: #74CA37;">**SLS**</span> advisors
 - @rm_main: Remove advisors instead.
