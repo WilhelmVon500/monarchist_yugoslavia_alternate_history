@@ -317,7 +317,7 @@ view-if: slovene_peoples_party_uo and n_advisors < 3
 title: Vladko Maček
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/MačekVladko.jpg
+face-image: img/portraits/MačekVladko.jpg
 tags: hss_advisor
 view-if: macek_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
 on-arrival: macek_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
@@ -329,7 +329,7 @@ Vladko Maček is now an advisor.
 title: August Košutić
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions -  WIP ?]
 is-card: true
-card-image: img/portraits/KošutićAugust.jpg
+face-image: img/portraits/KošutićAugust.jpg
 tags: hss_advisor
 view-if: kosutic_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
 on-arrival: kosutic_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
@@ -341,7 +341,7 @@ August Košutić is now an advisor.
 title: Juraj Šutej
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/ŠutejJuraj.jpg
+face-image: img/portraits/ŠutejJuraj.jpg
 tags: hss_advisor
 view-if: sutej_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
 on-arrival: sutej_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
@@ -353,7 +353,7 @@ Juraj Šutej is now an advisor.
 title: Ljudevit Tomašić
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/TomašićLjudevit.jpg
+face-image: img/portraits/TomašićLjudevit.jpg
 tags: hss_advisor
 view-if: tomasic_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
 on-arrival: tomasic_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
@@ -365,7 +365,7 @@ Ljudevit Tomašić is now an advisor.
 title: Ivan Šubašić
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/ŠubašićIvan.jpg
+face-image: img/portraits/ŠubašićIvan.jpg
 tags: hss_advisor
 view-if: subasic_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
 on-arrival: subasic_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
@@ -381,7 +381,7 @@ Ivan Šubašić is now an advisor.
 title: Svetozar Pribićević
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/PribićevićSvetozar.jpg
+face-image: img/portraits/PribićevićSvetozar.jpg
 tags: sds_advisor
 view-if: pribicevic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
 on-arrival: pribicevic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
@@ -393,7 +393,7 @@ Svetozar Pribićević is now an advisor.
 title: Srđan Budisavljević
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/BudisavljevićSrđan.jpg
+face-image: img/portraits/BudisavljevićSrđan.jpg
 tags: sds_advisor
 view-if: budisavljevic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
 on-arrival: budisavljevic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
@@ -405,7 +405,7 @@ Srđan Budisavljević is now an advisor.
 title: Juraj Demetrović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/DemetrovićJuraj.jpg
+face-image: img/portraits/DemetrovićJuraj.jpg
 tags: sds_advisor
 view-if: demetrovic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
 on-arrival: demetrovic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
@@ -421,7 +421,7 @@ Juraj Demetrović is now an advisor.
 title: Ljubomir Davidović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/DavidovićLjubomir.jpg
+face-image: img/portraits/DavidovićLjubomir.jpg
 tags: ds_advisor
 view-if: davidovic_advisor = 0 and n_advisors < 3 and democratic_party_uo
 on-arrival: davidovic_advisor = 1; n_advisors += 1; democratic_party_strength += 5
@@ -433,7 +433,7 @@ Ljubomir Davidović is now an advisor.
 title: Milan Grol
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/GrolMilan.jpg
+face-image: img/portraits/GrolMilan.jpg
 tags: ds_advisor
 view-if: grol_advisor = 0 and n_advisors < 3 and democratic_party_uo
 on-arrival: grol_advisor = 1; n_advisors += 1; democratic_party_strength += 5
@@ -445,7 +445,7 @@ Milan Grol is now an advisor.
 title: Ante Pavelić Sr.
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/PavelićSrAnte.jpg
+face-image: img/portraits/PavelićSrAnte.jpg
 tags: ds_advisor
 view-if: pavelic_sr_advisor = 0 and n_advisors < 3 and democratic_party_uo
 on-arrival: pavelic_sr_advisor = 1; n_advisors += 1; democratic_party_strength += 5
@@ -457,7 +457,7 @@ Ante Pavelić Sr. is now an advisor.
 title: Albert Kramer
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/KramerAlbert.jpg
+face-image: img/portraits/KramerAlbert.jpg
 tags: ds_advisor
 view-if: kramer_advisor = 0 and n_advisors < 3 and democratic_party_uo
 on-arrival: kramer_advisor = 1; n_advisors += 1; democratic_party_strength += 5
@@ -469,7 +469,7 @@ Albert Kramer is now an advisor.
 title: Vojislav Marinković
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/MarinkovićVojislav.jpg
+face-image: img/portraits/MarinkovićVojislav.jpg
 tags: ds_advisor
 view-if: marinkovic_advisor = 0 and n_advisors < 3 and democratic_party_uo
 on-arrival: marinkovic_advisor = 1; n_advisors += 1; democratic_party_strength += 5
@@ -485,7 +485,7 @@ Vojislav Marinković is now an advisor.
 title: Jovan Jovanović Pižon
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/JovanovićPižonJovan.jpg
+face-image: img/portraits/JovanovićPižonJovan.jpg
 tags: zs_advisor
 view-if: jovanovic_pizon_advisor = 0 and n_advisors < 3 and agrarian_party_uo
 on-arrival: jovanovic_pizon_advisor = 1; n_advisors += 1; agrarian_party_strength += 5
@@ -497,7 +497,7 @@ Jovan Jovanović Pižon is now an advisor.
 title: Milan Gavrilović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/GavrilovićMilan.jpg
+face-image: img/portraits/GavrilovićMilan.jpg
 tags: zs_advisor
 view-if: gavrilovic_advisor = 0 and n_advisors < 3 and agrarian_party_uo
 on-arrival: gavrilovic_advisor = 1; n_advisors += 1; agrarian_party_strength += 5
@@ -509,7 +509,7 @@ Milan Gavrilović is now an advisor.
 title: Branko Čubrilović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/ČubrilovićBranko.jpg
+face-image: img/portraits/ČubrilovićBranko.jpg
 tags: zs_advisor
 view-if: cubrilovic_advisor = 0 and n_advisors < 3 and agrarian_party_uo
 on-arrival: cubrilovic_advisor = 1; n_advisors += 1; agrarian_party_strength += 3
@@ -525,7 +525,7 @@ Branko Čubrilović is now an advisor.
 title: Sekula Drljević
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/DrljevićSekula.jpg
+face-image: img/portraits/DrljevićSekula.jpg
 tags: neorev_advisor
 view-if: drljevic_advisor = 0 and n_advisors < 3 and montenegrin_federalist_party_uo
 on-arrival: drljevic_advisor = 1; n_advisors += 1; montenegrin_federalist_party_strength += 5
@@ -537,7 +537,7 @@ Sekula Drljević is now an advisor.
 title: Novica Radović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/RadovićNovica.jpg
+face-image: img/portraits/RadovićNovica.jpg
 tags: neorev_advisor
 view-if: radovic_advisor = 0 and n_advisors < 3 and montenegrin_federalist_party_uo
 on-arrival: radovic_advisor = 1; n_advisors += 1; montenegrin_federalist_party_strength += 5
@@ -549,7 +549,7 @@ Novica Radović is now an advisor.
 title: Krsto Popović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/PopovićKrsto.jpg
+face-image: img/portraits/PopovićKrsto.jpg
 tags: neorev_advisor
 view-if: popovic_advisor = 0 and n_advisors < 3 and montenegrin_federalist_party_uo
 on-arrival: popovic_advisor = 1; n_advisors += 1; montenegrin_federalist_party_strength += 5
@@ -565,7 +565,7 @@ Krsto Popović is now an advisor.
 title: Anton Korošec
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/KorošecAnton.jpg
+face-image: img/portraits/KorošecAnton.jpg
 tags: nonfactional_advisor
 view-if: korosec_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
 on-arrival: korosec_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
@@ -577,7 +577,7 @@ Anton Korošec is now an advisor.
 title: Juro Adlešič
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/AdlešičJuro.jpg
+face-image: img/portraits/AdlešičJuro.jpg
 tags: nonfactional_advisor
 view-if: adlesic_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
 on-arrival: adlesic_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
@@ -589,7 +589,7 @@ Juro Adlešič is now an advisor.
 title: Franc Snoj
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/SnojFranc.jpg
+face-image: img/portraits/SnojFranc.jpg
 tags: nonfactional_advisor
 view-if: snoj_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
 on-arrival: snoj_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
