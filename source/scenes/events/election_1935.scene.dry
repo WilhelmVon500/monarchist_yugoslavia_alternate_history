@@ -424,7 +424,6 @@ There are enough votes for a right-wing coalition of the Center (+ BVP), DVP, DN
 - @right_coalition_sure: Yes, we will abdicate our responsibility for government formation, and let a right-wing coalition take power.
 
 @no_right_coalition
-go-to: no_majority
 
 However, the DNVP and its leader Hugenberg is refusing to partake in a coalition with the "November criminals" in the Center Party. Thus, there is no clear path towards a Reichstag majority.
 
@@ -441,58 +440,6 @@ choose-if: year < 1929
 on-arrival: spd_in_government = 0; spd_toleration = 0; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "DVP"; interior_minister_party = "DNVP"; justice_minister_party = "DNVP"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DVP"; finance_minister_party = "Z"; agriculture_minister_party = "DNVP"; in_right_coalition = 1;
 
 Even though the DNVP is very reluctant to participate in such a coalition, they still accede to President Hindenburg's wishes. Thus, a majority center-right coalition is formed, with Brüning as chancellor.
-
-
-@no_confidence_elections_new
-on-arrival: {!
-Q.in_emergency_government = 1;
-Q.no_majority_elections += 1;
-Q.next_election_month = Q.month + 6;
-Q.next_election_time = Q.time + 6;
-if (Q.next_election_month > 12) {
-    Q.next_election_month -= 12;
-    Q.next_election_year = Q.year + 1;
-} else {
-    Q.next_election_year = Q.year;
-}
-Q.pro_republic -= 5;
-Q.workers_spd -= 3;
-Q.new_middle_spd -= 3;
-Q.old_middle_spd -= 3;
-Q.rural_spd -= 3;
-Q.catholics_spd -= 3;
-Q.workers_nsdap += 5;
-Q.old_middle_nsdap += 3;
-Q.new_middle_nsdap += 3;
-Q.rural_nsdap += 3;
-Q.unemployed_nsdap += 5;
-if (Q.pro_republic < 45 && Q.pro_republic >= 38) {
-    Q.workers_spd -= 6;
-}
-if (Q.pro_republic < 38) {
-    Q.workers_spd *= 0.85;
-    Q.new_middle_spd -= 5;
-    Q.old_middle_spd -= 5;
-    Q.rural_spd -= 5;
-    Q.catholics_spd -= 3;
-    Q.workers_nsdap += 5;
-    Q.old_middle_nsdap += 5;
-    Q.new_middle_nsdap += 5;
-    Q.rural_nsdap += 5;
-    Q.unemployed_nsdap += 5;   
-}
-!}
-view-if: no_confidence_votes > 50
-
-The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
-
-
-@no_confidence_win
-view-if: no_confidence_votes <= 50
-on-arrival: in_minority_government = 1; in_emergency_government = 0;
-achievement: minderheitsregierung
-
-We have won the vote of no confidence, and are currently ruling under an SPD minority government. Now our task is to fix the country.
 
 
 @ministries
