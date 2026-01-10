@@ -125,9 +125,9 @@ Foreign: [+ foreign_minister +] ([?if foreign_minister_party=="I":<span style="c
 
 Social: [+ social_minister +] ([?if social_minister_party=="I":<span style="color: #808080;">**I**</span>?][?if social_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Agriculture: [+ agriculture_minister +] ([?if agriculture_minister_party=="I":<span style="color: #808080;">**I**</span>?][?if agriculture_minister_party=="SPD":<span style="color: #E3000F;">**SPD**</span>?][?if agriculture_minister_party==ddp_name:<span style="color: #DCCA4A;">**[+ddp_name+]**</span>?][?if agriculture_minister_party=="DBP":<span style="color: #38C538;">**DBP**</span>?][?if agriculture_minister_party=="Z":<span style="color: #000000;">**Z**</span>?][?if agriculture_minister_party==dvp_name:<span style="color: var(--dvp-color);">**[+ dvp_name +]**</span>?][?if agriculture_minister_party=="CNBLP":<span style="color: #7FCEB1;">**CNBLP**</span>?][?if agriculture_minister_party=="KVP":<span style="color: #455B95;">**KVP**</span>?][?if agriculture_minister_party=="DNVP":<span style="color: #3F7BC1;">**DNVP**</span>?][?if agriculture_minister_party=="DNF":<span style="color: #003755;">**DNF**</span>?][?if agriculture_minister_party=="NSDAP":<span style="color: #954B00;">**NSDAP**</span>?])
+Agriculture: [+ agriculture_minister +] ([?if agriculture_minister_party=="I":<span style="color: #808080;">**I**</span>?][?if agriculture_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Army: [+ army_minister +] ([?if reichswehr_minister_party=="I":<span style="color: #808080;">**I**</span>?][?if reichswehr_minister_party=="SPD":<span style="color: #E3000F;">**SPD**</span>?][?if reichswehr_minister_party==ddp_name:<span style="color: #DCCA4A;">**[+ddp_name+]**</span>?][?if reichswehr_minister_party=="Z":<span style="color: #000000;">**Z**</span>?][?if reichswehr_minister_party==dvp_name:<span style="color: var(--dvp-color);">**[+ dvp_name +]**</span>?][?if reichswehr_minister_party=="DNVP":<span style="color: #3F7BC1;">**DNVP**</span>?][?if reichswehr_minister_party=="DNF":<span style="color: #003755;">**DNF**</span>?][?if reichswehr_minister_party=="NSDAP":<span style="color: #954B00;">**NSDAP**</span>?])
+Army: [+ army_minister +] ([?if army_minister_party=="I":<span style="color: #808080;">**I**</span>?])
 
 
 @paramilitaries
