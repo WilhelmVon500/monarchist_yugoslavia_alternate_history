@@ -311,7 +311,7 @@ Q.minority_government = 0;
 
 // ministries - which parties control the ministries?
 Q.deputy_prime_minister = 'Vacant';
-Q.deputy_prime_minister_party = 'N/A';
+Q.deputy_prime_minister_party = 'I';
 Q.foreign_minister = 'Jevtić';
 Q.foreign_minister_party = 'JNS';
 Q.interior_minister = 'Lazić';
