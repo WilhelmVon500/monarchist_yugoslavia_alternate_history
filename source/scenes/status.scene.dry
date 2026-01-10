@@ -33,7 +33,9 @@ King: [+ king +]
 
 Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Assembly composition:
+[? if uo_in_government: Budget: [+ budget +] ?]
+
+= Assembly composition
 
 {!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">!}**HSS**{!</span>!}: [+ hss_r +]%
 
@@ -64,8 +66,6 @@ Assembly composition:
 [? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">!}**ZBOR**{!</span>!}: [+ zbor_r +]% ?]
 
 {!<span class="tooltip-text" style="color: #AAAAAA;">!}**Others**{!</span>!}: [+ other_r +]%
-
-[? if uo_in_government: Budget: [+ budget +] ?]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
