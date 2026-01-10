@@ -281,48 +281,48 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor
+tags: hss_advisor, sds_advisor, ds_advisor, zs_advisor, cfs_advisor, sls_advisor
 frequency: 1
 
 
-- @centrist: Add Centrists
-- @left: Add Leftists
-- @reformist: Add Reformists
-- @labor: Add Labor
-- @neorev: Add Neorevisionists
-- @nonfactional: Add non-factional advisors
+- @hss: Add <span style="color: #04B431;">**HSS**</span> advisors
+- @sds: Add <span style="color: #FCF342;">**SDS**</span> advisors
+- @ds: Add <span style="color: #FFD500;">**DS**</span> advisors
+- @zs: Add <span style="color: #3D863D;">**ZS**</span advisors
+- @cfs: Add <span style="color: #006400;">**CFS**</span> advisors
+- @sls: Add <span style="color: #74CA37;">**SLS**</span> advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
 
-@centrist
+@hss
 view-if: n_advisors < 3
 
-- #center_advisor
+- #hss_advisor
 
-@reformist
+@sds
 view-if: n_advisors < 3
 
-- #reformist_advisor
+- #sds_advisor
 
-@left
+@ds
 view-if: n_advisors < 3
 
-- #left_advisor
+- #ds_advisor
 
-@labor
+@zs
 view-if: n_advisors < 3
 
-- #labor_advisor
+- #zs_advisor
 
-@neorev
+@cfs
 view-if: neorevisionism > 0 and n_advisors < 3
 
-- #neorev_advisor
+- #cfs_advisor
 
-@nonfactional
+@sls
 view-if: n_advisors < 3
 
-- #nonfactional_advisor
+- #sls_advisor
 
 @add_hilferding
 title: Rudolf Hilferding
