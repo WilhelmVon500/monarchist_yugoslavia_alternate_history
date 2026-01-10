@@ -46,7 +46,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['democratic_party', 'croatian_peasant_party', 'independent_democratic_party', 'agrarian_party', 'montenegrin_federalist_party', 'yugoslav_muslim_organization'];
+Q.factions = ['democratic_party', 'croatian_peasant_party', 'independent_democratic_party', 'agrarian_party', 'montenegrin_federalist_party', 'slovene_peoples_party'];
 // should this be normalized to 100%?
 Q.democratic_party_strength = 15;
 Q.democratic_party_dissent = 20;
@@ -58,16 +58,16 @@ Q.montenegrin_federalist_party_strength = 25;
 Q.montenegrin_federalist_party_dissent = 5;
 Q.independent_democratic_party_strength = 5;
 Q.independent_democratic_party_dissent = 10;
-Q.yugoslav_muslim_organization_strength = 5;
-Q.yugoslav_muslim_organization_dissent = 10;
+Q.slovene_peoples_party_strength = 5;
+Q.slovene_peoples_party_dissent = 10;
 
 // secret events...
 Q.democratic_party_uo = 1;
 Q.croatian_peasant_party_uo = 1;
-Q.independent_democratic_party = 1;
+Q.independent_democratic_party_uo = 1;
 Q.agrarian_party_uo = 0;
-Q.montenegrin_federalist_party = 0;
-Q.yugoslav_muslim_organization = 0;
+Q.montenegrin_federalist_party_uo = 0;
+Q.slovene_peoples_party_uo = 0;
 
 // organizations
 
@@ -429,47 +429,42 @@ Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
 
-// all the initial advisors are centrists.
-Q.wels_advisor = 1; // Otto Wels
-Q.muller_advisor = 1; // Hermann Müller
-Q.muller_dead = 0;
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
-Q.crispien_advisor = 0; // Arthur Crispien
-Q.hilferding_advisor = 1; // Rudolf Hilferding
+// initial advisors
+Q.davidovic_advisor = 1;
+Q.macek_advisor = 1;
+Q.pribicevic_advisor = 1;
 
-// left advisors
-Q.sender_advisor = 0; // Toni Sender
-Q.levi_advisor = 0; // Paul Levi
-Q.levi_dead = 0;
-Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitz_advisor = 0; // Max Seydewitz
+// hss advisors
+Q.kosutic_advisor = 0;
+Q.sutej_advisor = 0;
+Q.tomasic_advisor = 0;
+Q.subasic_advisor = 0;
 
-// centrist alternate advisors
-Q.pfulf_advisor = 0; // Antonie Pfülf
-Q.breitscheid_advisor = 0; // Rudolf Breitscheid
+// ids advisors
+Q.budisavljevic_advisor = 0;
+Q.demetrovic_advisor = 0;
 
-// Reformist advisors
-Q.severing_advisor = 0; // Carl Severing
-Q.braun_advisor = 0; // Otto Braun
-Q.juchacz_advisor = 0; // Marie Juchacz
-Q.baade_advisor = 0; // Fritz Baade
+// ds advisors
+Q.grol_advisor = 0;
+Q.kramer_advisor = 0;
+Q.marinkovic_advisor = 0;
+Q.pavelic_sr_advisor = 0;
 
-// Labor advisors
-Q.leipart_advisor = 0; // Theodor Leipart
-Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
-Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
-Q.wissell_advisor = 0; // Rudolf Wissell
+// zs advisors
+Q.jovanovic_pizon_advisor = 0;
+Q.gavrilovic_advisor = 0;
+Q.woytinsky_advisor = 0;
+Q.wissell_advisor = 0;
 
-// Revisionist advisors
-Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
+// cfs advisors
+Q.drljevic_advisor = 0;
+Q.radovic_advisor = 0;
+Q.popovic_advisor = 0;
 
-Q.leber_advisor = 0; // Julius Leber (post-1930)
-Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
-
-// Nonfactional advisors
-Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
-Q.radbruch_advisor = 0; // Gustav Radbruch
-Q.stampfer_advisor = 0; // Friedrich Stampfer
+// sls advisors
+Q.korosec_advisor = 0;
+Q.adlesic_advisor = 0;
+Q.snoj_advisor = 0;
 !}
 set-bg: img/map_2.jpg
 new-page: true
