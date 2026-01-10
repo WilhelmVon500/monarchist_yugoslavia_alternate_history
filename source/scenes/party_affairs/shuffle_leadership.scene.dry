@@ -109,44 +109,54 @@ Demetrović has been removed as an advisor. The <span style="color: #FCF342;">**
 # ds
 
 
-@remove_leipart
+@remove_davidovic
 title: Remove Leipart
-view-if: leipart_advisor
+view-if: davidovic_advisor
 tags: remove_advisor
-on-arrival: leipart_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: davidovic_advisor = 0; democratic_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Leipart has been removed as an advisor. The Labor faction disapproves.
+Leipart has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
 
-@remove_aufhauser
-title: Remove Aufhäuser
-view-if: aufhauser_advisor
+@remove_grol
+title: Remove Grol
+view-if: grol_advisor
 tags: remove_advisor
-on-arrival: aufhauser_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: grol_advisor = 0; democratic_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Aufhäuser has been removed as an advisor. The Labor faction disapproves.
+Grol has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
 
-@remove_wissell
-title: Remove Wissell
-view-if: wissell_advisor
+@remove_pavelic_sr
+title: Remove Pavelić Sr.
+view-if: pavelic_sr_advisor
 tags: remove_advisor
-on-arrival: wissell_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: pavelic_sr_advisor = 0; democratic_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Wissell has been removed as an advisor. The Labor faction disapproves.
+Pavelić Sr. has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
 
-
-@remove_woytinsky
-title: Remove Woytinsky
-view-if: woytinsky_advisor
+@remove_kramer
+title: Remove Kramer
+view-if: kramer_advisor
 tags: remove_advisor
-on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: kramer_advisor = 0; democratic_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Woytinsky has been removed as an advisor. The Labor faction disapproves.
+Kramer has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
 
-# left
+@remove_marinkovic
+title: Remove Marinković
+view-if: marinkovic_advisor
+tags: remove_advisor
+on-arrival: marinkovic_advisor = 0; democratic_party_dissent += 3; n_advisors -= 1
+go-to: rm_main
+
+Marinković has been removed as an advisor. The <span style="color: #FFD500;">**Democratic Party**</span> disapproves.
+
+
+# zs
+
 
 @remove_levi
 title: Remove Levi
@@ -315,7 +325,7 @@ view-if: agrarian_party_uo and n_advisors < 3
 - #zs_advisor
 
 @cfs
-view-if: montenegrin_federalist_party_uo and and n_advisors < 3
+view-if: montenegrin_federalist_party_uo and n_advisors < 3
 
 - #cfs_advisor
 
