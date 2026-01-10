@@ -447,9 +447,9 @@ Q.demetrovic_advisor = 0;
 
 // ds advisors
 Q.grol_advisor = 0;
+Q.pavelic_sr_advisor = 0;
 Q.kramer_advisor = 0;
 Q.marinkovic_advisor = 0;
-Q.pavelic_sr_advisor = 0;
 
 // zs advisors
 Q.jovanovic_pizon_advisor = 0;
