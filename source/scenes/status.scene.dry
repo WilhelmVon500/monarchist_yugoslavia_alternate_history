@@ -85,18 +85,39 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
-
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
 
 {!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+= Party Leadership
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="Communist Party of Yugoslavia" style="color: #770000;">!}**KPJ**{!</span>!}: Communism(Broz)
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Socialist Party of Yugoslavia" style="color: #DD0000;">!}**SPJ**{!</span>!}: Social Democracy(Topalović)
+
+{!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">!}**HSS**{!</span>!}: Croatian Christian Democracy(Maček)
+
+{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">!}**NDS**{!</span>!}: Social Liberalism(Pribićević)
+
+{!<span class="tooltip-text" title="Democratic Party" style="color: #FFD500;">!}**DS**{!</span>!}: Classical Liberalism(Davidović)
+
+{!<span class="tooltip-text" title="Agrarian Party" style="color: #3D863D;">!}**ZS**{!</span>!}: Agrarianism(Jovanović Pižon)
+
+{!<span class="tooltip-text" title="Montenegrin Federalist Party" style="color: #006400;">!}**CFS**{!</span>!}: Montenegrin Nationalism(Drljević)
+
+{!<span class="tooltip-text" title="Slovene People's Party" style="color: #74CA37;">!}**SLS**{!</span>!}: Slovenian Conservatism(Korošec)
+
+{!<span class="tooltip-text" title="Yugoslav Muslim Organization" style="color: #008000;">!}**JMO**{!</span>!}: Muslim Conservatism(Spaho)
+
+[? if nrs_exist: {!<span class="tooltip-text" title="People's Radical Party" style="color: #404371;">!}**NRS**{!</span>!}: Serb Conservatism(Maksimović) ?]
+
+{!<span class="tooltip-text" title="Yugoslav National Party" style="color: #767676;">!}**JNS**{!</span>!}: Authoritarianism(Srškić)
+
+[? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">!}**JRZ**{!</span>!}: Far-Right Authoritarianism(Stojadinović) ?]
+
+[? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">!}**ZBOR**{!</span>!}: Fascism(Ljotić) ?]
 
 = Members of the UO
 
