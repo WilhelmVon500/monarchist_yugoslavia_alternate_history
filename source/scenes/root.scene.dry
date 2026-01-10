@@ -143,9 +143,9 @@ Q.budget = 4;
 // Proportion of different social groups
 Q.workers = 17;
 Q.middle_class = 7;
-Q.rural = 57;
+Q.rural = 52;
 Q.unemployed = 9;
-Q.croatian_peasants = 10;
+Q.croatian_peasants = 15;
 
 Q.inflation = 1.1;
 
