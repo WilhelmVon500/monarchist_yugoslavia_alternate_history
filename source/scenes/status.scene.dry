@@ -51,8 +51,6 @@ Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style
 
 {!<span class="tooltip-text" title="Montenegrin Federalist Party" style="color: #006400;">!}**CFS**{!</span>!}: [+ cfs_r +]%
 
-**Regime Parties**: [+ regime_r +]%
-
 {!<span class="tooltip-text" title="Yugoslav National Party" style="color: #767676;">!}**JNS**{!</span>!}: [+ jns_r +]%
 
 {!<span class="tooltip-text" title="Slovene People's Party" style="color: #74CA37;">!}**SLS**{!</span>!}: [+ sls_r +]%
