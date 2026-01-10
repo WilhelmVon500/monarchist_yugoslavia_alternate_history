@@ -295,32 +295,32 @@ frequency: 1
 - @remove_none: Stop changing advisors.
 
 @hss
-view-if: n_advisors < 3
+view-if: croatian_peasant_party_uo and n_advisors < 3
 
 - #hss_advisor
 
 @sds
-view-if: n_advisors < 3
+view-if: independent_democratic_party_uo and n_advisors < 3
 
 - #sds_advisor
 
 @ds
-view-if: n_advisors < 3
+view-if: democratic_party_uo and n_advisors < 3
 
 - #ds_advisor
 
 @zs
-view-if: n_advisors < 3
+view-if: agrarian_party_uo and n_advisors < 3
 
 - #zs_advisor
 
 @cfs
-view-if: neorevisionism > 0 and n_advisors < 3
+view-if: montenegrin_federalist_party_uo and and n_advisors < 3
 
 - #cfs_advisor
 
 @sls
-view-if: n_advisors < 3
+view-if: slovene_peoples_party_uo and n_advisors < 3
 
 - #sls_advisor
 
