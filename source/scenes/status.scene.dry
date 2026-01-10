@@ -111,7 +111,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if nrs_exist: {!<span class="tooltip-text" title="People's Radical Party" style="color: #404371;">!}**NRS**{!</span>!}: Serb Conservatism(Maksimović) ?]
 
-{!<span class="tooltip-text" title="Yugoslav National Party" style="color: #767676;">!}**JNS**{!</span>!}: Authoritarianism(Srškić)
+{!<span class="tooltip-text" title="Yugoslav National Party" style="color: #767676;">!}**JNS**{!</span>!}: Authoritarian Conservatism(Srškić)
 
 [? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">!}**JRZ**{!</span>!}: Far-Right Authoritarianism(Stojadinović) ?]
 
