@@ -55,13 +55,13 @@ go-to: rm_main
 Košutić has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
 @remove_sutej
-title: Remove Müller
+title: Remove Šutej
 view-if: sutej_advisor
 tags: remove_advisor
 on-arrival: sutej_advisor = 0; croatian_peasant_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Müller has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
+Šutej has been removed as an advisor. The <span style="color: #04B431;">**Croatian Peasant Party**</span> disapproves.
 
 
 @remove_tomasic
@@ -324,53 +324,65 @@ view-if: n_advisors < 3
 
 - #sls_advisor
 
-@add_hilferding
-title: Rudolf Hilferding
-subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+@add_macek
+title: Vladko Maček
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/HilferdingRudolf.jpg
-tags: center_advisor
-view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: hilferding_advisor = 1; n_advisors += 1
+card-image: img/portraits/MačekVladko.jpg
+tags: hss_advisor
+view-if: macek_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
+on-arrival: macek_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
 go-to: advisor_menu
 
-Rudolf Hilferding is now an advisor.
+Vladko Maček is now an advisor.
 
-@add_wels
-title: Otto Wels
-subtitle: Otto Wels is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
+@add_kosutic
+title: August Košutić
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions -  WIP ?]
 is-card: true
-card-image: img/portraits/WelsRudolf.jpg
-tags: center_advisor
-view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: wels_advisor = 1; n_advisors += 1
+card-image: img/portraits/KošutićAugust.jpg
+tags: hss_advisor
+view-if: kosutic_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
+on-arrival: kosutic_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
 go-to: advisor_menu
 
-Otto Wels is now an advisor.
+August Košutić is now an advisor.
 
-@add_muller
-title: Hermann Müller
-subtitle: Hermann Müller is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
+@add_sutej
+title: Juraj Šutej
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/MüllerHermann.jpg
-tags: center_advisor
-view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: muller_advisor = 1; n_advisors += 1
+card-image: img/portraits/ŠutejJuraj.jpg
+tags: hss_advisor
+view-if: sutej_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
+on-arrival: sutej_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
 go-to: advisor_menu
 
-Hermann Müller is now an advisor.
+Juraj Šutej is now an advisor.
 
-@add_breitscheid
-title: Rudolf Breitscheid
-subtitle: Rudolf Breitscheid comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
+@add_tomasic
+title: Ljudevit Tomašić
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
-card-image: img/portraits/BreitscheidRudolf.jpg
-view-if: breitscheid_advisor = 0 and n_advisors < 3
-on-arrival: breitscheid_advisor = 1; n_advisors += 1
+card-image: img/portraits/TomašićLjudevit.jpg
+tags: hss_advisor
+view-if: tomasic_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
+on-arrival: tomasic_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
 go-to: advisor_menu
-tags: center_advisor
 
-Rudolf Breitscheid is now an advisor.
+Ljudevit Tomašić is now an advisor.
+
+@add_subasic
+title: Ivan Šubašić
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
+is-card: true
+card-image: img/portraits/ŠubašićIvan.jpg
+tags: hss_advisor
+view-if: subasic_advisor = 0 and n_advisors < 3 and croatian_peasant_party_uo
+on-arrival: subasic_advisor = 1; n_advisors += 1; croatian_peasant_party_strength += 5
+go-to: advisor_menu
+
+Ivan Šubašić is now an advisor.
 
 # reformist
 
