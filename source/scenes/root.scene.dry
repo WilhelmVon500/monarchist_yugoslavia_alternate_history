@@ -441,7 +441,7 @@ Q.sutej_advisor = 0;
 Q.tomasic_advisor = 0;
 Q.subasic_advisor = 0;
 
-// ids advisors
+// sds advisors
 Q.budisavljevic_advisor = 0;
 Q.demetrovic_advisor = 0;
 
