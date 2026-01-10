@@ -73,7 +73,7 @@ Q.yugoslav_muslim_organization = 0;
 
 // inter-party relations
 Q.jns_relation = 20;
-Q.ap_relation = 50;
+Q.zs_relation = 50;
 Q.jmo_relation = 30;
 Q.kpj_relation = 25;
 Q.zbor_relation = 10;
@@ -92,7 +92,6 @@ Q.alexander_enabled = 1;
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
 Q.rb_strength = 2000;
 Q.rb_militancy = 0.01;
-Q.women_in_rb = 0;
 Q.rb_banned = 0;
 Q.sh_strength = 500;
 Q.sh_militancy = 0.5;
@@ -216,17 +215,41 @@ Q.croatian_peasants_other = 15;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
+Q.regime_r = 100;
 Q.jns_r = 100;
 
+Q.kpj_r = 0;
+Q.spj_r = 0;
+Q.hss_r = 0;
+Q.nds_r = 0;
+Q.ds_r = 0;
+Q.zs_r = 0;
+Q.cfs_r = 0;
+Q.sls_r = 0;
+Q.jmo_r = 0;
+Q.nrs_r = 0;
+Q.jrz_r = 0;
+Q.zbor_r = 0;
+Q.other_r = 0;
+
 // diff from prev
+Q.old_regime_r = 100;
 Q.old_jns_r = 100;
 
-// jrz isn't formed yet, but it may be formed
-Q.jrz_r = 0;
+Q.old_kpj_r = 0;
+Q.old_spj_r = 0;
+Q.old_hss_r = 0;
+Q.old_nds_r = 0;
+Q.old_ds_r = 0;
+Q.old_zs_r = 0;
+Q.old_cfs_r = 0;
+Q.old_sls_r = 0;
+Q.old_jmo_r = 0;
+Q.old_nrs_r = 0;
 Q.old_jrz_r = 0;
+Q.old_zbor_r = 0;
+Q.old_other_r = 0;
 
-// for changing the DDP's name to the DStP
-Q.ddp_name = "DDP";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
