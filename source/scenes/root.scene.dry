@@ -156,8 +156,9 @@ Q.economic_growth = 0;
 Q.economic_expansion = 0;
 
 Q.classes = ['workers', 'middle_class', 'rural', 'unemployed', 'croatian_peasants'];
-Q.parties = ['jns', 'nrs', 'zbor', 'kpj', 'spj', 'ds', 'nds', 'zs', 'jmo', 'hss', 'cfs', 'sls'];
+Q.parties = ['jns', 'nrs', 'kpj', 'spj', 'ds', 'nds', 'zs', 'jmo', 'hss', 'cfs', 'sls'];
 
+Q.zbor_exist = 0;
 Q.jrz_exist = 0;
 
 // Support for party by social group
