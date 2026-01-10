@@ -2,7 +2,7 @@ title: Vladko Maček
 is-pinned-card: true
 tags: advisor, hss_advisor
 card-image: img/portraits/MačekVladko.jpg
-view-if: macek_advisor = 1
+view-if: macek_advisor
 new-page: true 
 
 = Vladko Maček
