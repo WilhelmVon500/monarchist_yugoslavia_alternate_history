@@ -422,7 +422,6 @@ choose-if: year < 1929
 There are enough votes for a right-wing coalition of the Center (+ BVP), DVP, DNVP, and minor conservative parties. [? if largest_party == "SPD": However, this will be seen as abdicating responsibility for government, as we are the largest party. ?]
 
 - @right_coalition_sure: Yes, we will abdicate our responsibility for government formation, and let a right-wing coalition take power.
-- @grand_coalition: Actually, we wish to form a grand coalition after all.
 
 @no_right_coalition
 go-to: no_majority
