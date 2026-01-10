@@ -63,7 +63,7 @@ Assembly composition:
 
 [? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">!}**ZBOR**{!</span>!}: [+ zbor_r +]% ?]
 
-Others: [+ other_r +]%
+{!<span class="tooltip-text" style="color: #AAAAAA;">!}**Others**{!</span>!}: [+ other_r +]%
 
 [? if uo_in_government: Budget: [+ budget +] ?]
 
