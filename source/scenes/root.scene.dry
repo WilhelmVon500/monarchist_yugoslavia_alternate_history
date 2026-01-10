@@ -179,14 +179,14 @@ Q.workers_nrs = 0;
 Q.workers_jrz = 0;
 Q.workers_zbor = 0;
 
-Q.middle_class_jns = 40;
+Q.middle_class_jns = 35;
 Q.middle_class_kpj = 1;
 Q.middle_class_spj = 2;
 Q.middle_class_ds = 28;
 Q.middle_class_nds = 10;
 Q.middle_class_zs = 3;
 Q.middle_class_jmo = 2;
-Q.middle_class_hss = 5;
+Q.middle_class_hss = 25;
 Q.middle_class_cfs = 4;
 Q.middle_class_sls = 6;
 Q.middle_class_other = 10;
