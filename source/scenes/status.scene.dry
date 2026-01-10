@@ -37,6 +37,10 @@ Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style
 
 = Assembly composition
 
+{!<span class="tooltip-text" title="Communist Party of Yugoslavia" style="color: #770000;">!}**KPJ**{!</span>!}: [+ kpj_r +]%
+
+{!<span class="tooltip-text" title="Socialist Party of Yugoslavia" style="color: #DD0000;">!}**SPJ**{!</span>!}: [+ spj_r +]%
+
 {!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">!}**HSS**{!</span>!}: [+ hss_r +]%
 
 {!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">!}**NDS**{!</span>!}: [+ nds_r +]%
@@ -46,10 +50,6 @@ Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style
 {!<span class="tooltip-text" title="Agrarian Party" style="color: #3D863D;">!}**ZS**{!</span>!}: [+ zs_r +]%
 
 {!<span class="tooltip-text" title="Montenegrin Federalist Party" style="color: #006400;">!}**CFS**{!</span>!}: [+ cfs_r +]%
-
-{!<span class="tooltip-text" title="Socialist Party of Yugoslavia" style="color: #DD0000;">!}**SPJ**{!</span>!}: [+ spj_r +]%
-
-{!<span class="tooltip-text" title="Communist Party of Yugoslavia" style="color: #770000;">!}**KPJ**{!</span>!}: [+ kpj_r +]%
 
 **Regime Parties**: [+ regime_r +]%
 
@@ -65,7 +65,7 @@ Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style
 
 [? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">!}**ZBOR**{!</span>!}: [+ zbor_r +]% ?]
 
-{!<span class="tooltip-text" style="color: #AAAAAA;">!}**Others**{!</span>!}: [+ other_r +]%
+<span style="color: #AAAAAA;">**Others**</span>: [+ other_r +]%
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
@@ -197,31 +197,31 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-KPJ: [+ kpj_votes +]%
+<span style="color: #770000;">**KPJ**</span>: [+ kpj_votes +]%
 
-SPJ: [+ spj_votes +]%
+<span style="color: #DD0000;">**SPJ**</span>: [+ spj_votes +]%
 
-HSS: [+ hss_votes +]%
+<span style="color: #04B431;">**HSS**</span>: [+ hss_votes +]%
 
-NDS: [+ nds_votes +]%
+<span style="color: #FCF342;">**NDS**</span>: [+ nds_votes +]%
 
-DS: [+ ds_votes +]%
+<span style="color: #FFD500;">**DS**</span>: [+ ds_votes +]%
 
-ZS: [+ zs_votes +]%
+<span style="color: #3D863D;">**ZS**</span>: [+ zs_votes +]%
 
-CFS: [+ cfs_votes +]%
+<span style="color: #006400;">**CFS**</span>: [+ cfs_votes +]%
 
-SLS: [+ sls_votes +]%
+<span style="color: #74CA37;">**SLS**</span>: [+ sls_votes +]%
 
-JMO: [+ jmo_votes +]%
+<span style="color: #008000;">**JMO**</span>: [+ jmo_votes +]%
 
-JNS: [+ jns_votes +]%
+[? if nrs_exist: <span style="color: #404371;">**NRS**</span>: [+ nrs_votes +]% ?]
 
-[? if jrz_exist: JRZ: [+ jrz_votes +]% ?]
+<span style="color: #767676;">**JNS**</span>: [+ jns_votes +]%
 
-[? if zbor_exist: ZBOR: [+ zbor_votes +]% ?]
+[? if jrz_exist: <span style="color: #222222;">**JRZ**</span>: [+ jrz_votes +]% ?]
 
-Others: [+ other_votes +]%
+[? if zbor_exist: <span style="color: #04522C;">**ZBOR**</span>: [+ zbor_votes +]% ?]
 
 **Detailed results for each demographic**
 
