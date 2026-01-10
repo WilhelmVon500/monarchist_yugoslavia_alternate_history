@@ -1,0 +1,11 @@
+title: 1935
+subtitle: A new year
+new-page: true
+tags: event
+priority: 10
+view-if: year >= 1935
+max-visits: 1
+
+= 1935
+
+WIP
