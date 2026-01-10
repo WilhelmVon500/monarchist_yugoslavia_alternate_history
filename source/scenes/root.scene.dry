@@ -453,8 +453,7 @@ Q.pavelic_sr_advisor = 0;
 // zs advisors
 Q.jovanovic_pizon_advisor = 0;
 Q.gavrilovic_advisor = 0;
-Q.woytinsky_advisor = 0;
-Q.wissell_advisor = 0;
+Q.cubrilovic_advisor = 0;
 
 // cfs advisors
 Q.drljevic_advisor = 0;
