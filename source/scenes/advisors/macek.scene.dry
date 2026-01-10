@@ -1,0 +1,12 @@
+title: Vladko Maček
+is-pinned-card: true
+tags: advisor, labor
+card-image: img/portraits/MačekVladko.jpg
+view-if: macek_advisor = 1
+new-page: true 
+
+= Vladko Maček
+
+WIP.
+
+- @root: Return to main
