@@ -43,7 +43,7 @@ Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style
 
 {!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">!}**HSS**{!</span>!}: [+ hss_r +]%
 
-{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">!}**NDS**{!</span>!}: [+ nds_r +]%
+{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">!}**SDS**{!</span>!}: [+ sds_r +]%
 
 {!<span class="tooltip-text" title="Democratic Party" style="color: #FFD500;">!}**DS**{!</span>!}: [+ ds_r +]%
 
@@ -99,7 +99,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Croatian Peasant Party" style="color: #04B431;">!}**HSS**{!</span>!}: Croatian Christian Democracy(Maček)
 
-{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">!}**NDS**{!</span>!}: Social Liberalism(Pribićević)
+{!<span class="tooltip-text" title="Independent Democratic Party" style="color: #FCF342;">!}**SDS**{!</span>!}: Social Liberalism(Pribićević)
 
 {!<span class="tooltip-text" title="Democratic Party" style="color: #FFD500;">!}**DS**{!</span>!}: Classical Liberalism(Davidović)
 
@@ -224,7 +224,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 <span style="color: #04B431;">**HSS**</span>: [+ hss_votes +]%
 
-<span style="color: #FCF342;">**NDS**</span>: [+ nds_votes +]%
+<span style="color: #FCF342;">**SDS**</span>: [+ sds_votes +]%
 
 <span style="color: #FFD500;">**DS**</span>: [+ ds_votes +]%
 
