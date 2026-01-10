@@ -1,0 +1,11 @@
+title: <span style="color: #04522C;">**ZBOR**</span> Formed!
+subtitle: A new far-right party is born.
+new-page: true
+on-arrival: zbor_exist = 1; parties.push('zbor')
+tags: event
+view-if: year = 1935
+max-visits: 1
+
+= <span style="color: #04522C;">**ZBOR**</span> Formed
+
+WIP
