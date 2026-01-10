@@ -158,50 +158,32 @@ Marinković has been removed as an advisor. The <span style="color: #FFD500;">**
 # zs
 
 
-@remove_levi
-title: Remove Levi
-view-if: levi_advisor
+@remove_jovanovic_pizon
+title: Remove Jovanović Pižon
+view-if: jovanovic_pizon_advisor
 tags: remove_advisor
-on-arrival: levi_advisor = 0; left_dissent += 5; n_advisors -= 1
+on-arrival: jovanovic_pizon_advisor = 0; agrarian_party_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Levi has been removed as an advisor. The Leftist faction disapproves.
+Jovanović Pižon has been removed as an advisor. The <span style="color: #3D863D;">**Agrarian Party**</span> disapproves.
 
-@remove_sender
-title: Remove Sender
-view-if: sender_advisor
+@remove_gavrilovic
+title: Remove Gavrilović
+view-if: gavrilovic_advisor
 tags: remove_advisor
-on-arrival: sender_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: gavrilovic_advisor = 0; agrarian_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Sender has been removed as an advisor. The Leftist faction disapproves.
+Gavrilović has been removed as an advisor. The <span style="color: #3D863D;">**Agrarian Party**</span> disapproves.
 
-@remove_rosenfeld
-title: Remove Rosenfeld
-view-if: rosenfeld_advisor
+@remove_cubrilovic
+title: Remove Čubrilović
+view-if: cubrilovic_advisor
 tags: remove_advisor
-on-arrival: rosenfeld_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: cubrilovic_advisor = 0; agrarian_party_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Rosenfeld has been removed as an advisor. The Leftist faction disapproves.
-
-@remove_seydewitz
-title: Remove Seydewitz
-view-if: seydewitz_advisor
-tags: remove_advisor
-on-arrival: seydewitz_advisor = 0; left_dissent += 3; n_advisors -= 1
-go-to: rm_main
-
-Seydewitz has been removed as an advisor. The Leftist faction disapproves.
-
-@remove_siemsen
-title: Remove Siemsen
-view-if: siemsen_advisor
-tags: remove_advisor
-on-arrival: siemsen_advisor = 0; left_dissent += 3; n_advisors -= 1
-go-to: rm_main
-
-Siemsen has been removed as an advisor. The Leftist faction disapproves.
+Čubrilović has been removed as an advisor. The <span style="color: #3D863D;">**Agrarian Party**</span> disapproves.
 
 
 # neorevisionists
