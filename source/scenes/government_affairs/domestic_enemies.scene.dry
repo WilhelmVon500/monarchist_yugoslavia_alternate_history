@@ -11,8 +11,8 @@ view-if: spd_in_government = 1 and interior_minister_party = "SPD"
 
 As we have control over the Interior Ministry, we can direct police and intelligence services to investigate internal enemies. We can proscribe various organizations.
 
-- @ban_zbor: Ban the ZBOR.
-- @unban_zbor: Unban the ZBOR.
+- @ban_zbor: Ban the <span style="color: #04522C;">**ZBOR**</span>.
+- @unban_zbor: Unban the <span style="color: #04522C;">**ZBOR**</span>.
 - @persecute_zbor
 - @ban_sh: Ban the Stahlhelm.
 - @unban_sh: Unban the Stahlhelm.
@@ -35,7 +35,7 @@ on-arrival: sa_banned = 0; sa_strength += 100; sa_militancy += 0.05
 The SA is no longer banned. They immediately go on a recruiting spree.
 
 @persecute_zbor
-title: Further persecute the SA.
+title: Further persecute the <span style="color: #04522C;">**ZBOR**</span>.
 view-if: zbor_exist and zbor_banned
 choose-if: judicial_reform >= 3 and interior_police_loyalty >= 0.7
 unavailable-subtitle: [? if judicial_reform < 3 : The judiciary would not allow this. ?] [? if interior_police_loyalty < 0.7 : The police are too disloyal to be trusted with this. ?]
