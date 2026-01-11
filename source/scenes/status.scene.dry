@@ -135,13 +135,13 @@ Economic growth: [+ economic_growth_2 +]%
 <div style="display: flex;gap: 5px;margin-bottom: 5px;margin-left: -3px;">[? if prime_minister == "Srškić": <img src="img/portraits/SrškićMilan.jpg" style="width: 50%; height: 200px;"> ?][? if prime_minister == "Uzunović": <img src="img/portraits/UzunovićNikola.jpg" style="width: 50%; height: 200px;"> ?]
 [? if deputy_prime_minister == "Maček": <img src="img/portraits/MačekVladko.jpg" style="width: 50%; height: 200px;"></div> ?]</div>
 
-Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
+Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if prime_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
 Deputy Prime Minister: [+ deputy_prime_minister +] ([?if deputy_prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if deputy_prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
 Interior: [+ interior_minister +] ([?if interior_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if interior_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if interior_minister_party=="SLS":<span style="color: #74CA37;">**SLS**</span>?])
 
-Finance: [+ finance_minister +] ([?if finance_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if finance_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
+Finance: [+ finance_minister +] ([?if finance_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if finance_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if finance_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
 Economic: [+ economic_minister +] ([?if economic_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if economic_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
@@ -149,9 +149,9 @@ Justice: [+ justice_minister +] ([?if justice_minister_party=="I":<span style="c
 
 Foreign: [+ foreign_minister +] ([?if foreign_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if foreign_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Social: [+ social_minister +] ([?if social_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if social_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
+Social: [+ social_minister +] ([?if social_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if social_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if social_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
-Agriculture: [+ agriculture_minister +] ([?if agriculture_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if agriculture_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
+Agriculture: [+ agriculture_minister +] ([?if agriculture_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if agriculture_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if agriculture_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
 Army: [+ army_minister +] ([?if army_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if army_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
