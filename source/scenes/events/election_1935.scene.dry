@@ -423,6 +423,7 @@ WIP
 - @pm_stojadinovic: Prince Paul appoints Milan Stojadinović.
 
 @pm_stojadinovic
+face-image: img/portraits/StojadinovićMilan.jpg
 on-arrival: prime_minister = 'Stojadinović'; prime_minister_party = 'JNS'; deputy_prime_minister = 'Vacant'; deputy_prime_minister_party = 'I'; foreign_minister = 'Stojadinović'; foreign_minister_party = 'JNS'; interior_minister = 'Korošec'; interior_minister_party = 'SLS'; justice_minister = 'Auer'; justice_minister_party = 'SLS'; finance_minister = 'Letica'; finance_minister_party = 'JNS'; economic_minister = 'Vrbanić'; economic_minister_party = 'JNS'; social_minister = 'Cvetković'; social_minister_party = 'JNS'; army_minister = 'Živković'; army_minister_party = 'JNS'; agriculture_minister = 'Stanković'; agriculture_minister_party = 'JNS';
 
 WIP.
