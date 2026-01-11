@@ -248,7 +248,7 @@ Q.croatian_peasants_jrz = 0;
 Q.croatian_peasants_zbor = 0;
 
 
-Q.regime_r = 100;
+Q.jns_seats = 370;
 Q.jns_r = 100;
 
 Q.kpj_r = 0;
