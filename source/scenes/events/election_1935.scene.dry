@@ -326,6 +326,16 @@ go-to: coalition_menu
   <td>[+ str_seats_change_zs +] ([+ str_change_zs +] pp.)</td>
 </tr>
 ?]
+
+[? if cfs_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> CFS:</td>
+  <td>[+ cfs_votes +]%</td>
+  <td>[+ str_votes_change_cfs +]</td>
+  <td>[+ cfs_seats +] ([+ cfs_r +]%)</td>
+  <td>[+ str_seats_change_cfs +] ([+ str_change_cfs +] pp.)</td>
+</tr>
+?]
 {!</table>!}
 
 **Potential coalitions:**
