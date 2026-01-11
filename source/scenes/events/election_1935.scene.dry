@@ -37,8 +37,7 @@ for (let party of Q.parties) {
 }
 
 for (let party of Q.parties) {
-    Q.party_votes[party] = Math.round(Q.party_votes[party] * 1000 / totalVotes) / 10;
-    Q[party + '_votes'] = Math.round(Q.party_votes[party] * 1000 / totalVotes) / 10;
+    Q.party_votes[party] = parseFloat(Q.party_votes[party] * 100 / totalVotes).toFixed(1);
 }
 
 let validParties = Q.parties.filter(party => {
