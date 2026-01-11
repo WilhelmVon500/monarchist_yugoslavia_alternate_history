@@ -65,12 +65,12 @@ for (let seat of topSeats) {
 }
 
 for (let party of Q.parties) {
-    let seats = seatCounts[party] || 0;
-    if (party == "jns") {
-        let seats = seats + 148
-    }
+    const seats = seatCounts[party] || 0;
     Q[party + '_seats'] = seats;
-    Q[party + '_r'] = Math.round((seats / TOTAL_TOTAL_SEATS) * 1000) / 10;  // % of seats
+    if (party == "jns") {
+        Q[party + '_seats'] = Q[party + '_seats'] + 148
+    }
+    Q[party + '_r'] = Math.round((Q[party + '_seats'] / TOTAL_TOTAL_SEATS) * 1000) / 10;  // % of seats
 }
 
 for (var party of Q.parties) {
@@ -393,8 +393,6 @@ go-to: coalition_menu
 **Potential coalitions:**
 
 Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span>): [+ regime_coalition +]%
-
-UO Coalition (<span style="color: #04B431;">**HSS**</span> + <span style="color: #FCF342;">**SDS**</span> + <span style="color: #FFD500;">**DS**</span>): [+ uo_coalition +]%
 
 There are some potential coalition arrangements.
 
