@@ -265,25 +265,67 @@ go-to: coalition_menu
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!} 
-{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Seats</td><td>Change</td></tr>
 
-[? if jrz_exist: {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
+[? if kpj_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> KPJ:</td>
+  <td>[+ kpj_votes +]%</td>
+  <td>[+ str_votes_change_kpj +]</td>
+  <td>[+ kpj_seats +] ([+ kpj_r +]%)</td>
+  <td>[+ str_seats_change_kpj +] ([+ str_change_kpj +] pp.)</td>
+</tr>
+?]
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+[? if spj_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> SPJ:</td>
+  <td>[+ spj_votes +]%</td>
+  <td>[+ str_votes_change_spj +]</td>
+  <td>[+ spj_seats +] ([+ spj_r +]%)</td>
+  <td>[+ str_seats_change_spj +] ([+ str_change_spj +] pp.)</td>
+</tr>
+?]
 
-{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
+[? if hss_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> HSS:</td>
+  <td>[+ hss_votes +]%</td>
+  <td>[+ str_votes_change_hss +]</td>
+  <td>[+ hss_seats +] ([+ hss_r +]%)</td>
+  <td>[+ str_seats_change_hss +] ([+ str_change_hss +] pp.)</td>
+</tr>
+?]
 
-{!<tr><td><div class="box" style='background-color:#000'> </div> !} Z: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td><td>!} [+ str_change_z +] {!</td></tr>!}
+[? if sds_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> SDS:</td>
+  <td>[+ sds_votes +]%</td>
+  <td>[+ str_votes_change_sds +]</td>
+  <td>[+ sds_seats +] ([+ sds_r +]%)</td>
+  <td>[+ str_seats_change_sds +] ([+ str_change_sds +] pp.)</td>
+</tr>
+?]
 
-{!<tr><td><div class="box" style='background-color:#69A2BE'> </div> !} BVP: {!</td><td>!} 3% {!</td><td>!} 0 {!</td></tr>!}
+[? if ds_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> DS:</td>
+  <td>[+ ds_votes +]%</td>
+  <td>[+ str_votes_change_ds +]</td>
+  <td>[+ ds_seats +] ([+ ds_r +]%)</td>
+  <td>[+ str_seats_change_ds +] ([+ str_change_ds +] pp.)</td>
+</tr>
+?]
 
-{!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td></tr>!}
- 
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div> !} DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#954B00'> </div> !} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
+[? if zs_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> ZS:</td>
+  <td>[+ zs_votes +]%</td>
+  <td>[+ str_votes_change_zs +]</td>
+  <td>[+ zs_seats +] ([+ zs_r +]%)</td>
+  <td>[+ str_seats_change_zs +] ([+ str_change_zs +] pp.)</td>
+</tr>
+?]
 {!</table>!}
 
 **Potential coalitions:**
