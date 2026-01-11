@@ -9,6 +9,12 @@ Q.parties.push('jrz');
 
 Q.middle_class_jrz += 10;
 Q.rural_jrz += 20;
+
+Q.prime_minister_party = "JRZ";
+Q.finance_minister_party = "JRZ";
+Q.foreign_minister_party = "JRZ";
+Q.social_minister_party = "JRZ";
+Q.agriculture_minister_party = "JRZ";
 !}
 tags: event
 
