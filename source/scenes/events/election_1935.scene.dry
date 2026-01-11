@@ -269,7 +269,7 @@ go-to: coalition_menu
 
 [? if kpj_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> KPJ:</td>
+  <td><div class="box" style='background-color:#770000;'> </div> KPJ:</td>
   <td>[+ kpj_votes +]%</td>
   <td>[+ str_votes_change_kpj +]</td>
   <td>[+ kpj_seats +] ([+ kpj_r +]%)</td>
@@ -279,7 +279,7 @@ go-to: coalition_menu
 
 [? if spj_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> SPJ:</td>
+  <td><div class="box" style='background-color:#DD0000;'> </div> SPJ:</td>
   <td>[+ spj_votes +]%</td>
   <td>[+ str_votes_change_spj +]</td>
   <td>[+ spj_seats +] ([+ spj_r +]%)</td>
@@ -289,7 +289,7 @@ go-to: coalition_menu
 
 [? if hss_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> HSS:</td>
+  <td><div class="box" style='background-color:#04B431;'> </div> HSS:</td>
   <td>[+ hss_votes +]%</td>
   <td>[+ str_votes_change_hss +]</td>
   <td>[+ hss_seats +] ([+ hss_r +]%)</td>
@@ -299,7 +299,7 @@ go-to: coalition_menu
 
 [? if sds_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> SDS:</td>
+  <td><div class="box" style='background-color:#FCF342;'> </div> SDS:</td>
   <td>[+ sds_votes +]%</td>
   <td>[+ str_votes_change_sds +]</td>
   <td>[+ sds_seats +] ([+ sds_r +]%)</td>
@@ -309,7 +309,7 @@ go-to: coalition_menu
 
 [? if ds_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> DS:</td>
+  <td><div class="box" style='background-color:#FFD500;'> </div> DS:</td>
   <td>[+ ds_votes +]%</td>
   <td>[+ str_votes_change_ds +]</td>
   <td>[+ ds_seats +] ([+ ds_r +]%)</td>
@@ -319,7 +319,7 @@ go-to: coalition_menu
 
 [? if zs_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> ZS:</td>
+  <td><div class="box" style='background-color:#3D863D;'> </div> ZS:</td>
   <td>[+ zs_votes +]%</td>
   <td>[+ str_votes_change_zs +]</td>
   <td>[+ zs_seats +] ([+ zs_r +]%)</td>
@@ -329,7 +329,7 @@ go-to: coalition_menu
 
 [? if cfs_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> CFS:</td>
+  <td><div class="box" style='background-color:#006400;'> </div> CFS:</td>
   <td>[+ cfs_votes +]%</td>
   <td>[+ str_votes_change_cfs +]</td>
   <td>[+ cfs_seats +] ([+ cfs_r +]%)</td>
@@ -339,18 +339,58 @@ go-to: coalition_menu
 
 [? if sls_seats: 
 <tr>
-  <td><div class="box" style='background-color:#990000;'> </div> SLS:</td>
+  <td><div class="box" style='background-color:#74CA37;'> </div> SLS:</td>
   <td>[+ sls_votes +]%</td>
   <td>[+ str_votes_change_sls +]</td>
   <td>[+ sls_seats +] ([+ sls_r +]%)</td>
   <td>[+ str_seats_change_sls +] ([+ str_change_sls +] pp.)</td>
 </tr>
 ?]
+
+[? if jmo_seats: 
+<tr>
+  <td><div class="box" style='background-color:#008000;'> </div> JMO:</td>
+  <td>[+ jmo_votes +]%</td>
+  <td>[+ str_votes_change_jmo +]</td>
+  <td>[+ jmo_seats +] ([+ jmo_r +]%)</td>
+  <td>[+ str_seats_change_jmo +] ([+ str_change_jmo +] pp.)</td>
+</tr>
+?]
+
+[? if jns_seats: 
+<tr>
+  <td><div class="box" style='background-color:#767676;'> </div> JNS:</td>
+  <td>[+ jns_votes +]%</td>
+  <td>[+ str_votes_change_jns +]</td>
+  <td>[+ jns_seats +] ([+ jns_r +]%)</td>
+  <td>[+ str_seats_change_jns +] ([+ str_change_jns +] pp.)</td>
+</tr>
+?]
+
+[? if jrz_seats: 
+<tr>
+  <td><div class="box" style='background-color:#222222;'> </div> JRZ:</td>
+  <td>[+ jrz_votes +]%</td>
+  <td>[+ str_votes_change_jrz +]</td>
+  <td>[+ jrz_seats +] ([+ jrz_r +]%)</td>
+  <td>[+ str_seats_change_jrz +] ([+ str_change_jrz +] pp.)</td>
+</tr>
+?]
+
+[? if zbor_seats: 
+<tr>
+  <td><div class="box" style='background-color:#04522C;'> </div> ZBOR:</td>
+  <td>[+ zbor_votes +]%</td>
+  <td>[+ str_votes_change_zbor +]</td>
+  <td>[+ zbor_seats +] ([+ zbor_r +]%)</td>
+  <td>[+ str_seats_change_zbor +] ([+ str_change_zbor +] pp.)</td>
+</tr>
+?]
 {!</table>!}
 
 **Potential coalitions:**
 
-Pro-Regime Coalition (<span style="color: #008000;">**JMO**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span>): [+ regime_coalition +]%
+Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span>): [+ regime_coalition +]%
 
 There are some potential coalition arrangements.
 
