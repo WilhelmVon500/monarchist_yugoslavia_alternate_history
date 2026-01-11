@@ -54,7 +54,6 @@ We have increased our campaigning among the unemployed. [? if welfare < 0: The w
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-view-if: peoples_party == 1
 on-arrival: croat_peasants_hss += 3*(1-dissent) if croatian_peasant_party_uo; croat_peasants_sds += 1*(1-dissent) if independent_democratic_party_uo; croat_peasants_zs += 1*(1-dissent) if agrarian_party_uo; resources -= 1
 
 We have increased our campaigning among Croat peasants.
