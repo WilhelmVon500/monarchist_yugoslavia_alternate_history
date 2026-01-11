@@ -67,7 +67,7 @@ for (let seat of topSeats) {
 for (let party of Q.parties) {
     const seats = seatCounts[party] || 0;
     Q[party + '_seats'] = seats;
-    if (party == "JNS") Q.jns_seats += 148;
+    if (party == "jns") Q.jns_seats += 148;
     Q[party + '_r'] = Math.round((seats / TOTAL_TOTAL_SEATS) * 1000) / 10;  // % of seats
 }
 
@@ -330,17 +330,7 @@ go-to: coalition_menu
 
 **Potential coalitions:**
 
-Weimar Coalition (SPD + Z + [+ ddp_name +]): [+ weimar_coalition +]%
-
-Grand Coalition (SPD + Z + BVP + [+ ddp_name +] + DVP): [+ grand_coalition +]%
-
-Bourgeois Coalition (Z + BVP + [+ ddp_name +] + DVP + Others): [+ bourgeois_coalition +]%
-
-Right-wing Coalition (Z + BVP + DVP + Others + DNVP): [+ right_coalition +]%
-
-[? if nazi_urgency <= 1 and nsdap_r >= 15 : The rapid rise in NSDAP votes is extremely worrying. Many had believed that the party was moribund; now, some of us consider it to be the greatest threat to democracy in Germany. ?]
-
-[? if anti_democratic_coalition >= 50 : Together, the anti-democratic KPD, DNVP, and NSDAP have a majority in the Reichstag. A stable governing majority will be almost impossible. ?]
+Pro-Regime Coalition (JNS + JMO + SLS): [+ regime_coalition +]%
 
 There are some potential coalition arrangements.
 
