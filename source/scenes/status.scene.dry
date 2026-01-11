@@ -115,19 +115,16 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">!}**JRZ**{!</span>!}: Far-Right Authoritarianism(Stojadinović) ?]
 
-[? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">!}**ZBOR**{!</span>!}: Fascism(Ljotić) ?]
+[? if zbor_exist: {!<span class="tooltip-text" title="United Militant Labour Organization" style="color: #04522C;">!}**ZBOR**{!</span>!}: Serb Ultranationalism(Ljotić) ?]
 
-= Members of the UO
+= Members of the <span style="color: #FFA500;">**[+uo_name+]**</span>
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+[? if croatian_peasant_party_uo: {!<span class="tooltip-text" title="WIP." style="color: #04B431;>**HSS**</span>!} strength: [+ croatian_peasant_party_strength : strength +], dissent: [+ croatian_peasant_party_dissent : dissent +] ?]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+[? if independent_democratic_party_uo: {!<span class="tooltip-text" title="WIP." style="color: #FCF342;>**SDS**</span>!} strength: [+ independent_democratic_party_strength : strength +], dissent: [+ independent_democratic_party_dissent : dissent +] ?]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+[? if democratic_party_uo: {!<span class="tooltip-text" title="WIP." style="color: #FFD500;>**DS**</span>!} strength: [+ democratic_party_strength : strength +], dissent: [+ democratic_party_dissent : dissent +] ?]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
-
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
 
 
@@ -203,7 +200,7 @@ Prussian police: [+ prussian_police_strength +] thousand members.
 
 Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+[? if uo_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 @polls
 on-arrival: {!
