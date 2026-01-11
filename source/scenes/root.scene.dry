@@ -134,8 +134,9 @@ Q.electoral_threshold = 0;
 Q.constitutional_reform = 0;
 // reduction in royal powers
 Q.royal_powers = 0;
-Q.kpj_banned = 0;
-Q.zbor_banned = 0;
+Q.kpj_banned = 1;
+Q.spj_banned = 1;
+Q.zbor_banned = 1;
 
 Q.coup_progress = 0;
 
