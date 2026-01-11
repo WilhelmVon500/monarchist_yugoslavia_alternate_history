@@ -5,7 +5,6 @@ priority: -1
 view-if: year = 1935 and month = 5
 on-departure: month_actions += 1; in_election = 0; next_election_year = next_election_year + 4; n_elections += 1; next_election_time = time + 48;
 set-jump: post_election_1935
-face-image: img/Rothe_Wahlen_1903.jpg
 
 # TODO: should there be an image?
 
@@ -30,6 +29,9 @@ for (var party of Q.parties) {
             Q[party + '_r'] = 0;
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
+            if (party == "jns") {
+                Q[party + '_r'] += 40;
+            }
         }
         new_party_sum += Q[party + '_r'];
     } else {
@@ -69,31 +71,20 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
 // get change arrows and signs
 
 
-// The largest party can only be the NSDAP or the SPD.
-Q.largest_party = 'SPD';
-if (Q.nsdap_r >= Q.spd_r && Q.nsdap_r >= Q.kpd_r) {
-    Q.largest_party = 'NSDAP';
-}
-
-if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
-    Q.largest_party = 'KPD';
-}
+Q.largest_party = 'JNS';
 
 // coalitions
-Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
+Q.regime_coalition = Q.jns_r + Q.sls_r + Q.jmo_r;
 
-if (Q.kpd_relation >= 30) {
-    Q.weimar_coalition += Q.sapd_r;
-}
+Q.leverage = Q.uo_r;
 
-Q.leverage = Q.spd_r;
-
-Q.grand_coalition_failed = 0;
-// Reset government and ministers... Based on Brüning's 1930 govt
+// Reset government and ministers...
 Q.coalition_dissent = 0;
 Q.uo_in_government = 0;
-Q.in_weimar_coalition = 0;
-Q.spd_toleration = 0;
+Q.uo_toleration = 0;
+Q.in_regime_coalition = 0;
+
+
 Q.foreign_minister_party = 'I';
 Q.interior_minister_party = 'I';
 Q.justice_minister_party = 'I';
@@ -110,72 +101,111 @@ for (var party of Q.parties) {
 Q.election_records.push(election_result);
 !}
 on-display: {!
-data = [
-    {
-        "id": "kpd",
-        "legend": "KPD",
-        "name": "KPD",
-        "seats": Math.round(Q.kpd_r*5),
-    }
-];
-if (Q.sapd_formed && Q.sapd_r) {
+data = []
+if (Q.kpj_r) {
     data.push({
-            "id": "sapd",
-            "legend": "SAPD",
-            "name": "SAPD",
-            "seats": Math.round(Q.sapd_r*5),
-            });
+            "id": "kpj",
+            "legend": "KPJ",
+            "name": "KPJ",
+            "seats": Math.round(Q.kpj_r*3.7),
+    });
 }
-data = data.concat([
-    {
-        "id": "spd",
-        "legend": "SPD",
-        "name": "SPD",
-        "seats": Math.round(Q.spd_r*5),
-    },
-    {
-        "id": "ddp",
-        "legend": Q.ddp_name,
-        "name": Q.ddp_name,
-        "seats": Math.round(Q.ddp_r*5),
-    },
-    {
-        "id": "z",
-        "legend": "Center",
-        "name": "Center",
-        "seats": Math.round((Q.z_r - 3)*5),
-    },
-    {
-        "id": "bvp",
-        "legend": "BVP",
-        "name": "BVP",
-        "seats": Math.round(3*5),
-    },
-    {
-        "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
-        "seats": Math.round(Q.dvp_r*5),
-    },
-    {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Math.round(Q.other_r*5),
-    },
-    {
-        "id": "dnvp",
-        "legend": "DNVP",
-        "name": "DNVP",
-        "seats": Math.round(Q.dnvp_r*5),
-    },
-    {
-        "id": "nsdap",
-        "legend": "NSDAP",
-        "name": "NSDAP",
-        "seats": Math.round(Q.nsdap_r*5),
-    },
-]);
+if (Q.spj_r) {
+    data.push({
+            "id": "spj",
+            "legend": "SPJ",
+            "name": "SPJ",
+            "seats": Math.round(Q.spj_r*3.7),
+    });
+}
+if (Q.hss_r) {
+    data.push({
+            "id": "hss",
+            "legend": "HSS",
+            "name": "HSS",
+            "seats": Math.round(Q.hss_r*3.7),
+    });
+}
+if (Q.sds_r) {
+    data.push({
+            "id": "sds",
+            "legend": "SDS",
+            "name": "SDS",
+            "seats": Math.round(Q.sds_r*3.7),
+    });
+}
+if (Q.ds_r) {
+    data.push({
+            "id": "ds",
+            "legend": "DS",
+            "name": "DS",
+            "seats": Math.round(Q.ds_r*3.7),
+    });
+}
+if (Q.zs_r) {
+    data.push({
+            "id": "zs",
+            "legend": "ZS",
+            "name": "ZS",
+            "seats": Math.round(Q.zs_r*3.7),
+    });
+}
+if (Q.cfs_r) {
+    data.push({
+            "id": "cfs",
+            "legend": "CFS",
+            "name": "CFS",
+            "seats": Math.round(Q.cfs_r*3.7),
+    });
+}
+if (Q.sls_r) {
+    data.push({
+            "id": "sls",
+            "legend": "SLS",
+            "name": "SLS",
+            "seats": Math.round(Q.cfs_r*3.7),
+    });
+}
+if (Q.jmo_r) {
+    data.push({
+            "id": "jmo",
+            "legend": "JMO",
+            "name": "JMO",
+            "seats": Math.round(Q.jmo_r*3.7),
+    });
+}
+if (Q.nrs_r) {
+    data.push({
+            "id": "nrs",
+            "legend": "NRS",
+            "name": "NRS",
+            "seats": Math.round(Q.nrs_r*3.7),
+    });
+}
+if (Q.jns_r) {
+    data.push({
+            "id": "jns",
+            "legend": "JNS",
+            "name": "JNS",
+            "seats": Math.round(Q.jns_r*3.7),
+    });
+}
+if (Q.jrz_r) {
+    data.push({
+            "id": "jrz",
+            "legend": "JRZ",
+            "name": "JRZ",
+            "seats": Math.round(Q.jrz_r*3.7),
+    });
+}
+if (Q.zbor_r) {
+    data.push({
+            "id": "zbor",
+            "legend": "ZBOR",
+            "name": "ZBOR",
+            "seats": Math.round(Q.zbor_r*3.7),
+    });
+}
 
 if (window && d3) {
     var width = 500; 
