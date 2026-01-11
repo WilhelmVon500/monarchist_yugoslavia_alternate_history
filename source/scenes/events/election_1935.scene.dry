@@ -105,69 +105,6 @@ for (var party of Q.parties) {
 }
 
 
-
-
-
-
-
-// set old results
-// election threshold constitutional reform
-// banning parties
-var new_party_sum = 0;
-for (var party of Q.parties) {
-    Q['old_' + party + '_r'] = Q[party + '_r'];
-    if (Q.electoral_threshold > 0) {
-        if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
-            Q[party + '_r'] = 0;
-        } else {
-            Q[party + '_r'] = parseFloat((Q[party+'_votes']).toFixed(1));
-            if (party == "jns") {
-                Q.jns_r = parseFloat((Q.jns_r + 40).toFixed(1));
-            }
-        }
-        new_party_sum += Q[party + '_r'];
-    } else {
-        if (Q[party + '_banned']) {
-            Q[party + '_r'] = 0;
-        } else {
-            Q[party + '_r'] = parseFloat((Q[party+'_votes']).toFixed(1));
-            if (party == "jns") {
-                Q.jns_r = parseFloat((Q.jns_r + 40).toFixed(1));
-            }
-            if (party == 'other') Q[party + '_r'] = Q[party + '_votes'] * 0.3;
-            new_party_sum += Q[party + '_r'];
-        }
-    }
-
-    Q['change_' + party + '_votes'] = Q[party + '_votes'] - Q['old_' + party + '_votes'];
-    var sign2 = Q['change_' + party + '_votes'] > 0 
-                    ? '<img src="img/arrowup.png"> ' 
-                    : Q['change_' + party + '_votes'] < 0 
-                      ? '<img src="img/arrowdown.png"> ' 
-                      : '<img src="img/steady.png"> ';
-    Q['votes_change_' + party] = sign2 + Math.abs(parseFloat(Q['change_' + party + '_votes'])).toFixed(1);
-
-    Q['old_' + party + '_votes'] = parseFloat((Q[party + '_votes']).toFixed(1));
-}
-// calculate new party sum
-if (new_party_sum > 0) {
-    for (var party of Q.parties) {
-        if (Q[party + '_r'] > 0) {
-            Q[party + '_r'] = Math.round(Q[party + '_r']*1000/new_party_sum)/10;
-        }
-        Q[party + '_r'] = parseFloat((Q[party+'_r']).toFixed(1));
-        
-        Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
-        var sign = Q['change_' + party + '_r'] > 0 
-                   ? '<img src="img/arrowup.png"> ' 
-                   : Q['change_' + party + '_r'] < 0 
-                     ? '<img src="img/arrowdown.png"> ' 
-                     : '<img src="img/steady.png"> ';
-        Q['str_change_' + party] = sign + Math.abs(parseFloat(Q['change_' + party + '_r'])).toFixed(1);
-    }
-}
-
-
 Q.largest_party = 'JNS';
 
 // coalitions
@@ -329,9 +266,8 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
+[? if jrz_exist: {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
 
