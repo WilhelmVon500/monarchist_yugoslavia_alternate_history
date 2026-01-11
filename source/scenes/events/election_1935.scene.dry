@@ -29,7 +29,7 @@ for (var party of Q.parties) {
             Q[party + '_r'] = 0;
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
-            if (party == "jns") {
+            if (Q[party] == "jns") {
                 Q[party + '_r'] += 40;
             }
         }
