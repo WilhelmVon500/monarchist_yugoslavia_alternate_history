@@ -137,7 +137,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Deputy Prime Minister: [+ deputy_prime_minister +] ([?if deputy_prime_minister=="I":<span style="color: #AAAAAA;">**I**</span>?][?if deputy_prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
+Deputy Prime Minister: [+ deputy_prime_minister +] ([?if deputy_prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if deputy_prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
 Interior: [+ interior_minister +] ([?if interior_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if interior_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if interior_minister_party=="SLS":<span style="color: #74CA37;">**SLS**</span>?])
 
@@ -153,7 +153,7 @@ Social: [+ social_minister +] ([?if social_minister_party=="I":<span style="colo
 
 Agriculture: [+ agriculture_minister +] ([?if agriculture_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if agriculture_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
-Army: [+ army_minister +] ([?if army_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?])
+Army: [+ army_minister +] ([?if army_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if army_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
 
 @paramilitaries
