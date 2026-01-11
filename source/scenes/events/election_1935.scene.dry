@@ -49,16 +49,15 @@ let dhondtTable = [];
 for (let party of validParties) {
     let votes = Q.party_votes[party];
     for (let divisor = 1; divisor <= TOTAL_SEATS; divisor++) {
-        if (party != "jns") {
-                dhondtTable.push({
-                    party: party,
-                    value: votes / divisor
-                });
-        }
         if (party == "jns") {
                 dhondtTable.push({
                     party: party,
                     value: (votes / divisor) + 148
+                });
+        } else {
+                dhondtTable.push({
+                        party: party,
+                        value: votes / divisor
                 });
         }
     }
@@ -399,7 +398,7 @@ go-to: coalition_menu
 
 Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span>): [+ regime_coalition +]%
 
-UO Coalition (): [+ uo_coalition +]%
+UO Coalition (<span style="color: #04B431;">**HSS**</span> + <span style="color: #FCF342;">**SDS**</span> + <span style="color: #FFD500;">**DS**</span>): [+ uo_coalition +]%
 
 There are some potential coalition arrangements.
 
