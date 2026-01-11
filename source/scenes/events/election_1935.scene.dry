@@ -120,7 +120,17 @@ Q.uo_in_government = 0;
 Q.uo_toleration = 0;
 Q.in_regime_coalition = 0;
 
+Q.deputy_prime_minister = 'Vacant';
+Q.foreign_minister = 'Vacant';
+Q.interior_minister = 'Vacant';
+Q.justice_minister = 'Vacant';
+Q.social_minister = 'Vacant';
+Q.army_minister = 'Vacant';
+Q.economic_minister = 'Vacant';
+Q.finance_minister = 'Vacant';
+Q.agriculture_minister = 'Vacant';
 
+Q.deputy_prime_minister_party = 'I';
 Q.foreign_minister_party = 'I';
 Q.interior_minister_party = 'I';
 Q.justice_minister_party = 'I';
