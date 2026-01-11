@@ -49,18 +49,10 @@ let dhondtTable = [];
 for (let party of validParties) {
     let votes = Q.party_votes[party];
     for (let divisor = 1; divisor <= TOTAL_SEATS; divisor++) {
-        if (party != "jns") {
-                dhondtTable.push({
-                    party: party,
-                    value: votes / divisor
-                });
-        }
-        if (party == "jns") {
-                dhondtTable.push({
-                    party: party,
-                    value: (votes / divisor) + 148
-                });
-        }
+        dhondtTable.push({
+                party: party,
+                value: votes / divisor
+        });
     }
 }
 
@@ -149,7 +141,7 @@ if (Q.kpj_r) {
             "id": "kpj",
             "legend": "KPJ",
             "name": "KPJ",
-            "seats": Math.round(Q.kpj_r*3.7),
+            "seats": Math.round(Q.kpj_seats),
     });
 }
 if (Q.spj_r) {
@@ -157,7 +149,7 @@ if (Q.spj_r) {
             "id": "spj",
             "legend": "SPJ",
             "name": "SPJ",
-            "seats": Math.round(Q.spj_r*3.7),
+            "seats": Math.round(Q.spj_seats),
     });
 }
 if (Q.hss_r) {
@@ -165,7 +157,7 @@ if (Q.hss_r) {
             "id": "hss",
             "legend": "HSS",
             "name": "HSS",
-            "seats": Math.round(Q.hss_r*3.7),
+            "seats": Math.round(Q.hss_seats),
     });
 }
 if (Q.sds_r) {
@@ -173,7 +165,7 @@ if (Q.sds_r) {
             "id": "sds",
             "legend": "SDS",
             "name": "SDS",
-            "seats": Math.round(Q.sds_r*3.7),
+            "seats": Math.round(Q.sds_seats),
     });
 }
 if (Q.ds_r) {
@@ -181,7 +173,7 @@ if (Q.ds_r) {
             "id": "ds",
             "legend": "DS",
             "name": "DS",
-            "seats": Math.round(Q.ds_r*3.7),
+            "seats": Math.round(Q.ds_seats),
     });
 }
 if (Q.zs_r) {
@@ -189,7 +181,7 @@ if (Q.zs_r) {
             "id": "zs",
             "legend": "ZS",
             "name": "ZS",
-            "seats": Math.round(Q.zs_r*3.7),
+            "seats": Math.round(Q.zs_seats),
     });
 }
 if (Q.cfs_r) {
@@ -197,7 +189,7 @@ if (Q.cfs_r) {
             "id": "cfs",
             "legend": "CFS",
             "name": "CFS",
-            "seats": Math.round(Q.cfs_r*3.7),
+            "seats": Math.round(Q.cfs_seats),
     });
 }
 if (Q.sls_r) {
@@ -205,7 +197,7 @@ if (Q.sls_r) {
             "id": "sls",
             "legend": "SLS",
             "name": "SLS",
-            "seats": Math.round(Q.cfs_r*3.7),
+            "seats": Math.round(Q.cfs_seats),
     });
 }
 if (Q.jmo_r) {
@@ -213,7 +205,7 @@ if (Q.jmo_r) {
             "id": "jmo",
             "legend": "JMO",
             "name": "JMO",
-            "seats": Math.round(Q.jmo_r*3.7),
+            "seats": Math.round(Q.jmo_seats),
     });
 }
 if (Q.nrs_r) {
@@ -221,7 +213,7 @@ if (Q.nrs_r) {
             "id": "nrs",
             "legend": "NRS",
             "name": "NRS",
-            "seats": Math.round(Q.nrs_r*3.7),
+            "seats": Math.round(Q.nrs_seats),
     });
 }
 if (Q.jns_r) {
@@ -229,7 +221,7 @@ if (Q.jns_r) {
             "id": "jns",
             "legend": "JNS",
             "name": "JNS",
-            "seats": Math.round(Q.jns_r*3.7),
+            "seats": Math.round(Q.jns_seats),
     });
 }
 if (Q.jrz_r) {
@@ -237,7 +229,7 @@ if (Q.jrz_r) {
             "id": "jrz",
             "legend": "JRZ",
             "name": "JRZ",
-            "seats": Math.round(Q.jrz_r*3.7),
+            "seats": Math.round(Q.jrz_seats),
     });
 }
 if (Q.zbor_r) {
@@ -245,7 +237,7 @@ if (Q.zbor_r) {
             "id": "zbor",
             "legend": "ZBOR",
             "name": "ZBOR",
-            "seats": Math.round(Q.zbor_r*3.7),
+            "seats": Math.round(Q.zbor_seats),
     });
 }
 
@@ -342,6 +334,16 @@ go-to: coalition_menu
   <td>[+ str_votes_change_cfs +]</td>
   <td>[+ cfs_seats +] ([+ cfs_r +]%)</td>
   <td>[+ str_seats_change_cfs +] ([+ str_change_cfs +] pp.)</td>
+</tr>
+?]
+
+[? if sls_seats: 
+<tr>
+  <td><div class="box" style='background-color:#990000;'> </div> SLS:</td>
+  <td>[+ sls_votes +]%</td>
+  <td>[+ str_votes_change_sls +]</td>
+  <td>[+ sls_seats +] ([+ sls_r +]%)</td>
+  <td>[+ str_seats_change_sls +] ([+ str_change_sls +] pp.)</td>
 </tr>
 ?]
 {!</table>!}
