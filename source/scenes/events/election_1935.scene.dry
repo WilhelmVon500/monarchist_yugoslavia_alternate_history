@@ -67,7 +67,10 @@ for (let seat of topSeats) {
 for (let party of Q.parties) {
     const seats = seatCounts[party] || 0;
     Q[party + '_seats'] = seats;
-    if (party == "jns") Q.jns_seats += 148;
+    if (party == "jns") {
+        seats += 148
+        Q.jns_seats += 148;
+    }
     Q[party + '_r'] = Math.round((seats / TOTAL_TOTAL_SEATS) * 1000) / 10;  // % of seats
 }
 
