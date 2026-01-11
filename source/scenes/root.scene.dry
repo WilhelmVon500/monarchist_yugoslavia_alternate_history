@@ -251,18 +251,31 @@ Q.croatian_peasants_zbor = 0;
 Q.jns_seats = 370;
 Q.jns_r = 100;
 
+Q.kpj_seats = 0;
 Q.kpj_r = 0;
+Q.spj_seats = 0;
 Q.spj_r = 0;
+Q.hss_seats = 0;
 Q.hss_r = 0;
+Q.sds_seats = 0;
 Q.sds_r = 0;
+Q.ds_seats = 0;
 Q.ds_r = 0;
+Q.zs_seats = 0;
 Q.zs_r = 0;
+Q.cfs_seats = 0;
 Q.cfs_r = 0;
+Q.sls_seats = 0;
 Q.sls_r = 0;
+Q.jmo_seats = 0;
 Q.jmo_r = 0;
+Q.nrs_seats = 0;
 Q.nrs_r = 0;
+Q.jrz_seats = 0;
 Q.jrz_r = 0;
+Q.zbor_seats = 0;
 Q.zbor_r = 0;
+Q.other_seats = 0;
 Q.other_r = 0;
 
 // diff from prev
