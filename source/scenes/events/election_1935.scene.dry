@@ -18,7 +18,8 @@ The Reichstag elections are to be held now.
 
 @post_election_1935
 on-arrival: {!  
-const TOTAL_SEATS = 370;
+const TOTAL_SEATS = 222;
+const TOTAL_TOTAL_SEATS = 222;
 const threshold = Q.electoral_threshold || 0;
 
 for (var party of Q.parties) {
@@ -26,7 +27,6 @@ for (var party of Q.parties) {
     Q['old_'+party+'_seats'] = Q[party+'_seats'];
 }
 
-// Step 1: Normalize votes to 100%
 let totalVotes = 0;
 Q.party_votes = {};  // Store normalized votes here
 
@@ -40,19 +40,14 @@ for (let party of Q.parties) {
     Q.party_votes[party] = Math.round(Q.party_votes[party] * 1000 / totalVotes) / 10; // normalize to 100, 1 decimal
 }
 
-// Step 2: Filter valid parties
 let validParties = Q.parties.filter(party => {
     return Q[party + '_banned'] !== 1 && Q.party_votes[party] >= threshold;
 });
 
-// Step 3: D’Hondt table
 let dhondtTable = [];
 
 for (let party of validParties) {
     let votes = Q.party_votes[party];
-    if (Q[party] == "jns") {
-        let votes = Q.party_votes[party]+40
-    }    
     for (let divisor = 1; divisor <= TOTAL_SEATS; divisor++) {
         dhondtTable.push({
             party: party,
@@ -61,24 +56,21 @@ for (let party of validParties) {
     }
 }
 
-// Step 4: Allocate top 351 seats
 dhondtTable.sort((a, b) => b.value - a.value);
 let topSeats = dhondtTable.slice(0, TOTAL_SEATS);
 
-// Step 5: Count seats
 let seatCounts = {};
 for (let seat of topSeats) {
     seatCounts[seat.party] = (seatCounts[seat.party] || 0) + 1;
 }
 
-// Step 6: Save seats and % of seats (_seats and _r)
 for (let party of Q.parties) {
     const seats = seatCounts[party] || 0;
     Q[party + '_seats'] = seats;
-    Q[party + '_r'] = Math.round((seats / TOTAL_SEATS) * 1000) / 10;  // % of seats
+    if (party == "JNS") Q.jns_seats += 148;
+    Q[party + '_r'] = Math.round((seats / TOTAL_TOTAL_SEATS) * 1000) / 10;  // % of seats
 }
 
-// step 7 - change over time
 for (var party of Q.parties) {
     Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
     var sign = Q['change_' + party + '_r'] > 0 
