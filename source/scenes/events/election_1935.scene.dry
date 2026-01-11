@@ -19,7 +19,7 @@ The Reichstag elections are to be held now.
 @post_election_1935
 on-arrival: {!  
 const TOTAL_SEATS = 222;
-const TOTAL_TOTAL_SEATS = 222;
+const TOTAL_TOTAL_SEATS = 370;
 const threshold = Q.electoral_threshold || 0;
 
 for (var party of Q.parties) {
