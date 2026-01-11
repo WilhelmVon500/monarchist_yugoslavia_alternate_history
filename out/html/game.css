@@ -577,6 +577,9 @@ table {
 .seat.zbor {
     fill: #04522C;
 }
+.seat.other {
+    fill: #AAAAAA;
+}
 
 .tooltip-text {
     text-decoration: underline;
