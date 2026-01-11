@@ -399,6 +399,8 @@ go-to: coalition_menu
 
 Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span>): [+ regime_coalition +]%
 
+UO Coalition (): [+ uo_coalition +]%
+
 There are some potential coalition arrangements.
 
 @coalition_menu
