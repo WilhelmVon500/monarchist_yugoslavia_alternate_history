@@ -49,10 +49,18 @@ let dhondtTable = [];
 for (let party of validParties) {
     let votes = Q.party_votes[party];
     for (let divisor = 1; divisor <= TOTAL_SEATS; divisor++) {
-        dhondtTable.push({
-            party: party,
-            value: votes / divisor
-        });
+        if (party != "jns") {
+                dhondtTable.push({
+                    party: party,
+                    value: votes / divisor
+                });
+        }
+        if (party == "jns") {
+                dhondtTable.push({
+                    party: party,
+                    value: (votes / divisor) + 148
+                });
+        }
     }
 }
 
