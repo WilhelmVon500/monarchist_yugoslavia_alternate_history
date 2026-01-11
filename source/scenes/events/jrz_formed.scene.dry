@@ -1,6 +1,6 @@
 title: A New <span style="color: #222222;">**Party**</span> for the Regime?
 subtitle: Milan Stojadinović has formed a new party.
-view-if: year = 1935 and month >= 6 and prime_minister = "Stojadinović"
+view-if: year = 1935 and month >= 8 and prime_minister = "Stojadinović"
 new-page: true
 max-visits: 1
 on-arrival: {!
