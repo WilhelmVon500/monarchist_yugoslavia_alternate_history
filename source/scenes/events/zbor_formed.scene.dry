@@ -4,6 +4,9 @@ new-page: true
 on-arrival: {!
 Q.zbor_exist = 1;
 Q.parties.push('zbor');
+
+Q.rural_zbor += 5;
+Q.unemployed_zbor += 3;
 !}
 tags: event
 view-if: year = 1935
