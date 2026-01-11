@@ -17,7 +17,6 @@ The Reichstag elections are to be held now.
 - @election_algorithm: May we do our best...
 
 @post_election_1935
-on-arrival: {!
 on-arrival: {!  
 const TOTAL_SEATS = 370;
 const threshold = Q.electoral_threshold || 0;
