@@ -255,7 +255,6 @@ go-to: coalition_menu
 {!<table>!} 
 <tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Seats</td><td>Change</td></tr>
 
-[? if kpj_seats: 
 <tr>
   <td><div class="box" style='background-color:#770000;'> </div> KPJ:</td>
   <td>[+ kpj_votes +]%</td>
@@ -263,9 +262,7 @@ go-to: coalition_menu
   <td>[+ kpj_seats +] ([+ kpj_r +]%)</td>
   <td>[+ str_seats_change_kpj +] ([+ str_change_kpj +]%)</td>
 </tr>
-?]
 
-[? if spj_seats: 
 <tr>
   <td><div class="box" style='background-color:#DD0000;'> </div> SPJ:</td>
   <td>[+ spj_votes +]%</td>
@@ -273,9 +270,7 @@ go-to: coalition_menu
   <td>[+ spj_seats +] ([+ spj_r +]%)</td>
   <td>[+ str_seats_change_spj +] ([+ str_change_spj +]%)</td>
 </tr>
-?]
 
-[? if hss_seats: 
 <tr>
   <td><div class="box" style='background-color:#04B431;'> </div> HSS:</td>
   <td>[+ hss_votes +]%</td>
@@ -283,9 +278,7 @@ go-to: coalition_menu
   <td>[+ hss_seats +] ([+ hss_r +]%)</td>
   <td>[+ str_seats_change_hss +] ([+ str_change_hss +]%)</td>
 </tr>
-?]
 
-[? if sds_seats: 
 <tr>
   <td><div class="box" style='background-color:#FCF342;'> </div> SDS:</td>
   <td>[+ sds_votes +]%</td>
@@ -293,9 +286,7 @@ go-to: coalition_menu
   <td>[+ sds_seats +] ([+ sds_r +]%)</td>
   <td>[+ str_seats_change_sds +] ([+ str_change_sds +]%)</td>
 </tr>
-?]
 
-[? if ds_seats: 
 <tr>
   <td><div class="box" style='background-color:#FFD500;'> </div> DS:</td>
   <td>[+ ds_votes +]%</td>
@@ -303,9 +294,7 @@ go-to: coalition_menu
   <td>[+ ds_seats +] ([+ ds_r +]%)</td>
   <td>[+ str_seats_change_ds +] ([+ str_change_ds +]%)</td>
 </tr>
-?]
 
-[? if zs_seats: 
 <tr>
   <td><div class="box" style='background-color:#3D863D;'> </div> ZS:</td>
   <td>[+ zs_votes +]%</td>
@@ -313,9 +302,7 @@ go-to: coalition_menu
   <td>[+ zs_seats +] ([+ zs_r +]%)</td>
   <td>[+ str_seats_change_zs +] ([+ str_change_zs +]%)</td>
 </tr>
-?]
 
-[? if cfs_seats: 
 <tr>
   <td><div class="box" style='background-color:#006400;'> </div> CFS:</td>
   <td>[+ cfs_votes +]%</td>
@@ -323,9 +310,7 @@ go-to: coalition_menu
   <td>[+ cfs_seats +] ([+ cfs_r +]%)</td>
   <td>[+ str_seats_change_cfs +] ([+ str_change_cfs +]%)</td>
 </tr>
-?]
 
-[? if sls_seats: 
 <tr>
   <td><div class="box" style='background-color:#74CA37;'> </div> SLS:</td>
   <td>[+ sls_votes +]%</td>
@@ -333,9 +318,7 @@ go-to: coalition_menu
   <td>[+ sls_seats +] ([+ sls_r +]%)</td>
   <td>[+ str_seats_change_sls +] ([+ str_change_sls +]%)</td>
 </tr>
-?]
 
-[? if jmo_seats: 
 <tr>
   <td><div class="box" style='background-color:#008000;'> </div> JMO:</td>
   <td>[+ jmo_votes +]%</td>
@@ -343,9 +326,7 @@ go-to: coalition_menu
   <td>[+ jmo_seats +] ([+ jmo_r +]%)</td>
   <td>[+ str_seats_change_jmo +] ([+ str_change_jmo +]%)</td>
 </tr>
-?]
 
-[? if jns_seats: 
 <tr>
   <td><div class="box" style='background-color:#767676;'> </div> JNS:</td>
   <td>[+ jns_votes +]%</td>
@@ -353,9 +334,8 @@ go-to: coalition_menu
   <td>[+ jns_seats +] ([+ jns_r +]%)</td>
   <td>[+ str_seats_change_jns +] ([+ str_change_jns +]%)</td>
 </tr>
-?]
 
-[? if jrz_seats: 
+[? if jrz_exist:
 <tr>
   <td><div class="box" style='background-color:#222222;'> </div> JRZ:</td>
   <td>[+ jrz_votes +]%</td>
@@ -365,7 +345,7 @@ go-to: coalition_menu
 </tr>
 ?]
 
-[? if zbor_seats: 
+[? if zbor_exist:
 <tr>
   <td><div class="box" style='background-color:#04522C;'> </div> ZBOR:</td>
   <td>[+ zbor_votes +]%</td>
