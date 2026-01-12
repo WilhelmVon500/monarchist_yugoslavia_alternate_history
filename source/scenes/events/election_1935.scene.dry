@@ -53,7 +53,7 @@ for (var party of Q.parties) {
 if (new_party_sum > 0) {
     for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
-            Q[party + '_r'] = Math.round(Q[party + '_r']*600/new_party_sum)/10;
+            Q[party + '_r'] = parseFloat(Q[party + '_r']*60/new_party_sum).toFixed(1));
         }
         Q[party + '_r'] = parseFloat((Q[party+'_r']).toFixed(1));
     }
