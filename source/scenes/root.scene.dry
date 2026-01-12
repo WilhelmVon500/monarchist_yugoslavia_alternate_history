@@ -279,7 +279,7 @@ Q.other_seats = 0;
 Q.other_r = 0;
 
 // diff from prev
-Q.old_regime_r = 100;
+Q.old_jns_votes = 100;
 Q.old_jns_r = 100;
 
 Q.old_kpj_r = 0;
