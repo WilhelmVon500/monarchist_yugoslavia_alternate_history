@@ -63,7 +63,7 @@ Q.jns_r = parseFloat(Q.jns_r + 40).toFixed(1);
 
 for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
-            Q[party + '_seats' = Math.round(Q[party + '_r'] * 3.7)
+            Q[party + '_seats'] = Math.round(Q[party + '_r'] * 3.7);
         }
         Q[party + '_r'] = parseFloat((Q[party+'_r']).toFixed(1));
         
