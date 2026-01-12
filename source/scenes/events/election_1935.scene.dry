@@ -18,7 +18,6 @@ The Reichstag elections are to be held now.
 
 @post_election_1935
 on-arrival: {!
-
 var new_party_sum = 0;
 for (var party of Q.parties) {
     Q['old_' + party + '_seats'] = Q[party + '_seats'];
