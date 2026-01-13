@@ -67,7 +67,7 @@ if (new_party_sum > 0) {
 
 for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
-            Q[party + '_seats'] = parseFloat((Q[party + '_r'] * 3.7).toFixed(1));
+            Q[party + '_seats'] = Math.round(Q[party + '_r'] * 3.7);
         }
         
         Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
