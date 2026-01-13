@@ -53,7 +53,7 @@ for (var party of Q.parties) {
 // calculate new party sum
 if (new_party_sum > 0) {
     for (var party of Q.parties) {
-        if (Q[party + '_election_votes'] > 0 && !(Q[party + '_votes'] < Q.electoral_threshold) & !(Q.electoral_threshold > 1 && party == 'other')) {
+        if (Q[party + '_election_votes'] > 0 && !(Q[party + '_votes'] < Q.electoral_threshold) && !(Q.electoral_threshold > 1 && party == 'other')) {
             Q[party + '_r'] = Math.round(Q[party + '_election_votes']*1000/new_party_sum)/10;
         } else {
             Q[party + '_r'] = 0;
