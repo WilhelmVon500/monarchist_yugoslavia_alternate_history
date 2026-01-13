@@ -248,6 +248,7 @@ Q.croatian_peasants_jrz = 0;
 Q.croatian_peasants_zbor = 0;
 
 
+Q.jns_election_votes = 100;
 Q.jns_seats = 370;
 Q.jns_r = 100;
 
