@@ -259,6 +259,7 @@ go-to: coalition_menu
 {!<table>!} 
 <tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Seats</td><td>Change</td></tr>
 
+[? if not kpj_banned:
 <tr>
   <td><div class="box" style='background-color:#770000;'> </div> KPJ:</td>
   <td>[+ kpj_election_votes +]%</td>
@@ -266,7 +267,9 @@ go-to: coalition_menu
   <td>[+ kpj_seats +] ([+ kpj_r +]%)</td>
   <td>[+ str_seats_change_kpj +] ([+ str_change_kpj +]%)</td>
 </tr>
+?]
 
+[? if not spj_banned:
 <tr>
   <td><div class="box" style='background-color:#DD0000;'> </div> SPJ:</td>
   <td>[+ spj_election_votes +]%</td>
@@ -274,6 +277,7 @@ go-to: coalition_menu
   <td>[+ spj_seats +] ([+ spj_r +]%)</td>
   <td>[+ str_seats_change_spj +] ([+ str_change_spj +]%)</td>
 </tr>
+?]
 
 <tr>
   <td><div class="box" style='background-color:#04B431;'> </div> HSS:</td>
