@@ -62,13 +62,22 @@ Q.independent_democratic_party_dissent = 10;
 Q.slovene_peoples_party_strength = 5;
 Q.slovene_peoples_party_dissent = 10;
 
-// secret events...
+// ...
 Q.democratic_party_uo = 1;
 Q.croatian_peasant_party_uo = 1;
 Q.independent_democratic_party_uo = 1;
+
 Q.agrarian_party_uo = 0;
 Q.montenegrin_federalist_party_uo = 0;
+Q.socialist_party_of_yugoslavia_uo = 0;
+
 Q.slovene_peoples_party_uo = 0;
+Q.yugoslav_muslim_organization_uo = 0;
+Q.peoples_radical_party_uo = 0;
+// ...
+Q.slovene_peoples_party_pro_regime = 1;
+Q.yugoslav_muslim_organization_pro_regime = 1;
+Q.peoples_radical_party_pro_regime = 0;
 
 // organizations
 
