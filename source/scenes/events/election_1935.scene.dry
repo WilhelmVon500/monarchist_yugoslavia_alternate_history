@@ -377,14 +377,17 @@ go-to: coalition_menu
 **Coalitions:**
 
 Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span>
-[? if regime_parties.includes('jrz'): + <span style="color: #222222;">**JRZ**</span>?]
-[? if regime_parties.includes('jmo'): + <span style="color: #008000;">**JMO**</span>?]
-[? if regime_parties.includes('sls'): + <span style="color: #74CA37;">**SLS**</span>?]
+[? if jrz_exist: <span style="color: #222222;">**JRZ**</span> ?]
+[? if yugoslav_muslim_organization_pro_regime: <span style="color: #008000;">**JMO**</span> ?]
+[? if slovene_peoples_party_pro_regime: <span style="color: #74CA37;">**SLS**</span> ?]
 ): [+ regime_coalition +]%
 
-United Opposition (<span style="color: #FFD500;">**DS**</span>
-[? if uo_parties.includes('sds'): + <span style="color: #FCF342;">**SDS**</span>?]
-[? if uo_parties.includes('hss'): + <span style="color: #04B431;">**HSS**</span>?]
+Anti-Regime Coalition (
+[? if croatian_peasant_party_uo: <span style="color: #04B431;">**HSS**</span> ?]
+[? if independent_democratic_party_uo: <span style="color: #FCF342;">**SDS**</span> ?]
+[? if democratic_party_uo: <span style="color: #FFD500;">**DS**</span> ?]
+[? if agrarian_party_uo: <span style="color: #3D863D;">**ZS**</span> ?]
+[? if montenegrin_federalist_party_uo: <span style="color: #006400;">**CFS**</span> ?]
 ): [+ uo_coalition +]%
 
 There are some potential coalition arrangements.
