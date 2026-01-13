@@ -376,9 +376,16 @@ go-to: coalition_menu
 
 **Coalitions:**
 
-Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span>[? if ('jrz' in regime_parties): + <span style="color: #222222;">**JRZ**</span>?][? if regime_parties.includes('jmo'): + <span style="color: #008000;">**JMO**</span>?][? if regime_parties.includes('sls'): + <span style="color: #74CA37;">**SLS**</span>?]): [+ regime_coalition +]%
+Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span>
+[? if regime_parties.includes('jrz'): + <span style="color: #222222;">**JRZ**</span>?]
+[? if regime_parties.includes('jmo'): + <span style="color: #008000;">**JMO**</span>?]
+[? if regime_parties.includes('sls'): + <span style="color: #74CA37;">**SLS**</span>?]
+): [+ regime_coalition +]%
 
-United Opposition (<span style="color: #FFD500;">**DS**</span>[? if uo_parties.includes('sds'): + <span style="color: #FCF342;">**SDS**</span>?][? if uo_parties.includes('hss'): + <span style="color: #04B431;">**HSS**</span>?]): [+ uo_coalition +]%
+United Opposition (<span style="color: #FFD500;">**DS**</span>
+[? if uo_parties.includes('sds'): + <span style="color: #FCF342;">**SDS**</span>?]
+[? if uo_parties.includes('hss'): + <span style="color: #04B431;">**HSS**</span>?]
+): [+ uo_coalition +]%
 
 There are some potential coalition arrangements.
 
