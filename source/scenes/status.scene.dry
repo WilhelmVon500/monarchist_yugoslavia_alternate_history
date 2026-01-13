@@ -125,6 +125,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if democratic_party_uo: {!<span class="tooltip-text" title="WIP." style="color: #FFD500;>**DS**</span>!} strength: [+ democratic_party_strength : strength +], dissent: [+ democratic_party_dissent : dissent +] ?]
 
+[? if agrarian_party_uo: {!<span class="tooltip-text" title="WIP." style="color: #3D863D;>**ZS**</span>!} strength: [+ agrarian_party_strength : strength +], dissent: [+ agrarian_party_dissent : dissent +] ?]
+
 
 
 
