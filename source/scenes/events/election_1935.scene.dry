@@ -90,7 +90,16 @@ for (var party of Q.parties) {
 Q.largest_party = 'JNS';
 
 // coalitions
-Q.regime_coalition = Q.jns_r + Q.sls_r + Q.jmo_r;
+Q.regime_coalition = 0;
+Q.uo_coalition = 0;
+for (var party of Q.parties) {
+        if (Q.regime_parties.includes(Q[party])) {
+            Q.regime_coalition = parseFloat(Q.regime_coalition + Q[party + '_r']).toFixed(1);
+        }
+        if (Q.uo_parties.includes(Q[party])) {
+            Q.uo_coalition = parseFloat(Q.uo_coalition + Q[party + '_r']).toFixed(1);
+        }
+}
 
 Q.leverage = Q.uo_r;
 
@@ -99,6 +108,7 @@ Q.coalition_dissent = 0;
 Q.uo_in_government = 0;
 Q.uo_toleration = 0;
 Q.in_regime_coalition = 0;
+Q.in_uo_coalition = 0;
 
 Q.deputy_prime_minister = 'Vacant';
 Q.foreign_minister = 'Vacant';
@@ -364,9 +374,11 @@ go-to: coalition_menu
 ?]
 {!</table>!}
 
-**Potential coalitions:**
+**Coalitions:**
 
-Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span>): [+ regime_coalition +]%
+Pro-Regime Coalition (<span style="color: #767676;">**JNS**</span>[? if regime_parties.includes('jrz'): + <span style="color: #222222;">**JRZ**</span>?][? if regime_parties.includes('jmo'): + <span style="color: #008000;">**JMO**</span>?][? if regime_parties.includes('sls'): + <span style="color: #74CA37;">**SLS**</span>?]): [+ regime_coalition +]%
+
+United Opposition (<span style="color: #FFD500;">**DS**</span>[? if uo_parties.includes('sds'): + <span style="color: #FCF342;">**SDS**</span>?][? if uo_parties.includes('hss'): + <span style="color: #04B431;">**HSS**</span>?]): [+ uo_coalition +]%
 
 There are some potential coalition arrangements.
 
