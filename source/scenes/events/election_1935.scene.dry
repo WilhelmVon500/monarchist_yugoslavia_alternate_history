@@ -353,7 +353,7 @@ go-to: coalition_menu
 </tr>
 ?]
 
-[? if zbor_exist:
+[? if zbor_exist and not zbor_banned:
 <tr>
   <td><div class="box" style='background-color:#04522C;'> </div> ZBOR:</td>
   <td>[+ zbor_election_votes +]%</td>
