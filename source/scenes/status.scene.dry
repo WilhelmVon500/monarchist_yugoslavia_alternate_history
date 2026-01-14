@@ -31,6 +31,8 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 King: [+ king +]
 
+[? if regent_enabled: Regent: [+ regent +] ?]
+
 Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
 
 [? if uo_in_government: Budget: [+ budget +] ?]
