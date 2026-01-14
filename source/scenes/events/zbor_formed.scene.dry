@@ -5,7 +5,7 @@ on-arrival: {!
 Q.zbor_exist = 1;
 Q.parties.push('zbor');
 
-Q.rural_zbor += 5;
+Q.rural_zbor += 3;
 Q.unemployed_zbor += 3;
 !}
 tags: event
