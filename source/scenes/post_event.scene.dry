@@ -57,7 +57,7 @@ for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
     Q[party+'_votes'] = parseFloat(Q[party+'_normalized']*100).toFixed(1);
     if (Q.uo_parties.includes(party)) {
-        Q.uo_votes = parseFloat(Q.uo_votes + Q[party + '_votes']).toFixed(1);
+        Q.uo_votes = Q.uo_votes + Q[party + '_votes'].toFixed(1);
     }
 }
 
