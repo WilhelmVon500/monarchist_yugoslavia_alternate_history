@@ -247,7 +247,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: KPJ: [+ workers_kpj_display +]%, SPJ: [+ workers_spj_display +]%, HSS: [+ workers_hss_display +]%, SDS: [+ workers_sds_display +]%, DS: [+ workers_ds_display +]%; ZS: [+ workers_zs_display +]%, CFS: [+ workers_cfs_display +]%, SLS: [+ workers_sls_display +]%, JMO: [+ workers_jmo_display +]%, [? if nrs_exist: NRS: [+ workers_nrs_display +]%, ?]JNS: [+ workers_jns_display +]%, [? if jrz_exist: JRZ: [+ workers_jrz_display +]%, ?][? if zbor_exist: ZBOR: [+ workers_zbor_display +]%, ?]Others: [+ workers_other_display +]%
 
 Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
