@@ -215,6 +215,8 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
+<span style="color: #FFA500;">**[+uo_name+]**</span>: **[+ uo_votes +]%**
+
 <span style="color: #770000;">**KPJ**</span>: [+ kpj_votes +]%
 
 <span style="color: #DD0000;">**SPJ**</span>: [+ spj_votes +]%
