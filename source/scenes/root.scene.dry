@@ -146,7 +146,7 @@ Q.constitutional_reform = 0;
 Q.royal_powers = 0;
 Q.kpj_banned = 1;
 Q.spj_banned = 1;
-Q.zbor_banned = 1;
+Q.zbor_banned = 0;
 
 Q.coup_progress = 0;
 
