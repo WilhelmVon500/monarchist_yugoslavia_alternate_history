@@ -167,7 +167,7 @@ Q.economic_expansion = 0;
 
 Q.classes = ['workers', 'middle_class', 'rural', 'unemployed', 'croatian_peasants'];
 Q.parties = ['jns', 'kpj', 'spj', 'ds', 'sds', 'zs', 'jmo', 'hss', 'cfs', 'sls'];
-Q.uo_parties = ['hss', 'ds', 'sds'];
+Q.uo_parties = ['hss', 'sds', 'ds'];
 Q.regime_parties = ['jns', 'jmo', 'sls'];
 
 Q.nrs_exist = 0;
