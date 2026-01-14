@@ -56,6 +56,9 @@ for (var party of Q.parties) {
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
     Q[party+'_votes'] = Math.round(Q[party+'_normalized']*1000)/ 10;
+    if (Q.uo_parties.includes(party)) {
+        Q.uo_votes = parseFloat(Q.uo_votes + Q[party + '_votes']).toFixed(1);
+    }
 }
 
 
