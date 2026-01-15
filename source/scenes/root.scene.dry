@@ -47,7 +47,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['democratic_party', 'croatian_peasant_party', 'independent_democratic_party', 'agrarian_party', 'montenegrin_federalist_party', 'slovene_peoples_party'];
+Q.factions = ['democratic_party', 'croatian_peasant_party', 'independent_democratic_party', 'agrarian_party', 'montenegrin_federalist_party', 'slovene_peoples_party', 'peoples_radical_party'];
 // should this be normalized to 100%?
 Q.democratic_party_strength = 15;
 Q.democratic_party_dissent = 20;
@@ -61,6 +61,8 @@ Q.independent_democratic_party_strength = 5;
 Q.independent_democratic_party_dissent = 10;
 Q.slovene_peoples_party_strength = 5;
 Q.slovene_peoples_party_dissent = 10;
+Q.peoples_radical_party_strength = 5;
+Q.peoples_radical_party_dissent = 15;
 
 // ...
 Q.democratic_party_uo = 1;
