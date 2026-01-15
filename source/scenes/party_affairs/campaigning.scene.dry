@@ -38,7 +38,7 @@ We have increased our campaigning among the new middle class.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; rural_ds += 1*(1-dissent) if democratic_party_uo; rural_sds += 1*(1-dissent) if independent_democratic_party_uo;
+on-arrival: resources -= 1; rural_ds += 2*(1-dissent) if democratic_party_uo; rural_sds += 1*(1-dissent) if independent_democratic_party_uo; rural_zs += 2*(1-dissent) if agrarian_party_uo;
 
 We have increased our campaigning among rural population.
 
@@ -54,6 +54,6 @@ We have increased our campaigning among the unemployed.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: croatian_peasants_hss += 4*(1-dissent) if croatian_peasant_party_uo; croatian_peasants_sds += 1*(1-dissent) if independent_democratic_party_uo; croatian_peasants_zs += 1*(1-dissent) if agrarian_party_uo; resources -= 1
+on-arrival: resources -= 1; croatian_peasants_hss += 4*(1-dissent) if croatian_peasant_party_uo; croatian_peasants_sds += 1*(1-dissent) if independent_democratic_party_uo; croatian_peasants_zs += 1*(1-dissent) if agrarian_party_uo;
 
 We have increased our campaigning among Croatian peasants.
