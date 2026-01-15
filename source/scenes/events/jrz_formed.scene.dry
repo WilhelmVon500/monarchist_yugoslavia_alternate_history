@@ -9,7 +9,9 @@ Q.parties.push('jrz');
 Q.regime_parties.push('jrz');
 
 Q.middle_class_jrz += 10;
+Q.middle_class_jns -= 6;
 Q.rural_jrz += 20;
+Q.rural_jns -= 12;
 
 Q.prime_minister_party = "JRZ";
 Q.finance_minister_party = "JRZ";
