@@ -293,6 +293,21 @@ Q.other_r = 0;
 
 // diff from prev
 Q.old_jns_votes = 100;
+
+Q.old_kpj_votes = 0;
+Q.old_spj_votes = 0;
+Q.old_hss_votes = 0;
+Q.old_sds_votes = 0;
+Q.old_ds_votes = 0;
+Q.old_zs_votes = 0;
+Q.old_cfs_votes = 0;
+Q.old_sls_votes = 0;
+Q.old_jmo_votes = 0;
+Q.old_nrs_votes = 0;
+Q.old_jrz_votes = 0;
+Q.old_zbor_votes = 0;
+Q.old_other_votes = 0;
+
 Q.old_jns_r = 100;
 
 Q.old_kpj_r = 0;
