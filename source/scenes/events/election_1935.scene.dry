@@ -102,7 +102,7 @@ for (var party of Q.parties) {
         }
 }
 
-Q.leverage = Q.uo_r;
+Q.leverage = Q.uo_coalition;
 
 // Reset government and ministers...
 Q.coalition_dissent = 0;
