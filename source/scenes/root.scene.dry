@@ -177,6 +177,7 @@ Q.regime_parties = ['jns', 'jmo', 'sls'];
 
 Q.nrs_exist = 0;
 Q.jrz_exist = 0;
+Q.srs_exist = 0;
 Q.zbor_exist = 0;
 
 // Support for party by social group
@@ -195,6 +196,7 @@ Q.workers_other = 0;
 
 Q.workers_nrs = 0;
 Q.workers_jrz = 0;
+Q.workers_srs = 0;
 Q.workers_zbor = 0;
 
 Q.middle_class_jns = 35;
@@ -211,6 +213,7 @@ Q.middle_class_other = 10;
 
 Q.middle_class_nrs = 0;
 Q.middle_class_jrz = 0;
+Q.middle_class_srs = 0;
 Q.middle_class_zbor = 0;
 
 Q.rural_jns = 60;
@@ -227,6 +230,7 @@ Q.rural_other = 0;
 
 Q.rural_nrs = 0;
 Q.rural_jrz = 0;
+Q.rural_srs = 0;
 Q.rural_zbor = 0;
 
 Q.unemployed_jns = 26;
@@ -243,6 +247,7 @@ Q.unemployed_other = 5;
 
 Q.unemployed_nrs = 0;
 Q.unemployed_jrz = 0;
+Q.unemployed_srs = 0;
 Q.unemployed_zbor = 0;
 
 Q.croatian_peasants_jns = 15;
@@ -259,6 +264,7 @@ Q.croatian_peasants_other = 0;
 
 Q.croatian_peasants_nrs = 0;
 Q.croatian_peasants_jrz = 0;
+Q.croatian_peasants_srs = 0;
 Q.croatian_peasants_zbor = 0;
 
 
@@ -284,6 +290,8 @@ Q.nrs_seats = 0;
 Q.nrs_r = 0;
 Q.jrz_seats = 0;
 Q.jrz_r = 0;
+Q.srs_seats = 0;
+Q.srs_r = 0;
 Q.zbor_seats = 0;
 Q.zbor_r = 0;
 Q.other_seats = 0;
@@ -306,6 +314,7 @@ Q.sls_election_votes = 0;
 Q.jmo_election_votes = 0;
 Q.nrs_election_votes = 0;
 Q.jrz_election_votes = 0;
+Q.srs_election_votes = 0;
 Q.zbor_election_votes = 0;
 Q.other_election_votes = 0;
 
@@ -322,6 +331,7 @@ Q.old_sls_r = 0;
 Q.old_jmo_r = 0;
 Q.old_nrs_r = 0;
 Q.old_jrz_r = 0;
+Q.old_srs_r = 0;
 Q.old_zbor_r = 0;
 Q.old_other_r = 0;
 
