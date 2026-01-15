@@ -260,10 +260,6 @@ Q.croatian_peasants_jrz = 0;
 Q.croatian_peasants_zbor = 0;
 
 
-Q.jns_election_votes = 100;
-Q.jns_seats = 370;
-Q.jns_r = 100;
-
 Q.kpj_seats = 0;
 Q.kpj_r = 0;
 Q.spj_seats = 0;
@@ -292,21 +288,24 @@ Q.other_seats = 0;
 Q.other_r = 0;
 
 // diff from prev
-Q.old_jns_votes = 100;
+Q.jns_seats = 370;
+Q.jns_r = 100;
 
-Q.old_kpj_votes = 0;
-Q.old_spj_votes = 0;
-Q.old_hss_votes = 0;
-Q.old_sds_votes = 0;
-Q.old_ds_votes = 0;
-Q.old_zs_votes = 0;
-Q.old_cfs_votes = 0;
-Q.old_sls_votes = 0;
-Q.old_jmo_votes = 0;
-Q.old_nrs_votes = 0;
-Q.old_jrz_votes = 0;
-Q.old_zbor_votes = 0;
-Q.old_other_votes = 0;
+Q.jns_election_votes = 100;
+
+Q.kpj_election_votes = 0;
+Q.spj_election_votes = 0;
+Q.hss_election_votes = 0;
+Q.sds_election_votes = 0;
+Q.ds_election_votes = 0;
+Q.zs_election_votes = 0;
+Q.cfs_election_votes = 0;
+Q.sls_election_votes = 0;
+Q.jmo_election_votes = 0;
+Q.nrs_election_votes = 0;
+Q.jrz_election_votes = 0;
+Q.zbor_election_votes = 0;
+Q.other_election_votes = 0;
 
 Q.old_jns_r = 100;
 
