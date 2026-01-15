@@ -399,6 +399,7 @@ Anti-Regime Coalition (
 [? if democratic_party_uo: <span style="color: #FFD500;">**DS**</span> ?]
 [? if agrarian_party_uo: <span style="color: #3D863D;">**ZS**</span> ?]
 [? if montenegrin_federalist_party_uo: <span style="color: #006400;">**CFS**</span> ?]
+[? if peoples_radical_party_uo: <span style="color: #404371;">**NRS**</span> ?]
 ): [+ uo_coalition +]%
 
 There are some potential coalition arrangements.
