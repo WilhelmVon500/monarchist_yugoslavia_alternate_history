@@ -574,6 +574,9 @@ table {
 .seat.jrz {
     fill: #222222;
 }
+.seat.srs {
+    fill: #00008B;
+}
 .seat.zbor {
     fill: #04522C;
 }
