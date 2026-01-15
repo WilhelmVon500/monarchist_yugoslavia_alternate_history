@@ -25,6 +25,9 @@ for (var party of Q.parties) {
     Q['old_' + party + '_votes'] = Q[party + '_election_votes'];
     Q['old_' + party + '_seats'] = Q[party + '_seats'];
     Q['old_' + party + '_r'] = Q[party + '_r'];
+
+    Q[party + '_r'] = 0;
+    Q[party + '_seats'] = 0;
     if (Q.electoral_threshold > 0) {
         if (Q[party + '_banned']) {
             Q[party + '_election_votes'] = 0;
@@ -237,6 +240,14 @@ if (Q.jrz_seats) {
             "seats": Math.round(Q.jrz_seats),
     });
 }
+if (Q.srs_seats) {
+    data.push({
+            "id": "srs",
+            "legend": "SRS",
+            "name": "SRS",
+            "seats": Math.round(Q.srs_seats),
+    });
+}
 if (Q.zbor_seats) {
     data.push({
             "id": "zbor",
@@ -381,6 +392,16 @@ go-to: coalition_menu
   <td>[+ votes_change_jrz +]%</td>
   <td>[+ jrz_seats +] ([+ jrz_r +]%)</td>
   <td>[+ str_seats_change_jrz +] ([+ str_change_jrz +]%)</td>
+</tr>
+?]
+
+[? if srs_exist:
+<tr>
+  <td><div class="box" style='background-color:#00008B;'> </div> SRS:</td>
+  <td>[+ srs_election_votes +]%</td>
+  <td>[+ votes_change_srs +]%</td>
+  <td>[+ srs_seats +] ([+ srs_r +]%)</td>
+  <td>[+ str_seats_change_srs +] ([+ str_change_srs +]%)</td>
 </tr>
 ?]
 
