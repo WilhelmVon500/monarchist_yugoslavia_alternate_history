@@ -459,7 +459,7 @@ subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/KramerAlbert.jpg
 tags: ds_advisor
-view-if: kramer_advisor = 0 and n_advisors < 3 and democratic_party_uo
+view-if: kramer_advisor = 0 and n_advisors < 3 and democratic_party_uo and recruit_regime
 on-arrival: kramer_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
 
@@ -471,7 +471,7 @@ subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/MarinkovićVojislav.jpg
 tags: ds_advisor
-view-if: marinkovic_advisor = 0 and n_advisors < 3 and democratic_party_uo
+view-if: marinkovic_advisor = 0 and n_advisors < 3 and democratic_party_uo and recruit_regime
 on-arrival: marinkovic_advisor = 1; n_advisors += 1; democratic_party_strength += 5
 go-to: advisor_menu
 
@@ -567,7 +567,7 @@ subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/KorošecAnton.jpg
 tags: sls_advisor
-view-if: korosec_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo
+view-if: korosec_advisor = 0 and n_advisors < 3 and slovene_peoples_party_uo and recruit_regime
 on-arrival: korosec_advisor = 1; n_advisors += 1; slovene_peoples_party_strength += 5
 go-to: advisor_menu
 
