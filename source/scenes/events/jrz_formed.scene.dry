@@ -27,7 +27,7 @@ WIP
 - @nothing: This is none of our concern.
 
 @advantage
-on-arrival: jns_relation += 5
+on-arrival: jns_relation += 5; recruit_regime = 1;
 
 With turmoil in the conservative camp, we have an opportunity to recruit portions of former pro-Regime politicians into our coalition.
 
