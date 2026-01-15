@@ -94,10 +94,10 @@ Q.regime_coalition = 0;
 Q.uo_coalition = 0;
 for (var party of Q.parties) {
         if (Q.regime_parties.includes(party)) {
-            Q.regime_coalition = (Q.regime_coalition + Q[party + '_r']).toFixed(1);
+            Q.regime_coalition = parseFloat((Q.regime_coalition + Q[party + '_r']).toFixed(1));
         }
         if (Q.uo_parties.includes(party)) {
-            Q.uo_coalition = (Q.uo_coalition + Q[party + '_r']).toFixed(1);
+            Q.uo_coalition = parseFloat((Q.uo_coalition + Q[party + '_r']).toFixed(1));
         }
 }
 
