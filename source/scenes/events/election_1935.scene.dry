@@ -41,14 +41,6 @@ for (var party of Q.parties) {
         }
         new_party_sum += Q[party + '_election_votes'];
     }
-
-    Q['change_' + party + '_votes'] = Q[party + '_election_votes'] - Q['old_' + party + '_votes'];
-    var sign2 = Q['change_' + party + '_votes'] > 0 
-                    ? '<img src="img/arrowup.png"> ' 
-                    : Q['change_' + party + '_votes'] < 0 
-                      ? '<img src="img/arrowdown.png"> ' 
-                      : '<img src="img/steady.png"> ';
-    Q['votes_change_' + party] = sign2 + Math.abs(parseFloat(Q['change_' + party + '_votes'])).toFixed(1);
 }
 
 // calculate new party sum
@@ -70,6 +62,14 @@ for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
             Q[party + '_seats'] = Math.round(Q[party + '_r'] * 3.7);
         }
+
+        Q['change_' + party + '_votes'] = Q[party + '_election_votes'] - Q['old_' + party + '_votes'];
+        var sign2 = Q['change_' + party + '_votes'] > 0 
+                        ? '<img src="img/arrowup.png"> ' 
+                        : Q['change_' + party + '_votes'] < 0 
+                          ? '<img src="img/arrowdown.png"> ' 
+                          : '<img src="img/steady.png"> ';
+        Q['votes_change_' + party] = sign2 + Math.abs(parseFloat(Q['change_' + party + '_votes'])).toFixed(1);
         
         Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
         var sign = Q['change_' + party + '_r'] > 0 
