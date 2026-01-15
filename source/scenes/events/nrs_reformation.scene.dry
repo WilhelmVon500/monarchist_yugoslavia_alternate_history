@@ -1,0 +1,40 @@
+title: Old <span style="color: #404371;">**People's Radicals**</span> split from the Regime.
+subtitle: A chance for us to expand our support?
+view-if: year = 1935 and month = 12 and prime_minister = "Stojadinović" and jns_relation >= 40
+new-page: true
+max-visits: 1
+on-arrival: {!
+Q.nrs_exist = 1;
+Q.parties.push('nrs');
+
+Q.nrs_relation = 40;
+Q.jns_relation -= 10;
+
+Q.middle_class_nrs += 10;
+Q.middle_class_jns -= 10;
+Q.rural_nrs += 7;
+Q.rural_jns -= 7;
+!}
+tags: event
+
+= <span style="color: #404371;">**NRS**</span> Reformation
+
+WIP
+
+- @cooperate: We should try to bring them into our coalition.
+- @nothing: We shouldn't negotiate with them.
+
+@cooperate
+on-arrival: {!
+Q.nrs_relation += 10;
+
+Q.peoples_radical_party_uo = 1;
+Q.uo_parties.push('nrs');
+!}
+  
+WIP
+  
+
+@nothing
+
+We do not care.
