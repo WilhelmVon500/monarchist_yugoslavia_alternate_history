@@ -54,12 +54,16 @@ for (var party of Q.parties) {
 // 2. normalize support (fraction)
 Q.uo_votes = 0;
 Q.uo_coalition = 0;
+Q.regime_coalition = 0;
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
     Q[party+'_votes'] = Math.round(Q[party+'_normalized']*1000)/10;
     if (Q.uo_parties.includes(party)) {
         Q.uo_votes = parseFloat((Q.uo_votes + Q[party + '_votes']).toFixed(1));
         Q.uo_coalition = parseFloat((Q.uo_coalition + Q[party + '_r']).toFixed(1));
+    }
+    if (Q.regime_parties.includes(party)) {
+        Q.regime_coalition = parseFloat((Q.regime_coalition + Q[party + '_r']).toFixed(1));
     }
 }
 
