@@ -274,7 +274,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#770000;'> </div> KPJ:</td>
   <td>[+ kpj_election_votes +]%</td>
-  <td>[+ str_votes_change_kpj +]</td>
+  <td>[+ votes_change_kpj +]</td>
   <td>[+ kpj_seats +] ([+ kpj_r +]%)</td>
   <td>[+ str_seats_change_kpj +] ([+ str_change_kpj +]%)</td>
 </tr>
@@ -284,7 +284,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#DD0000;'> </div> SPJ:</td>
   <td>[+ spj_election_votes +]%</td>
-  <td>[+ str_votes_change_spj +]</td>
+  <td>[+ votes_change_spj +]</td>
   <td>[+ spj_seats +] ([+ spj_r +]%)</td>
   <td>[+ str_seats_change_spj +] ([+ str_change_spj +]%)</td>
 </tr>
@@ -293,7 +293,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#04B431;'> </div> HSS:</td>
   <td>[+ hss_election_votes +]%</td>
-  <td>[+ str_votes_change_hss +]</td>
+  <td>[+ votes_change_hss +]</td>
   <td>[+ hss_seats +] ([+ hss_r +]%)</td>
   <td>[+ str_seats_change_hss +] ([+ str_change_hss +]%)</td>
 </tr>
@@ -301,7 +301,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#FCF342;'> </div> SDS:</td>
   <td>[+ sds_election_votes +]%</td>
-  <td>[+ str_votes_change_sds +]</td>
+  <td>[+ votes_change_sds +]</td>
   <td>[+ sds_seats +] ([+ sds_r +]%)</td>
   <td>[+ str_seats_change_sds +] ([+ str_change_sds +]%)</td>
 </tr>
@@ -309,7 +309,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#FFD500;'> </div> DS:</td>
   <td>[+ ds_election_votes +]%</td>
-  <td>[+ str_votes_change_ds +]</td>
+  <td>[+ votes_change_ds +]</td>
   <td>[+ ds_seats +] ([+ ds_r +]%)</td>
   <td>[+ str_seats_change_ds +] ([+ str_change_ds +]%)</td>
 </tr>
@@ -317,7 +317,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#3D863D;'> </div> ZS:</td>
   <td>[+ zs_election_votes +]%</td>
-  <td>[+ str_votes_change_zs +]</td>
+  <td>[+ votes_change_zs +]</td>
   <td>[+ zs_seats +] ([+ zs_r +]%)</td>
   <td>[+ str_seats_change_zs +] ([+ str_change_zs +]%)</td>
 </tr>
@@ -325,7 +325,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#006400;'> </div> CFS:</td>
   <td>[+ cfs_election_votes +]%</td>
-  <td>[+ str_votes_change_cfs +]</td>
+  <td>[+ votes_change_cfs +]</td>
   <td>[+ cfs_seats +] ([+ cfs_r +]%)</td>
   <td>[+ str_seats_change_cfs +] ([+ str_change_cfs +]%)</td>
 </tr>
@@ -333,7 +333,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#74CA37;'> </div> SLS:</td>
   <td>[+ sls_election_votes +]%</td>
-  <td>[+ str_votes_change_sls +]</td>
+  <td>[+ votes_change_sls +]</td>
   <td>[+ sls_seats +] ([+ sls_r +]%)</td>
   <td>[+ str_seats_change_sls +] ([+ str_change_sls +]%)</td>
 </tr>
@@ -341,7 +341,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#008000;'> </div> JMO:</td>
   <td>[+ jmo_election_votes +]%</td>
-  <td>[+ str_votes_change_jmo +]</td>
+  <td>[+ votes_change_jmo +]</td>
   <td>[+ jmo_seats +] ([+ jmo_r +]%)</td>
   <td>[+ str_seats_change_jmo +] ([+ str_change_jmo +]%)</td>
 </tr>
@@ -349,7 +349,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#767676;'> </div> JNS:</td>
   <td>[+ jns_election_votes +]%</td>
-  <td>[+ str_votes_change_jns +]</td>
+  <td>[+ votes_change_jns +]</td>
   <td>[+ jns_seats +] ([+ jns_r +]%)</td>
   <td>[+ str_seats_change_jns +] ([+ str_change_jns +]%)</td>
 </tr>
@@ -358,7 +358,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#222222;'> </div> JRZ:</td>
   <td>[+ jrz_election_votes +]%</td>
-  <td>[+ str_votes_change_jrz +]</td>
+  <td>[+ votes_change_jrz +]</td>
   <td>[+ jrz_seats +] ([+ jrz_r +]%)</td>
   <td>[+ str_seats_change_jrz +] ([+ str_change_jrz +]%)</td>
 </tr>
@@ -368,7 +368,7 @@ go-to: coalition_menu
 <tr>
   <td><div class="box" style='background-color:#04522C;'> </div> ZBOR:</td>
   <td>[+ zbor_election_votes +]%</td>
-  <td>[+ str_votes_change_zbor +]</td>
+  <td>[+ votes_change_zbor +]</td>
   <td>[+ zbor_seats +] ([+ zbor_r +]%)</td>
   <td>[+ str_seats_change_zbor +] ([+ str_change_zbor +]%)</td>
 </tr>
