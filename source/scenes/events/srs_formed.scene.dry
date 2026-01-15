@@ -7,8 +7,10 @@ on-arrival: {!
 Q.srs_exist = 1;
 Q.parties.push('srs');
 
-Q.middle_class_jrz += 2;
-Q.rural_jrz += 3;
+Q.middle_class_srs += 2;
+Q.middle_class_jrz -= 2;
+Q.rural_srs += 3;
+Q.rural_jrz -= 3;
 !}
 tags: event
 
