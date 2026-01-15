@@ -76,6 +76,8 @@ Q.socialist_party_of_yugoslavia_uo = 0;
 Q.slovene_peoples_party_uo = 0;
 Q.yugoslav_muslim_organization_uo = 0;
 Q.peoples_radical_party_uo = 0;
+
+Q.recruit_regime = 0;
 // ...
 Q.slovene_peoples_party_pro_regime = 1;
 Q.yugoslav_muslim_organization_pro_regime = 1;
