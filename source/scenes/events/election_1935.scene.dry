@@ -348,6 +348,16 @@ go-to: coalition_menu
   <td>[+ str_seats_change_sls +] ([+ str_change_sls +]%)</td>
 </tr>
 
+[? if nrs_exist:
+<tr>
+  <td><div class="box" style='background-color:#404371;'> </div> NRS:</td>
+  <td>[+ nrs_election_votes +]%</td>
+  <td>[+ votes_change_nrs +]%</td>
+  <td>[+ nrs_seats +] ([+ nrs_r +]%)</td>
+  <td>[+ str_seats_change_nrs +] ([+ str_change_nrs +]%)</td>
+</tr>
+?]
+
 <tr>
   <td><div class="box" style='background-color:#008000;'> </div> JMO:</td>
   <td>[+ jmo_election_votes +]%</td>
