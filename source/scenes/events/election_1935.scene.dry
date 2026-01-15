@@ -141,7 +141,7 @@ Q.election_records.push(election_result);
 !}
 on-display: {!
 data = []
-if (Q.kpj_r) {
+if (Q.kpj_seats) {
     data.push({
             "id": "kpj",
             "legend": "KPJ",
@@ -149,7 +149,7 @@ if (Q.kpj_r) {
             "seats": Math.round(Q.kpj_seats),
     });
 }
-if (Q.spj_r) {
+if (Q.spj_seats) {
     data.push({
             "id": "spj",
             "legend": "SPJ",
@@ -157,7 +157,7 @@ if (Q.spj_r) {
             "seats": Math.round(Q.spj_seats),
     });
 }
-if (Q.hss_r) {
+if (Q.hss_seats) {
     data.push({
             "id": "hss",
             "legend": "HSS",
@@ -165,7 +165,7 @@ if (Q.hss_r) {
             "seats": Math.round(Q.hss_seats),
     });
 }
-if (Q.sds_r) {
+if (Q.sds_seats) {
     data.push({
             "id": "sds",
             "legend": "SDS",
@@ -173,7 +173,7 @@ if (Q.sds_r) {
             "seats": Math.round(Q.sds_seats),
     });
 }
-if (Q.ds_r) {
+if (Q.ds_seats) {
     data.push({
             "id": "ds",
             "legend": "DS",
@@ -181,7 +181,7 @@ if (Q.ds_r) {
             "seats": Math.round(Q.ds_seats),
     });
 }
-if (Q.zs_r) {
+if (Q.zs_seats) {
     data.push({
             "id": "zs",
             "legend": "ZS",
@@ -189,7 +189,7 @@ if (Q.zs_r) {
             "seats": Math.round(Q.zs_seats),
     });
 }
-if (Q.cfs_r) {
+if (Q.cfs_seats) {
     data.push({
             "id": "cfs",
             "legend": "CFS",
@@ -197,7 +197,7 @@ if (Q.cfs_r) {
             "seats": Math.round(Q.cfs_seats),
     });
 }
-if (Q.sls_r) {
+if (Q.sls_seats) {
     data.push({
             "id": "sls",
             "legend": "SLS",
@@ -205,7 +205,7 @@ if (Q.sls_r) {
             "seats": Math.round(Q.cfs_seats),
     });
 }
-if (Q.jmo_r) {
+if (Q.jmo_seats) {
     data.push({
             "id": "jmo",
             "legend": "JMO",
@@ -213,7 +213,7 @@ if (Q.jmo_r) {
             "seats": Math.round(Q.jmo_seats),
     });
 }
-if (Q.nrs_r) {
+if (Q.nrs_seats) {
     data.push({
             "id": "nrs",
             "legend": "NRS",
@@ -221,7 +221,7 @@ if (Q.nrs_r) {
             "seats": Math.round(Q.nrs_seats),
     });
 }
-if (Q.jns_r) {
+if (Q.jns_seats) {
     data.push({
             "id": "jns",
             "legend": "JNS",
@@ -229,7 +229,7 @@ if (Q.jns_r) {
             "seats": Math.round(Q.jns_seats),
     });
 }
-if (Q.jrz_r) {
+if (Q.jrz_seats) {
     data.push({
             "id": "jrz",
             "legend": "JRZ",
@@ -237,12 +237,20 @@ if (Q.jrz_r) {
             "seats": Math.round(Q.jrz_seats),
     });
 }
-if (Q.zbor_r) {
+if (Q.zbor_seats) {
     data.push({
             "id": "zbor",
             "legend": "ZBOR",
             "name": "ZBOR",
             "seats": Math.round(Q.zbor_seats),
+    });
+}
+if (Q.other_seats) {
+    data.push({
+            "id": "other",
+            "legend": "Others",
+            "name": "Others",
+            "seats": Math.round(Q.other_seats),
     });
 }
 
