@@ -39,6 +39,8 @@ Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style
 
 = Assembly composition
 
+<span style="color: #FFA500;">**[+uo_name+]**</span>: **[+ uo_coalition +]%**
+
 {!<span class="tooltip-text" title="Communist Party of Yugoslavia" style="color: #770000;">!}**KPJ**{!</span>!}: [+ kpj_r +]%
 
 {!<span class="tooltip-text" title="Socialist Party of Yugoslavia" style="color: #DD0000;">!}**SPJ**{!</span>!}: [+ spj_r +]%
