@@ -298,7 +298,7 @@ Q.other_seats = 0;
 Q.other_r = 0;
 
 // diff from prev
-Q.jns_seats = 370;
+Q.jns_seats = 305;
 Q.jns_r = 100;
 
 Q.jns_election_votes = 100;
