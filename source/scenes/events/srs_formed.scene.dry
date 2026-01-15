@@ -1,0 +1,17 @@
+title: Stojadinović's faction splits from the <span style="color: #222222;">**JRZ**</span>
+subtitle: Milan Stojadinović has formed a new party.
+view-if: year = 1940 and month >= 2
+new-page: true
+max-visits: 1
+on-arrival: {!
+Q.srs_exist = 1;
+Q.parties.push('srs');
+
+Q.middle_class_jrz += 2;
+Q.rural_jrz += 3;
+!}
+tags: event
+
+= <span style="color: #00008B;">**SRS**</span> Formation
+
+WIP
