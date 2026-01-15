@@ -10,10 +10,10 @@ Q.parties.push('nrs');
 Q.nrs_relation = 40;
 Q.jns_relation -= 10;
 
-Q.middle_class_nrs += 10;
-Q.middle_class_jns -= 10;
-Q.rural_nrs += 7;
-Q.rural_jns -= 7;
+Q.middle_class_nrs += 7;
+Q.middle_class_jns -= 7;
+Q.rural_nrs += 4;
+Q.rural_jns -= 4;
 !}
 tags: event
 
