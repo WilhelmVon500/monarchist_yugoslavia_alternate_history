@@ -42,12 +42,20 @@ for (var party of Q.parties) {
     }
 }
 
+Q.uo_election_votes = 0;
+Q.regime_election_votes = 0;
 // calculate new party sum
 if (new_party_sum > 0) {
     for (var party of Q.parties) {
         if (Q[party + '_election_votes'] > 0 && !(Q[party + '_election_votes'] < Q.electoral_threshold) && !(Q.electoral_threshold > 1 && party == 'other')) {
             Q[party + '_election_votes'] = parseFloat((Q[party + '_election_votes']*100/new_party_sum).toFixed(1));
             Q[party + '_r'] = parseFloat((Q[party + '_election_votes'] * 0.4).toFixed(1));
+            if (Q.uo_parties.includes(party)) {
+                Q.uo_election_votes = parseFloat((Q.uo_election_votes + Q[party + '_r']).toFixed(1));
+            }
+            if (Q.regime_parties.includes(party)) {
+                Q.regime_election_votes = parseFloat((Q.regime_election_votes + Q[party + '_r']).toFixed(1));
+            }
         } else {
             Q[party + '_election_votes'] = parseFloat((Q[party + '_election_votes']*100/new_party_sum).toFixed(1));
             Q[party + '_r'] = 0;
@@ -56,9 +64,9 @@ if (new_party_sum > 0) {
     }
 }
 
-if (Q.regime_votes > Q.uo_votes) {
+if (Q.regime_election_votes >= Q.uo_election_votes) {
     Q.jns_r = parseFloat(Q.jns_r + 60).toFixed(1);
-} else if (Q.uo_votes > Q.regime_votes) {
+} else if (Q.uo_election_votes > Q.regime_election_votes) {
     Q.total_sum = 60;
     for (var party of Q.parties) {
         if (party == "cfs") {
