@@ -1,0 +1,23 @@
+title: Cooperation with Government?
+subtitle: Cvetković seems to be more friendly to us.
+new-page: true
+tags: event
+view-if: prime_minister = "Cvetković"
+face-image: img/portraits/CvetkovićDragiša.jpg
+
+= Cooperation with Government?
+
+WIP
+
+- @prepare_an_agreement: Work with the Government to prepare an agreement.
+- @refuse: We are not going to cooperate with the Regime.
+
+@prepare_an_agreement
+on-arrival: yes_cvetkovic_macek = 1;
+
+WIP
+
+@refuse
+on-arrival: no_cvetkovic_macek = 1;
+
+WIP
