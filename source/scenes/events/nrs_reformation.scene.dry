@@ -1,6 +1,6 @@
 title: Old <span style="color: #404371;">**People's Radicals**</span> split from the Regime.
 subtitle: A chance for us to expand our support?
-view-if: year = 1935 and month = 12 and prime_minister = "Stojadinović" and recruit_regime
+view-if: year = 1935 and month = 12 and prime_minister = "Stojadinović" and recruit_regime and wip
 new-page: true
 max-visits: 1
 on-arrival: {!
