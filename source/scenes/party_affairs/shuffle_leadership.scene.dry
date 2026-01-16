@@ -105,6 +105,15 @@ go-to: rm_main
 
 Budisavljević has been removed as an advisor. The <span style="color: #FCF342;">**Independent Democratic Party**</span> disapproves.
 
+@remove_kosanovic
+title: Remove Kosanović
+view-if: kosanovic_advisor
+tags: remove_advisor
+on-arrival: kosanovic_advisor = 0; independent_democratic_party_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Kosanović has been removed as an advisor. The <span style="color: #FCF342;">**Independent Democratic Party**</span> disapproves.
+
 @remove_demetrovic
 title: Remove Demetrović
 view-if: demetrovic_advisor
@@ -410,13 +419,25 @@ go-to: advisor_menu
 
 Srđan Budisavljević is now an advisor.
 
+@add_kosanovic
+title: Sava Kosanović
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
+is-card: true
+face-image: img/portraits/KosanovićSava.jpg
+tags: sds_advisor
+view-if: kosanovic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
+on-arrival: kosanovic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
+go-to: advisor_menu
+
+Sava Kosanović is now an advisor.
+
 @add_demetrovic
 title: Juraj Demetrović
 subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
 is-card: true
 face-image: img/portraits/DemetrovićJuraj.jpg
 tags: sds_advisor
-view-if: demetrovic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo
+view-if: demetrovic_advisor = 0 and n_advisors < 3 and independent_democratic_party_uo and recruit_regime
 on-arrival: demetrovic_advisor = 1; n_advisors += 1; independent_democratic_party_strength += 5
 go-to: advisor_menu
 
