@@ -69,13 +69,13 @@ if (Q.regime_election_votes >= Q.uo_election_votes) {
 } else if (Q.uo_election_votes > Q.regime_election_votes) {
     Q.total_sum = 60;
     for (var party of Q.parties) {
-        if (party == "cfs") {
+        if (party == "cfs" && Q.uo_parties.includes(party)) {
             Q[party + '_r'] += 2;
             Q.total_sum -= 2;
-        } else if (party == "sls") {
+        } else if (party == "sls" && Q.uo_parties.includes(party)) {
             Q[party + '_r'] += 8;
             Q.total_sum -= 8;
-        } else if (party == "jmo") {
+        } else if (party == "jmo" && Q.uo_parties.includes(party)) {
             Q[party + '_r'] += 4;
             Q.total_sum -= 4;
         } else if (Q.uo_parties.includes(party)) {
