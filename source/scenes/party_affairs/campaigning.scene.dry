@@ -24,7 +24,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; workers_ds += 1.5*(1-dissent) if democratic_party_uo; workers_sds += 0.5*(1-dissent) if independent_democratic_party_uo; workers_hss += 1*(1-dissent) if croatian_peasant_party_uo; workers_nrs += 1*(1-dissent) if peoples_radical_party_uo;
 
-We have increased our campaigning among the workers. [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?]
+We have increased our campaigning among the workers.
 
 @middle_class
 subtitle: -1 resources
