@@ -95,6 +95,8 @@ Q.zbor_relation = 10;
 Q.ds_leader = "Davidović";
 Q.hss_leader = "Maček";
 
+Q.jrz_leader = "Stojadinović";
+
 // hmm... maybe we can play nice with Hindenburg???
 Q.king_relation = 25;
 // whether or not king can dismiss the government.
