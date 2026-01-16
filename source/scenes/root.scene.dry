@@ -499,6 +499,7 @@ Q.subasic_advisor = 0;
 
 // sds advisors
 Q.budisavljevic_advisor = 0;
+Q.kosanovic_advisor = 0;
 Q.demetrovic_advisor = 0;
 
 // ds advisors
