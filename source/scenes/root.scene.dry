@@ -429,7 +429,7 @@ Q.timers = ['advisor_action',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
             'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
             'coalition_affairs', 'womens_rights',
-            'dealing_with_toleration',
+            'dealing_with_toleration', 'government_cooperation',
             'constitutional_reform', 'labor_rights',
             'education_science', 'curriculum',
             // events
@@ -473,6 +473,7 @@ Q.labor_affairs_timer = 0;
 Q.military_policy_timer = 0;
 Q.police_timer = 0;
 Q.prussian_affairs_timer = 0;
+Q.government_cooperation_timer = 0;
 Q.shuffle_cabinet_timer = 0;
 Q.social_welfare_timer = 0;
 Q.womens_rights_timer = 0;
