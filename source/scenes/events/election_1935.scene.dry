@@ -55,7 +55,26 @@ if (new_party_sum > 0) {
         Q[party + '_r'] = parseFloat((Q[party+'_r']).toFixed(1));
     }
 }
-Q.jns_r = parseFloat(Q.jns_r + 60).toFixed(1);
+
+if (Q.regime_votes > Q.uo_votes) {
+    Q.jns_r = parseFloat(Q.jns_r + 60).toFixed(1);
+} else if (Q.uo_votes > Q.regime_votes) {
+    Q.total_sum = 60;
+    for (var party of Q.parties) {
+        if (party == "cfs") {
+            Q[party + '_r'] += 2;
+            Q.total_sum -= 2;
+        } else if (party == "sls") {
+            Q[party + '_r'] += 8;
+            Q.total_sum -= 8;
+        } else if (party == "jmo") {
+            Q[party + '_r'] += 4;
+            Q.total_sum -= 4;
+        } else {
+            Q[party + '_r'] = parseFloat(Q[party + '_r'] + (Q.total_sum / Q.uo_parties.length)).toFixed(1);
+        }
+    }
+}
 
 for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
