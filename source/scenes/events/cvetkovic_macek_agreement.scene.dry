@@ -2,7 +2,7 @@ title: Finally, an agreement
 new-page: true
 subtitle: Cvetković and Maček have found a compromise.
 tags: event
-view-if: prime_minister = "Cvetković" and year = 1939 and month >= 8
+view-if: prime_minister = "Cvetković" and year = 1939 and month >= 8 and yes_cvetkovic_macek
 on-arrival: jrz_relation += 5; cvetkovic_macek_agreement = 1; federalization = 1;
 max-visits: 1
 face-image: img/cm_agreement.jpg
