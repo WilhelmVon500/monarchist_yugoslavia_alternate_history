@@ -194,6 +194,15 @@ go-to: rm_main
 
 Čubrilović has been removed as an advisor. The <span style="color: #3D863D;">**Agrarian Party**</span> disapproves.
 
+@remove_jovanovic
+title: Remove Jovanović
+view-if: jovanovic_advisor
+tags: remove_advisor
+on-arrival: jovanovic_advisor = 0; agrarian_party_dissent += 3; n_advisors -= 1
+go-to: rm_main
+
+Jovanović has been removed as an advisor. The <span style="color: #3D863D;">**Agrarian Party**</span> disapproves.
+
 
 # cfs
 
@@ -516,6 +525,18 @@ on-arrival: cubrilovic_advisor = 1; n_advisors += 1; agrarian_party_strength += 
 go-to: advisor_menu
 
 Branko Čubrilović is now an advisor.
+
+@add_jovanovic
+title: Dragoljub Jovanović
+subtitle: WIP. {!<br><br>!}[? if difficulty < 0 : Actions - WIP ?]
+is-card: true
+face-image: img/portraits/JovanovićDragoljub.jpg
+tags: zs_advisor
+view-if: jovanovic_advisor = 0 and n_advisors < 3 and agrarian_party_uo
+on-arrival: jovanovic_advisor = 1; n_advisors += 1; agrarian_party_strength += 3
+go-to: advisor_menu
+
+Dragoljub Jovanović is now an advisor.
 
 
 # cfs
