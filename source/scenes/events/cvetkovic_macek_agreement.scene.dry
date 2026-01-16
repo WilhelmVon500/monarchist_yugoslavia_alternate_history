@@ -1,0 +1,24 @@
+title: Finally, an agreement
+new-page: true
+subtitle: Cvetković and Maček have found a compromise.
+tags: event
+view-if: prime_minister = "Cvetković" and year = 1939 and month >= 8
+on-arrival: jrz_relation += 5; cvetkovic_macek_agreement = 1; federalization = 1;
+max-visits: 1
+face-image: img/cm_agreement.jpg
+
+= Cvetković–Maček Agreement
+
+WIP
+
+- @new_government: Cvetković and Maček will form a new coalition.
+- @no_new_government: The <span style="color: #FFA500;">**[+uo_name+]**</span> has to reject this offer.
+
+@new_government
+on-arrival: jrz_relation += 5; prime_minister = 'Cvetković'; prime_minister_party = 'JRZ'; deputy_prime_minister = 'Maček'; deputy_prime_minister_party = 'HSS'; foreign_minister = 'Cincar-Marković'; foreign_minister_party = 'JRZ'; interior_minister = 'Mihaldžić'; interior_minister_party = 'JRZ'; justice_minister = 'Marković'; justice_minister_party = 'JRZ'; finance_minister = 'Šutej'; finance_minister_party = 'HSS'; economic_minister = 'Andres'; economic_minister_party = 'HSS'; social_minister = 'Budisavljević'; social_minister_party = 'SDS'; army_minister = 'Nedić'; army_minister_party = 'I'; agriculture_minister = 'Čubrilović'; agriculture_minister_party = 'ZS';
+face-image: img/portraits/MačekVladko.jpg
+
+WIP
+
+@no_new_government
+on-arrival: jrz_relation -= 3;
