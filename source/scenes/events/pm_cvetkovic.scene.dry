@@ -1,9 +1,10 @@
 title: Stojadinović resigns!
 subtitle: Stojadinović's cabinet has collapsed...
 view-if: year = 1939 and month >= 2
-max-visits: 1
 tags: event
 new-page: true
+max-visits: 1
+face-image: img/portraits/CvetkovićDragiša.jpg
 
 = WIP
 
