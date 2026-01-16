@@ -131,6 +131,7 @@ Q.coalition_dissent = 0;
 Q.uo_in_government = 0;
 Q.uo_toleration = 0;
 Q.in_regime_coalition = 0;
+Q.in_regime_grand_coalition = 0;
 Q.in_uo_coalition = 0;
 
 Q.deputy_prime_minister = 'Vacant';
