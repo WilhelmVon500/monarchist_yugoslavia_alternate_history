@@ -78,7 +78,7 @@ if (Q.regime_election_votes >= Q.uo_election_votes) {
         } else if (party == "jmo") {
             Q[party + '_r'] += 4;
             Q.total_sum -= 4;
-        } else {
+        } else if (Q.uo_parties.includes(party)) {
             Q[party + '_r'] = parseFloat(Q[party + '_r'] + (Q.total_sum / Q.uo_parties.length)).toFixed(1);
         }
     }
