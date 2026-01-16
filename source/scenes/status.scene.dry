@@ -119,7 +119,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Yugoslav National Party" style="color: #767676;">!}**JNS**{!</span>!}: Authoritarian Conservatism (Srškić)
 
-[? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">!}**JRZ**{!</span>!}: Far-Right Authoritarianism (Stojadinović) ?]
+[? if jrz_exist: {!<span class="tooltip-text" title="Yugoslav Radical Union" style="color: #222222;">!}**JRZ**{!</span>!}: Far-Right Authoritarianism ([+jrz_leader+]) ?]
 
 [? if srs_exist: {!<span class="tooltip-text" title="Serbian Radical Party" style="color: #00008B;">!}**SRS**{!</span>!}: Far-Right Authoritarianism (Stojadinović) ?]
 
