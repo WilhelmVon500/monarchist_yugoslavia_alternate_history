@@ -228,7 +228,7 @@ if (Q.sls_seats) {
             "id": "sls",
             "legend": "SLS",
             "name": "SLS",
-            "seats": Math.round(Q.cfs_seats),
+            "seats": Math.round(Q.sls_seats),
     });
 }
 if (Q.jmo_seats) {
