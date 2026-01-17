@@ -569,7 +569,7 @@ view-if: independent_democratic_party_uo
 go-to: ministries
 face-image: img/portraits/BudisavljevićSrđan.jpg
 
-Srđan Budisavljević of the <span style="color: #FCF342;">**SDS**</span> has been appointed Economic Minister.
+Srđan Budisavljević of the <span style="color: #FCF342;">**SDS**</span> has been appointed Social Minister.
 
 
 @interior
@@ -647,24 +647,40 @@ subtitle: The Justice Ministry controls the courts.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: justice_minister_party != "SPD"
-on-arrival: leverage -= 10; justice_minister_party = "SPD"; justice_minister = "Radbruch"
+view-if: not(justice_minister_party = "ZS" and agrarian_party_uo)
+on-arrival: leverage -= 10;
 go-to: ministries
 
-Gustav Radbruch of the SPD has been appointed Justice Minister.
+- @gavrilovic: Milan Gavrilović
+
+@gavrilovic
+on-arrival: justice_minister = "Gavrilović"; justice_minister_party = "ZS";
+view-if: agrarian_party_uo
+go-to: ministries
+face-image: img/portraits/GavrilovićMilan.jpg
+
+Milan Gavrilović of the <span style="color: #3D863D;">**ZS**</span> has been appointed Justice Minister.
 
 
 @foreign
 title: Foreign Ministry
-subtitle: This is usually the domain of Gustav Stresemann of the DVP.
+subtitle: This is usually the domain of conservative politicians.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 15
-view-if: foreign_minister_party != "SPD"
-on-arrival: leverage -= 15; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"
+view-if: not(foreign_minister_party = "DS" and democratic_party_uo)
+on-arrival: leverage -= 15;
 go-to: ministries
 
-Rudolf Breitscheid of the SPD has been appointed Foreign Minister.
+- @grol: Milan Grol
+
+@grol
+on-arrival: foreign_minister = "Grol"; foreign_minister_party = "DS";
+view-if: democratic_party_uo
+go-to: ministries
+face-image: img/portraits/GrolMilan.jpg
+
+Milan Grol of the <span style="color: #FFD500;">**DS**</span> has been appointed Foreign Minister.
 
 
 @agriculture
@@ -687,20 +703,7 @@ view-if: agrarian_party_uo
 go-to: ministries
 face-image: img/portraits/ČubrilovićBranko.jpg
 
-Branko Čubrilović of the <span style="color: #04B431;">**HSS**</span> has been appointed Economic Minister.
-
-
-@army
-title: Army Ministry
-subtitle: The Ministry responsible for the armed forces is not typically our domain.
-unavailable-subtitle: We do not have enough leverage.
-tags: mins_1928
-choose-if: leverage >= 15 
-view-if: army_minister_party != "SPD"
-on-arrival: leverage -= 15; army_minister_party = "SPD"; army_minister = "Leber"
-go-to: ministries
-
-Julius Leber of the SPD has been appointed Army Minister.
+Branko Čubrilović of the <span style="color: #3D863D;">**ZS**</span> has been appointed Agriculture Minister.
 
 
 
@@ -741,14 +744,14 @@ go-to: ministries
 
 @drop_justice
 title: Drop the Justice Ministry.
-view-if: justice_minister_party = "SPD"
+view-if: (justice_minister_party = "ZS" and agrarian_party_uo)
 on-arrival: justice_minister_party = "JRZ"; justice_minister = "Marković"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_foreign
 title: Drop the Foreign Ministry.
-view-if: foreign_minister_party = "SPD"
+view-if: (foreign_minister_party = "DS" and democratic_party_uo)
 on-arrival: foreign_minister_party = "JRZ"; foreign_minister = "Cincar-Marković"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
@@ -757,12 +760,5 @@ go-to: ministries
 title: Drop the Agriculture Ministry.
 view-if: (agriculture_minister_party = "ZS" and agrarian_party_uo)
 on-arrival: agriculture_minister_party = "JRZ"; agriculture_minister = "Bešlić"; leverage += 10;
-tags: drop_mins_1928
-go-to: ministries
-
-@drop_army
-title: Drop the Army Ministry.
-view-if: army_minister_party = "SPD"
-on-arrival: army_minister_party = "I"; army_minister = "Nedić"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
