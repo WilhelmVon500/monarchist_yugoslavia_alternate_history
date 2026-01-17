@@ -672,12 +672,22 @@ title: Agricultural Ministry
 subtitle: This is not our usual domain.
 unavailable-subtitle: We do not have enough leverage.
 choose-if: leverage >= 10 
-view-if: agriculture_minister_party != "SPD"
-on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_minister = "Baade"
+view-if: not(agriculture_minister_party = "ZS" and agrarian_party_uo)
+on-arrival: leverage -= 10;
 go-to: ministries
 tags: mins_1928
 
-Fritz Baade of the SPD has been appointed Agriculture Minister.
+We have to choose our minister.
+
+- @cubrilovic: Branko Čubrilović
+
+@cubrilovic
+on-arrival: agriculture_minister = "Čubrilović"; agriculture_minister_party = "ZS";
+view-if: agrarian_party_uo
+go-to: ministries
+face-image: img/portraits/ČubrilovićBranko.jpg
+
+Branko Čubrilović of the <span style="color: #04B431;">**HSS**</span> has been appointed Economic Minister.
 
 
 @army
@@ -745,7 +755,7 @@ go-to: ministries
 
 @drop_agriculture
 title: Drop the Agriculture Ministry.
-view-if: agriculture_minister_party = "SPD"
+view-if: (agriculture_minister_party = "ZS" and agrarian_party_uo)
 on-arrival: agriculture_minister_party = "JRZ"; agriculture_minister = "Bešlić"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
