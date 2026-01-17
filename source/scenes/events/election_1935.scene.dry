@@ -123,7 +123,7 @@ for (var party of Q.parties) {
             Q.uo_coalition = parseFloat((Q.uo_coalition + Q[party + '_r']).toFixed(1));
         }
 }
-Q.grand_regime_coalition = parseFloat((Q.regime_coalition + Q.uo_coalition).toFixed(1));
+Q.regime_grand_coalition = parseFloat((Q.regime_coalition + Q.uo_coalition).toFixed(1));
 
 
 
@@ -467,7 +467,7 @@ There are some potential coalition arrangements.
 @coalition_menu
 
 - @regime_coalition
-- @grand_regime_coalition
+- @regime_grand_coalition
 
 
 
@@ -506,14 +506,14 @@ WIP.
 
 
 
-@grand_regime_coalition
+@regime_grand_coalition
 title: Can we form a Grand Coalition with the Regime's parties?
 subtitle: <span style="color: #767676;">**JNS**</span>[? if jrz_exist: <span style="color: #222222;">**JRZ**</span> ?][? if yugoslav_muslim_organization_pro_regime: <span style="color: #008000;">**JMO**</span> ?][? if slovene_peoples_party_pro_regime: <span style="color: #74CA37;">**SLS**</span> ?][? if croatian_peasant_party_uo: <span style="color: #04B431;">**HSS**</span> ?][? if independent_democratic_party_uo: <span style="color: #FCF342;">**SDS**</span> ?][? if democratic_party_uo: <span style="color: #FFD500;">**DS**</span> ?][? if agrarian_party_uo: <span style="color: #3D863D;">**ZS**</span> ?][? if montenegrin_federalist_party_uo: <span style="color: #006400;">**CFS**</span> ?][? if peoples_radical_party_uo: <span style="color: #404371;">**NRS**</span> ?] ([+ regime_coalition +]%)
-view-if: grand_regime_coalition >= 50 and cvetkovic_macek_agreement
+view-if: regime_grand_coalition >= 50 and cvetkovic_macek_agreement
 choose-if: uo_coalition > regime_coalition or jrz_relation >= 40
 unavailable-subtitle: The pro-Regime parties are unwilling to include us in the new government.
 face-image: img/CvetkovićMaček.jpg
-on-arrival: in_grand_regime_coalition = 1; uo_in_government = 1;
+on-arrival: in_regime_grand_coalition = 1; uo_in_government = 1;
 
 WIP
 
