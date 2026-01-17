@@ -557,7 +557,6 @@ tags: mins_1928
 choose-if: leverage >= 5
 view-if: not(social_minister_party = "SDS" and independent_democratic_party_uo)
 on-arrival: leverage -= 5;
-go-to: ministries
 
 We have to choose our minister.
 
@@ -580,7 +579,6 @@ tags: mins_1928
 choose-if: leverage >= 15
 view-if: not(social_minister_party = "NRS" and peoples_radical_party_uo)
 on-arrival: leverage -= 15;
-go-to: ministries
 
 We have to choose our minister.
 
@@ -603,7 +601,6 @@ tags: mins_1928
 choose-if: leverage >= 10 
 view-if: not(finance_minister_party = "HSS" and croatian_peasant_party_uo)
 on-arrival: leverage -= 10;
-go-to: ministries
 
 We have to choose our minister.
 
@@ -626,7 +623,6 @@ tags: mins_1928
 choose-if: leverage >= 10 
 view-if: not(economic_minister_party = "HSS" and croatian_peasant_party_uo)
 on-arrival: leverage -= 10;
-go-to: ministries
 
 We have to choose our minister.
 
@@ -649,7 +645,6 @@ tags: mins_1928
 choose-if: leverage >= 10 
 view-if: not(justice_minister_party = "ZS" and agrarian_party_uo)
 on-arrival: leverage -= 10;
-go-to: ministries
 
 - @gavrilovic_justice: Milan Gavrilović
 
@@ -670,7 +665,6 @@ tags: mins_1928
 choose-if: leverage >= 15
 view-if: not(foreign_minister_party = "DS" and democratic_party_uo)
 on-arrival: leverage -= 15;
-go-to: ministries
 
 - @grol_foreign: Milan Grol
 
@@ -690,7 +684,6 @@ unavailable-subtitle: We do not have enough leverage.
 choose-if: leverage >= 10 
 view-if: not(agriculture_minister_party = "ZS" and agrarian_party_uo)
 on-arrival: leverage -= 10;
-go-to: ministries
 tags: mins_1928
 
 We have to choose our minister.
