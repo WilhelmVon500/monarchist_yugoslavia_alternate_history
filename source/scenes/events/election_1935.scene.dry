@@ -526,7 +526,7 @@ on-arrival: prime_minister = 'Cvetković'; prime_minister_party = 'JRZ'; deputy_
 
 WIP.
 
-- @ministries
+- @ministries: Now, we have our pick of ministries.
 
 @pm_grol
 unavailable-subtitle: The pro-Regime parties will not support him.
@@ -536,7 +536,7 @@ on-arrival: prime_minister = 'Grol'; prime_minister_party = 'DS'; deputy_prime_m
 
 WIP.
 
-- @ministries
+- @ministries: Now, we have our pick of ministries.
 
 
 
