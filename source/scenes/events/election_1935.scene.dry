@@ -732,27 +732,27 @@ go-to: ministries
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = "SPD"
-on-arrival: justice_minister_party = ddp_name; justice_minister = "Koch-Weser"; leverage += 10;
+on-arrival: justice_minister_party = "JRZ"; justice_minister = "Marković"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_foreign
 title: Drop the Foreign Ministry.
 view-if: foreign_minister_party = "SPD"
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; leverage += 15;
+on-arrival: foreign_minister_party = "JRZ"; foreign_minister = "Cincar-Marković"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_agriculture
 title: Drop the Agriculture Ministry.
 view-if: agriculture_minister_party = "SPD"
-on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietrich"; leverage += 10;
+on-arrival: agriculture_minister_party = "JRZ"; agriculture_minister = "Bešlić"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_army
 title: Drop the Army Ministry.
 view-if: army_minister_party = "SPD"
-on-arrival: army_minister_party = "I"; army_minister = "Groener"; leverage += 15;
+on-arrival: army_minister_party = "I"; army_minister = "Nedić"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
