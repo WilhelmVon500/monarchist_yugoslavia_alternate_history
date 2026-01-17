@@ -561,9 +561,9 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @budisavljevic: Srđan Budisavljević
+- @budisavljevic_social: Srđan Budisavljević
 
-@budisavljevic
+@budisavljevic_social
 on-arrival: social_minister = "Budisavljević"; social_minister_party = "SDS";
 view-if: independent_democratic_party_uo
 go-to: ministries
@@ -584,9 +584,9 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @maksimovic: Božidar Maksimović
+- @maksimovic_interior: Božidar Maksimović
 
-@maksimovic
+@maksimovic_interior
 on-arrival: interior_minister = "Maksimović"; interior_minister_party = "NRS";
 view-if: peoples_radical_party_uo
 go-to: ministries
@@ -607,9 +607,9 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @sutej: Juraj Šutej
+- @sutej_finance: Juraj Šutej
 
-@sutej
+@sutej_finance
 on-arrival: finance_minister = "Šutej"; finance_minister_party = "HSS";
 view-if: croatian_peasant_party_uo
 go-to: ministries
@@ -630,9 +630,9 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @andres: Ivan Andres
+- @andres_economic: Ivan Andres
 
-@andres
+@andres_economic
 on-arrival: economic_minister = "Andres"; economic_minister_party = "HSS";
 view-if: croatian_peasant_party_uo
 go-to: ministries
@@ -651,9 +651,9 @@ view-if: not(justice_minister_party = "ZS" and agrarian_party_uo)
 on-arrival: leverage -= 10;
 go-to: ministries
 
-- @gavrilovic: Milan Gavrilović
+- @gavrilovic_justice: Milan Gavrilović
 
-@gavrilovic
+@gavrilovic_justice
 on-arrival: justice_minister = "Gavrilović"; justice_minister_party = "ZS";
 view-if: agrarian_party_uo
 go-to: ministries
@@ -672,9 +672,9 @@ view-if: not(foreign_minister_party = "DS" and democratic_party_uo)
 on-arrival: leverage -= 15;
 go-to: ministries
 
-- @grol: Milan Grol
+- @grol_foreign: Milan Grol
 
-@grol
+@grol_foreign
 on-arrival: foreign_minister = "Grol"; foreign_minister_party = "DS";
 view-if: democratic_party_uo
 go-to: ministries
@@ -695,9 +695,9 @@ tags: mins_1928
 
 We have to choose our minister.
 
-- @cubrilovic: Branko Čubrilović
+- @cubrilovic_agriculture: Branko Čubrilović
 
-@cubrilovic
+@cubrilovic_agriculture
 on-arrival: agriculture_minister = "Čubrilović"; agriculture_minister_party = "ZS";
 view-if: agrarian_party_uo
 go-to: ministries
