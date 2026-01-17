@@ -25,15 +25,9 @@ tags: event
 
 WIP
 
-- @advantage: Can we build contacts with the <span style="color: #767676;">**JNS**</span>?
-- @nothing: This is none of our concern.
+- @advantage: We can build contacts with the <span style="color: #767676;">**JNS**</span>!
 
 @advantage
 on-arrival: jns_relation += 5; recruit_regime = 1;
 
 With turmoil in the conservative camp, we have an opportunity to recruit portions of former pro-Regime politicians into our coalition.
-
-
-@nothing
-
-The Regime's internal affairs are none of our concern.
