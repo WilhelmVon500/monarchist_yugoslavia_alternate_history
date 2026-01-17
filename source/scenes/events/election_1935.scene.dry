@@ -561,7 +561,7 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @budisavljevic
+- @budisavljevic: Srđan Budisavljević
 
 @budisavljevic
 on-arrival: social_minister = "Budisavljević"; social_minister_party = "SDS";
@@ -584,7 +584,7 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @maksimovic
+- @maksimovic: Božidar Maksimović
 
 @maksimovic
 on-arrival: interior_minister = "Maksimović"; interior_minister_party = "NRS";
@@ -607,7 +607,7 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @sutej
+- @sutej: Juraj Šutej
 
 @sutej
 on-arrival: finance_minister = "Šutej"; finance_minister_party = "HSS";
@@ -630,7 +630,7 @@ go-to: ministries
 
 We have to choose our minister.
 
-- @andres
+- @andres: Ivan Andres
 
 @andres
 on-arrival: economic_minister = "Andres"; economic_minister_party = "HSS";
