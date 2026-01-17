@@ -123,6 +123,9 @@ for (var party of Q.parties) {
             Q.uo_coalition = parseFloat((Q.uo_coalition + Q[party + '_r']).toFixed(1));
         }
 }
+Q.grand_regime_coalition = parseFloat((Q.regime_coalition + Q.uo_coalition).toFixed(1));
+
+
 
 Q.leverage = Q.uo_coalition;
 
@@ -464,12 +467,13 @@ There are some potential coalition arrangements.
 @coalition_menu
 
 - @regime_coalition
+- @grand_regime_coalition
 
 
 
 @regime_coalition
 title: Pro-Regime parties have a safe majority.
-subtitle: <span style="color: #767676;">**JNS**</span> + <span style="color: #008000;">**JMO**</span> + <span style="color: #74CA37;">**SLS**</span> ([+ regime_coalition +]%)
+subtitle: <span style="color: #767676;">**JNS**</span>[? if jrz_exist: <span style="color: #222222;">**JRZ**</span> ?][? if yugoslav_muslim_organization_pro_regime: <span style="color: #008000;">**JMO**</span> ?][? if slovene_peoples_party_pro_regime: <span style="color: #74CA37;">**SLS**</span> ?] ([+ regime_coalition +]%)
 view-if: regime_coalition >= 50
 on-arrival: in_regime_coalition = 1;
 
@@ -494,38 +498,94 @@ WIP.
 
 
 
+@grand_regime_coalition
+title: Can we form a coalition with former Regime parties?
+subtitle: <span style="color: #767676;">**JNS**</span>[? if jrz_exist: <span style="color: #222222;">**JRZ**</span> ?][? if yugoslav_muslim_organization_pro_regime: <span style="color: #008000;">**JMO**</span> ?][? if slovene_peoples_party_pro_regime: <span style="color: #74CA37;">**SLS**</span> ?][? if croatian_peasant_party_uo: <span style="color: #04B431;">**HSS**</span> ?][? if independent_democratic_party_uo: <span style="color: #FCF342;">**SDS**</span> ?][? if democratic_party_uo: <span style="color: #FFD500;">**DS**</span> ?][? if agrarian_party_uo: <span style="color: #3D863D;">**ZS**</span> ?][? if montenegrin_federalist_party_uo: <span style="color: #006400;">**CFS**</span> ?][? if peoples_radical_party_uo: <span style="color: #404371;">**NRS**</span> ?] ([+ regime_coalition +]%)
+view-if: grand_regime_coalition >= 50 and cvetkovic_macek_agreement
+choose-if: uo_coalition > regime_coalition or jrz_relation >= 40
+unavailable-subtitle: The pro-Regime parties are unwilling to include us in the new government.
+face-image: img/CvetkovićMaček.jpg
+on-arrival: in_grand_regime_coalition = 1; uo_in_government = 1;
+
+WIP
+
+- @pm_cvetkovic: Prince Paul appoints Dragiša Cvetković.
+- @pm_macek: Prince Paul appoints Milan Grol.
+
+@pm_cvetkovic
+face-image: img/portraits/CvetkovićDragiša.jpg
+on-arrival: prime_minister = 'Cvetković'; prime_minister_party = 'JRZ'; deputy_prime_minister = 'Maček'; deputy_prime_minister_party = 'HSS'; foreign_minister = 'Cincar-Marković'; foreign_minister_party = 'JRZ'; interior_minister = 'Mihaldžić'; interior_minister_party = 'JRZ'; justice_minister = 'Marković'; justice_minister_party = 'JRZ'; finance_minister = 'Đuričić'; finance_minister_party = 'JRZ'; economic_minister = 'Tomić'; economic_minister_party = 'I'; social_minister = 'Cvetković'; social_minister_party = 'JRZ'; army_minister = 'Nedić'; army_minister_party = 'I'; agriculture_minister = 'Bešlić'; agriculture_minister_party = 'JRZ';
+
+WIP.
+
+- @ministries
+
+@pm_grol
+unavailable-subtitle: The pro-Regime parties will not support him.
+view-if: uo_coalition > regime_coalition
+face-image: img/portraits/GrolMilan.jpg
+on-arrival: prime_minister = 'Grol'; prime_minister_party = 'DS'; deputy_prime_minister = 'Cvetković'; deputy_prime_minister_party = 'JRZ'; foreign_minister = 'Cincar-Marković'; foreign_minister_party = 'JRZ'; interior_minister = 'Mihaldžić'; interior_minister_party = 'JRZ'; justice_minister = 'Marković'; justice_minister_party = 'JRZ'; finance_minister = 'Đuričić'; finance_minister_party = 'JRZ'; economic_minister = 'Tomić'; economic_minister_party = 'I'; social_minister = 'Cvetković'; social_minister_party = 'JRZ'; army_minister = 'Nedić'; army_minister_party = 'I'; agriculture_minister = 'Bešlić'; agriculture_minister_party = 'JRZ';
+
+WIP.
+
+- @ministries
+
+
+
 
 
 @ministries
 
-We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. [? if in_left_front : Any ministry that we do not take will be given to the KPD. ?] [? if in_left_front and reichswehr_minister_party == "KPD" : If the KPD controls the Reichswehr Ministry, the army will most likely revolt. ?]
+We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. [? if in_left_front : Any ministry that we do not take will be given to the KPD. ?] [? if in_left_front and army_minister_party == "KPD" : If the KPD controls the Reichswehr Ministry, the army will most likely revolt. ?]
 
 - #mins_1928
 - #drop_mins_1928
 
-@labor
-title: Labor Ministry
-subtitle: Taking the Labor Ministry is expected of us.
+@social
+title: Social Ministry
+subtitle: Taking the Social Ministry is expected of us.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
-view-if: labor_minister_party != "SPD"
-on-arrival: leverage -= 5; labor_minister_party = "SPD"; labor_minister = "Wissell"
+view-if: not(social_minister_party = "SDS" and independent_democratic_party_uo)
+on-arrival: leverage -= 5;
 go-to: ministries
 
-Rudolf Wissell of the SPD has been appointed labor minister.
+We have to choose our minister.
+
+- @budisavljevic
+
+@budisavljevic
+on-arrival: social_minister = "Budisavljević"; social_minister_party = "SDS";
+view-if: independent_democratic_party_uo
+go-to: ministries
+face-image: img/portraits/BudisavljevićSrđan.jpg
+
+Srđan Budisavljević of the <span style="color: #FCF342;">**SDS**</span> has been appointed Economic Minister.
+
 
 @interior
 title: Interior Ministry
 subtitle: Taking the Interior Ministry is expected of us. The Interior Ministry controls domestic security.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
-choose-if: leverage >= 5
-view-if: interior_minister_party != "SPD"
-on-arrival: leverage -= 5; interior_minister_party = "SPD"; interior_minister = "Severing"
+choose-if: leverage >= 15
+view-if: not(social_minister_party = "NRS" and peoples_radical_party_uo)
+on-arrival: leverage -= 15;
 go-to: ministries
 
-Carl Severing of the SPD has been appointed Interior Minister.
+We have to choose our minister.
+
+- @maksimovic
+
+@maksimovic
+on-arrival: interior_minister = "Maksimović"; interior_minister_party = "NRS";
+view-if: peoples_radical_party_uo
+go-to: ministries
+face-image: img/portraits/MaksimovićBožidar.jpg
+
+Božidar Maksimović of the <span style="color: #404371;">**NRS**</span> has been appointed Interior Minister.
+
 
 @finance
 title: Finance Ministry
@@ -539,6 +599,7 @@ go-to: ministries
 
 Rudolf Hilferding of the SPD has been appointed Finance Minister.
 
+
 @economic
 title: Economic Ministry
 subtitle: The Economic Ministry controls broader economic policy.
@@ -551,6 +612,7 @@ go-to: ministries
 
 Robert Schmidt of the SPD has been appointed Economic Minister.
 
+
 @justice
 title: Justice Ministry
 subtitle: The Justice Ministry controls the courts.
@@ -562,6 +624,7 @@ on-arrival: leverage -= 10; justice_minister_party = "SPD"; justice_minister = "
 go-to: ministries
 
 Gustav Radbruch of the SPD has been appointed Justice Minister.
+
 
 @foreign
 title: Foreign Ministry
@@ -588,17 +651,18 @@ tags: mins_1928
 
 Fritz Baade of the SPD has been appointed Agriculture Minister.
 
-@reichswehr
-title: Reichswehr Ministry
-subtitle: The Ministry responsible for the armed forces is not typically our domain; General Groener and the bourgeois-conservatives will be displeased.
+
+@army
+title: Army Ministry
+subtitle: The Ministry responsible for the armed forces is not typically our domain.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 15 
-view-if: reichswehr_minister_party != "SPD"
-on-arrival: leverage -= 15; reichswehr_minister_party = "SPD"; reichswehr_minister = "Leber"
+view-if: army_minister_party != "SPD"
+on-arrival: leverage -= 15; army_minister_party = "SPD"; army_minister = "Leber"
 go-to: ministries
 
-Julius Leber of the SPD has been appointed Reichswehr Minister.
+Julius Leber of the SPD has been appointed Army Minister.
 
 
 
@@ -609,17 +673,17 @@ tags: mins_1928
 
 This coalition arrangement is tolerable to all.
 
-@drop_labor
-title: Drop the Labor Ministry.
-view-if: labor_minister_party = "SPD"
-on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 5;
+@drop_social
+title: Drop the Social Ministry.
+view-if: (social_minister_party = "SDS" and independent_democratic_party_uo)
+on-arrival: social_minister_party = "JRZ"; social_minister = "Cvetković"; leverage += 5;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_interior
 title: Drop the Interior Ministry.
-view-if: interior_minister_party = "SPD"
-on-arrival: interior_minister_party = "Z"; interior_minister = "Wirth"; leverage += 5;
+view-if: (social_minister_party = "NRS" and peoples_radical_party_uo)
+on-arrival: interior_minister_party = "JRZ"; interior_minister = "Mihaldžić"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -658,9 +722,9 @@ on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietr
 tags: drop_mins_1928
 go-to: ministries
 
-@drop_reichswehr
-title: Drop the Reichswehr Ministry.
-view-if: reichswehr_minister_party = "SPD"
-on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 15;
+@drop_army
+title: Drop the Army Ministry.
+view-if: army_minister_party = "SPD"
+on-arrival: army_minister_party = "I"; army_minister = "Groener"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
