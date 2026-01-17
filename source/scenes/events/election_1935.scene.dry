@@ -530,7 +530,7 @@ WIP.
 
 @pm_grol
 unavailable-subtitle: The pro-Regime parties will not support him.
-view-if: uo_coalition > regime_coalition
+choose-if: uo_coalition > regime_coalition
 face-image: img/portraits/GrolMilan.jpg
 on-arrival: prime_minister = 'Grol'; prime_minister_party = 'DS'; deputy_prime_minister = 'Cvetković'; deputy_prime_minister_party = 'JRZ'; foreign_minister = 'Cincar-Marković'; foreign_minister_party = 'JRZ'; interior_minister = 'Mihaldžić'; interior_minister_party = 'JRZ'; justice_minister = 'Marković'; justice_minister_party = 'JRZ'; finance_minister = 'Đuričić'; finance_minister_party = 'JRZ'; economic_minister = 'Tomić'; economic_minister_party = 'I'; social_minister = 'Cvetković'; social_minister_party = 'JRZ'; army_minister = 'Nedić'; army_minister_party = 'I'; agriculture_minister = 'Bešlić'; agriculture_minister_party = 'JRZ';
 
