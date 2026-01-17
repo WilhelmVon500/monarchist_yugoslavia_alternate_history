@@ -481,6 +481,7 @@ WIP
 
 - @pm_stojadinovic_1: Prince Paul appoints Milan Stojadinović.
 - @pm_stojadinovic_2: Stojadinović easily secures re-appointment.
+- @pm_cvetkovic_regime: Cvetković is appointed as Prime Minister.
 
 @pm_stojadinovic_1
 view-if: year = 1935
@@ -496,10 +497,17 @@ on-arrival: prime_minister = 'Stojadinović'; prime_minister_party = 'JRZ'; depu
 
 WIP.
 
+@pm_cvetkovic_regime
+view-if: prime_minister = 'Cvetković'
+face-image: img/portraits/CvetkovićDragiša.jpg
+on-arrival: prime_minister = 'Cvetković'; prime_minister_party = 'JRZ'; deputy_prime_minister = 'Vacant'; deputy_prime_minister_party = 'I'; foreign_minister = 'Cincar-Marković'; foreign_minister_party = 'JRZ'; interior_minister = 'Mihaldžić'; interior_minister_party = 'JRZ'; justice_minister = 'Marković'; justice_minister_party = 'JRZ'; finance_minister = 'Đuričić'; finance_minister_party = 'JRZ'; economic_minister = 'Tomić'; economic_minister_party = 'I'; social_minister = 'Cvetković'; social_minister_party = 'JRZ'; army_minister = 'Nedić'; army_minister_party = 'I'; agriculture_minister = 'Bešlić'; agriculture_minister_party = 'JRZ';
+
+WIP.
+
 
 
 @grand_regime_coalition
-title: Can we form a coalition with former Regime parties?
+title: Can we form a Grand Coalition with the Regime's parties?
 subtitle: <span style="color: #767676;">**JNS**</span>[? if jrz_exist: <span style="color: #222222;">**JRZ**</span> ?][? if yugoslav_muslim_organization_pro_regime: <span style="color: #008000;">**JMO**</span> ?][? if slovene_peoples_party_pro_regime: <span style="color: #74CA37;">**SLS**</span> ?][? if croatian_peasant_party_uo: <span style="color: #04B431;">**HSS**</span> ?][? if independent_democratic_party_uo: <span style="color: #FCF342;">**SDS**</span> ?][? if democratic_party_uo: <span style="color: #FFD500;">**DS**</span> ?][? if agrarian_party_uo: <span style="color: #3D863D;">**ZS**</span> ?][? if montenegrin_federalist_party_uo: <span style="color: #006400;">**CFS**</span> ?][? if peoples_radical_party_uo: <span style="color: #404371;">**NRS**</span> ?] ([+ regime_coalition +]%)
 view-if: grand_regime_coalition >= 50 and cvetkovic_macek_agreement
 choose-if: uo_coalition > regime_coalition or jrz_relation >= 40
@@ -509,8 +517,8 @@ on-arrival: in_grand_regime_coalition = 1; uo_in_government = 1;
 
 WIP
 
-- @pm_cvetkovic: Prince Paul appoints Dragiša Cvetković.
-- @pm_macek: Prince Paul appoints Milan Grol.
+- @pm_cvetkovic: Dragiša Cvetković is elected.
+- @pm_grol: Milan Grol is elected.
 
 @pm_cvetkovic
 face-image: img/portraits/CvetkovićDragiša.jpg
@@ -593,11 +601,21 @@ subtitle: The Finance Ministry controls the government budget and taxes.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: finance_minister_party != "SPD"
-on-arrival: leverage -= 10; finance_minister_party = "SPD"; finance_minister = "Hilferding"
+view-if: not(finance_minister_party = "HSS" and croatian_peasant_party_uo)
+on-arrival: leverage -= 10;
 go-to: ministries
 
-Rudolf Hilferding of the SPD has been appointed Finance Minister.
+We have to choose our minister.
+
+- @sutej
+
+@sutej
+on-arrival: finance_minister = "Šutej"; finance_minister_party = "HSS";
+view-if: croatian_peasant_party_uo
+go-to: ministries
+face-image: img/portraits/ŠutejJuraj.jpg
+
+Juraj Šutej of the <span style="color: #04B431;">**HSS**</span> has been appointed Finance Minister.
 
 
 @economic
@@ -606,11 +624,21 @@ subtitle: The Economic Ministry controls broader economic policy.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: economic_minister_party != "SPD"
-on-arrival: leverage -= 10; economic_minister_party = "SPD"; economic_minister = "Schmidt"
+view-if: not(economic_minister_party = "HSS" and croatian_peasant_party_uo)
+on-arrival: leverage -= 10;
 go-to: ministries
 
-Robert Schmidt of the SPD has been appointed Economic Minister.
+We have to choose our minister.
+
+- @andres
+
+@andres
+on-arrival: economic_minister = "Andres"; economic_minister_party = "HSS";
+view-if: croatian_peasant_party_uo
+go-to: ministries
+face-image: img/portraits/AndresIvan.jpg
+
+Ivan Andres of the <span style="color: #04B431;">**HSS**</span> has been appointed Economic Minister.
 
 
 @justice
@@ -631,9 +659,9 @@ title: Foreign Ministry
 subtitle: This is usually the domain of Gustav Stresemann of the DVP.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
-choose-if: leverage >= 10 
+choose-if: leverage >= 15
 view-if: foreign_minister_party != "SPD"
-on-arrival: leverage -= 10; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"
+on-arrival: leverage -= 15; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"
 go-to: ministries
 
 Rudolf Breitscheid of the SPD has been appointed Foreign Minister.
@@ -689,15 +717,15 @@ go-to: ministries
 
 @drop_finance
 title: Drop the Finance Ministry.
-view-if: finance_minister_party = "SPD"
-on-arrival: finance_minister_party = "DVP"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "Z" if in_weimar_coalition or in_popular_front; finance_minister = "Köhler" if in_weimar_coalition or in_popular_front
+view-if: (finance_minister_party = "HSS" and croatian_peasant_party_uo)
+on-arrival: finance_minister_party = "JRZ"; finance_minister = "Đuričić"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_economic
 title: Drop the Economic Ministry.
-view-if: economic_minister_party = "SPD"
-on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = ddp_name if in_weimar_coalition or in_popular_front; economic_minister = "Dietrich" if in_weimar_coalition or in_popular_front;
+view-if: (finance_minister_party = "HSS" and croatian_peasant_party_uo)
+on-arrival: economic_minister_party = "I"; economic_minister = "Tomić"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -711,14 +739,14 @@ go-to: ministries
 @drop_foreign
 title: Drop the Foreign Ministry.
 view-if: foreign_minister_party = "SPD"
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Z" if in_weimar_coalition or in_popular_front; foreign_minister = "Wirth" if in_weimar_coalition or in_popular_front;
+on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_agriculture
 title: Drop the Agriculture Ministry.
 view-if: agriculture_minister_party = "SPD"
-on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietrich"; leverage += 10; agriculture_minister_party = "Z" if in_weimar_coalition; agriculture_minister = "Hermes" if in_weimar_coalition
+on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietrich"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
