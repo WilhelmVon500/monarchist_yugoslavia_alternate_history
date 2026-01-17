@@ -147,7 +147,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 Prime Minister: [+ prime_minister +] ([?if prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if prime_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
-Deputy Prime Minister: [+ deputy_prime_minister +] ([?if deputy_prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if deputy_prime_minister_party=="HSS":<span style="color: #04B431;">**HSS**</span>?][?if deputy_prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?])
+Deputy Prime Minister: [+ deputy_prime_minister +] ([?if deputy_prime_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if deputy_prime_minister_party=="HSS":<span style="color: #04B431;">**HSS**</span>?][?if deputy_prime_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if deputy_prime_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
 Interior: [+ interior_minister +] ([?if interior_minister_party=="I":<span style="color: #AAAAAA;">**I**</span>?][?if interior_minister_party=="SLS":<span style="color: #74CA37;">**SLS**</span>?][?if interior_minister_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if interior_minister_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
 
