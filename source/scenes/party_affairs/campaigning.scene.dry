@@ -38,7 +38,7 @@ We have increased our campaigning among the new middle class.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; rural_ds += 1*(1-dissent) if democratic_party_uo; rural_sds += 0.5*(1-dissent) if independent_democratic_party_uo; rural_zs += 1*(1-dissent) if agrarian_party_uo; rural_nrs += 1*(1-dissent) if peoples_radical_party_uo;
+on-arrival: resources -= 1; rural_ds += 1*(1-dissent) if democratic_party_uo; rural_sds += 0.5*(1-dissent) if independent_democratic_party_uo; rural_zs += 0.75*(1-dissent) if agrarian_party_uo; rural_nrs += 1*(1-dissent) if peoples_radical_party_uo;
 
 We have increased our campaigning among rural population.
 
