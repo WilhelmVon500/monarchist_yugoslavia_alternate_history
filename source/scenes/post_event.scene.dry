@@ -311,10 +311,10 @@ if (Q.month_actions >= 1) {
 
         Q.workers_kpj -= 3/12;
         Q.middle_class_jns += 5/12;
-        Q.rural_jns += 3/12;
+        Q.rural_jns += 5/12;
         Q.unemployed_jns += 3/12;
     } else if (Q.year == 1935) {
-        Q.rural_jns += 3/12;
+        Q.rural_jns += 4/12;
         Q.rural_jrz += 5/12;
         Q.rural_zbor += 1/12;
         Q.rural_other -= 2/12;
@@ -322,8 +322,8 @@ if (Q.month_actions >= 1) {
 
         Q.zbor_strength += 15/12;
     } else if (Q.year >= 1936 && Q.year < 1938) {
-        Q.rural_jrz += 3/12;
-        Q.rural_jns -= 3/12;
+        Q.rural_jrz += 6/12;
+        Q.rural_jns -= 5/12;
         Q.middle_class_jrz += 2/12;
         Q.middle_class_jns -= 2/12;
         Q.middle_class_ds -= 1/12;
@@ -334,10 +334,10 @@ if (Q.month_actions >= 1) {
         Q.rural_zbor += 1/12;
     } else if (Q.year >= 1938 && Q.year < 1942) {
         Q.workers_kpj -= 3/12;
-        Q.rural_jns -= 2/12;
-        Q.middle_class_jrz += 7/12;
-        Q.rural_jrz += 5/12;
         Q.workers_jrz += 4/12;
+        Q.rural_jns -= 3/12;
+        Q.rural_jrz += 5/12;
+        Q.middle_class_jrz += 7/12;
         if (!Q.cvetkovic_macek_agreement) {
             Q.croatian_peasants_hss += 2/12;
             Q.croatian_peasants_jns -= 1/12;
