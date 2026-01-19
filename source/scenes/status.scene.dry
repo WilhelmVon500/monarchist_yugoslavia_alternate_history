@@ -268,3 +268,34 @@ Unemployed: <span style="color: #770000;">**KPJ**</span>: [+ unemployed_kpj_disp
 Croatian Peasants: <span style="color: #770000;">**KPJ**</span>: [+ croatian_peasants_kpj_display +]%, <span style="color: #DD0000;">**SPJ**</span>: [+ croatian_peasants_spj_display +]%, <span style="color: #04B431;">**HSS**</span>: [+ croatian_peasants_hss_display +]%, <span style="color: #FCF342;">**SDS**</span>: [+ croatian_peasants_sds_display +]%, <span style="color: #FFD500;">**DS**</span>: [+ croatian_peasants_ds_display +]%; <span style="color: #3D863D;">**ZS**</span>: [+ croatian_peasants_zs_display +]%, <span style="color: #006400;">**CFS**</span>: [+ croatian_peasants_cfs_display +]%, <span style="color: #74CA37;">**SLS**</span>: [+ croatian_peasants_sls_display +]%, <span style="color: #008000;">**JMO**</span>: [+ croatian_peasants_jmo_display +]%, [? if nrs_exist: <span style="color: #404371;">**NRS**</span>: [+ croatian_peasants_nrs_display +]%, ?]<span style="color: #767676;">**JNS**</span>: [+ croatian_peasants_jns_display +]%, [? if jrz_exist: <span style="color: #222222;">**JRZ**</span>: [+ croatian_peasants_jrz_display +]%, ?][? if srs_exist: <span style="color: #00008B;">**SRS**</span>: [+ croatian_peasants_srs_display +]%, ?][? if zbor_exist: <span style="color: #04522C;">**ZBOR**</span>: [+ croatian_peasants_zbor_display +]%, ?]<span style="color: #AAAAAA;">**Others**</span>: [+ croatian_peasants_other_display +]%
 
 Support for the Republic: [+ pro_republic_disp +]%
+
+
+@states
+
+= Drava Banovina
+
+Ban: [+ slovenia_leader +] ([?if slovenia_leader_party=="SLS":<span style="color: #74CA37;">**SLS**</span>?])
+
+Government: WIP
+
+[? if democracy_restored: Next election: [+ next_election_month_slovenia: month +] [+ next_election_year_slovenia +] ?]
+
+= [? if federalization: Croatia Banovina ?]
+
+[? if federalization: Ban: [+ croatia_leader +] ([?if croatia_leader_party=="HSS":<span style="color: #04B431;">**HSS**</span>?]) ?]
+
+[? if federalization: Government: WIP ?]
+
+[? if federalization and democracy_restored: Next election: [+ next_election_month_croatia: month +] [+ next_election_year_croatia +] ?]
+
+= [? if not federalization: Sava Banovina ?]
+
+[? if not federalization: Ban: Perović (<span style="color: #AAAAAA;">**I**</span>) ?]
+
+[? if not federalization: Government: WIP ?]
+
+= [? if not federalization: Littoral Banovina ?]
+
+[? if not federalization: Ban: Jablanović (<span style="color: #AAAAAA;">**I**</span>) ?]
+
+[? if not federalization: Government: WIP ?]
