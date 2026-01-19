@@ -20,7 +20,16 @@ face-image: img/portraits/MačekVladko.jpg
 
 WIP
 
+- @federalization: Now, to Federalization.
+
 @no_new_government
 on-arrival: jrz_relation -= 3;
+
+WIP
+
+- @federalization: Now, to Federalization.
+
+@federalization
+on-arrival: croatia_leader = "Šubašić"; croatia_leader_party = "HSS"; next_election_month_croatia = 12; next_election_year_croatia = 1942; slovenia_leader = "Natlačen"; slovenia_leader_party = "SLS"; next_election_month_slovenia = 12; next_election_year_slovenia = 1942;
 
 WIP
