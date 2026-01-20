@@ -31,5 +31,6 @@ WIP
 
 @federalization
 on-arrival: croatia_leader = "Šubašić"; croatia_leader_party = "HSS"; next_election_month_croatia = 12; next_election_year_croatia = 1942; slovenia_leader = "Natlačen"; slovenia_leader_party = "SLS"; next_election_month_slovenia = 12; next_election_year_slovenia = 1942;
+face-image: img/portraits/ŠubašićIvan.jpg
 
 WIP
