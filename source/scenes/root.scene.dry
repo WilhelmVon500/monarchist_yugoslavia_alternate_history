@@ -419,6 +419,9 @@ Q.cvetkovic_macek_agreement = 0;
 Q.federalization = 0;
 Q.democracy_restored = 0;
 
+Q.belgrade_leader = "Ilić";
+Q.belgrade_leader_party = "I";
+
 
 // Advisors/Leaders
 Q.n_advisors = 3;
