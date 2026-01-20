@@ -1,0 +1,11 @@
+title: Banovina of Serbia created!
+new-page: true
+subtitle: Federalization finalized!
+tags: event
+view-if: year = 1941 and month >= 8 and cvetkovic_macek_agreement
+on-arrival: total_federalization = 1; serbia_leader = "Uzunović"; serbia_leader_party = "JNS"; next_election_month_serbia = 12; next_election_year_serbia = 1942;
+max-visits: 1
+
+= Federalization Finished!
+
+WIP
