@@ -272,7 +272,15 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 @states
 
-= Drava Banovina
+= Belgrade City
+
+Ban: [+ belgrade_leader +] ([?if belgrade_leader_party=="I":<span style="color: #AAAAAA;">**I**</span>?])
+
+Government: WIP
+
+[? if democracy_restored: Next election: [+ next_election_month_belgrade: month +] [+ next_election_year_belgrade +] ?]
+
+= [? if not total_federalization: Drava ?][? if total_federalization: Slovene ?] Banovina
 
 Ban: [+ slovenia_leader +] ([?if slovenia_leader_party=="SLS":<span style="color: #74CA37;">**SLS**</span>?])
 
@@ -280,7 +288,7 @@ Government: WIP
 
 [? if democracy_restored: Next election: [+ next_election_month_slovenia: month +] [+ next_election_year_slovenia +] ?]
 
-= [? if federalization: Croatia Banovina ?]
+= [? if federalization: Banovina of Croatia ?]
 
 [? if federalization: Ban: [+ croatia_leader +] ([?if croatia_leader_party=="HSS":<span style="color: #04B431;">**HSS**</span>?]) ?]
 
@@ -299,3 +307,11 @@ Government: WIP
 [? if not federalization: Ban: Jablanović (<span style="color: #AAAAAA;">**I**</span>) ?]
 
 [? if not federalization: Government: WIP ?]
+
+= [? if total_federalization: Banovina of Serbia ?]
+
+[? if total_federalization: Ban: [+ serbia_leader +] ([?if serbia_leader_party=="NS":<span style="color: #767676;">**JNS**</span>?]) ?]
+
+[? if total_federalization: Government: WIP ?]
+
+[? if total_federalization and democracy_restored: Next election: [+ next_election_month_serbia: month +] [+ next_election_year_serbia +] ?]
