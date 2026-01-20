@@ -421,6 +421,8 @@ Q.democracy_restored = 0;
 
 Q.belgrade_leader = "Ilić";
 Q.belgrade_leader_party = "I";
+Q.montenegro_leader = "Stanišić";
+Q.montenegro_leader_party = "JNS";
 
 
 // Advisors/Leaders
