@@ -274,7 +274,7 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 = Belgrade City
 
-Ban: [+ belgrade_leader +] ([?if belgrade_leader_party=="I":<span style="color: #AAAAAA;">**I**</span>?])
+Mayor: [+ belgrade_leader +] ([?if belgrade_leader_party=="I":<span style="color: #AAAAAA;">**I**</span>?])
 
 Government: WIP
 
