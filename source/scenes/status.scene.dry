@@ -315,3 +315,41 @@ Government: WIP
 [? if total_federalization: Government: WIP ?]
 
 [? if total_federalization and democracy_restored: Next election: [+ next_election_month_serbia: month +] [+ next_election_year_serbia +] ?]
+
+= [? if not total_federalization: Vrbas Banovina ?]
+
+[? if not total_federalization: Ban: Milosavljević (<span style="color: #AAAAAA;">**I**</span>) ?]
+
+[? if not total_federalization: Government: WIP ?]
+
+= [? if not total_federalization: Drina Banovina ?]
+
+[? if not total_federalization: Ban: Dunjić (<span style="color: #767676;">**JNS**</span>) ?]
+
+[? if not total_federalization: Government: WIP ?]
+
+= [? if not total_federalization: Zeta ?][? if total_federalization: Montenegrin ?] Banovina
+
+Ban: [+ montenegro_leader +] ([?if montenegro_leader_party=="JNS":<span style="color: #767676;">**JNS**</span>?][?if montenegro_leader_party=="JRZ":<span style="color: #222222;">**JRZ**</span>?])
+
+Government: WIP
+
+[? if democracy_restored: Next election: [+ next_election_month_montenegro: month +] [+ next_election_year_montenegro +] ?]
+
+= [? if not total_federalization: Danube Banovina ?]
+
+[? if not total_federalization: Ban: Rajić (<span style="color: #767676;">**JNS**</span>) ?]
+
+[? if not total_federalization: Government: WIP ?]
+
+= [? if not total_federalization: Morava Banovina ?]
+
+[? if not total_federalization: Ban: Nikolić (<span style="color: #AAAAAA;">**I**</span>) ?]
+
+[? if not total_federalization: Government: WIP ?]
+
+= [? if not total_federalization: Vardar Banovina ?]
+
+[? if not total_federalization: Ban: Hajduk-Veljković (<span style="color: #767676;">**JNS**</span>) ?]
+
+[? if not total_federalization: Government: WIP ?]
