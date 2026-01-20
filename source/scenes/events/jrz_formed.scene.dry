@@ -18,6 +18,9 @@ Q.finance_minister_party = "JRZ";
 Q.foreign_minister_party = "JRZ";
 Q.social_minister_party = "JRZ";
 Q.agriculture_minister_party = "JRZ";
+
+Q.montenegro_leader = "Krstić";
+Q.montenegro_leader_party = "JRZ";
 !}
 tags: event
 
