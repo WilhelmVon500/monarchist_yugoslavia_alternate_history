@@ -59,9 +59,12 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
 
       // Declare the y (vertical position) scale.
       if (!dataMax) {
-          const maxSPD = d3.max(data, d => d.spd);
-          const maxNSDAP = d3.max(data, d => d.nsdap);
-          dataMax = maxSPD >= maxNSDAP ? maxSPD + 10 : maxNSDAP + 10;
+          const maxHSS = d3.max(data, d => d.hss);
+          const maxDS = d3.max(data, d => d.ds);
+          const maxJNS = d3.max(data, d => d.jns);
+          const maxJRZ = d3.max(data, d => d.jrz);
+
+          const overallMax = d3.max([maxHSS, maxDS, maxJNS, maxJRZ]);
           dataMin = 0;
       }
       const yScale = d3.scaleLinear([dataMin, dataMax], [height - marginBottom, marginTop]);
