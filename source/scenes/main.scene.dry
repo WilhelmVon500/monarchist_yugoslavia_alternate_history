@@ -54,7 +54,6 @@ is-deck: true
 
 @govt
 title: Government Affairs
-view-if: time >= 6
 card-image: img/national_assembly.jpg
 is-deck: true
 
