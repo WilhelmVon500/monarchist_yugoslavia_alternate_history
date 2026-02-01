@@ -310,7 +310,7 @@ Government: WIP
 
 = [? if total_federalization: Banovina of Serbia ?]
 
-[? if total_federalization: Ban: [+ serbia_leader +] ([?if serbia_leader_party=="NS":<span style="color: #767676;">**JNS**</span>?]) ?]
+[? if total_federalization: Ban: [+ serbia_leader +] ([?if serbia_leader_party=="JNS":<span style="color: #767676;">**JNS**</span>?]) ?]
 
 [? if total_federalization: Government: WIP ?]
 
